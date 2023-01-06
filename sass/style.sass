@@ -2,13 +2,15 @@
 @import 'fonts'
 @import 'elements'
 @import 'btns'
+@import 'navbar'
 @import 'header'
 @import 'footer'
 
 .catalog
     padding: 0
-    .wrap 
+    .wrap
         padding: 0 14px 14px
+    
     &-item
         min-width: 72px
         width: 72px
@@ -27,7 +29,7 @@
         display: flex
         align-items: center
         justify-content: center
-        background-color: #f1f1f1
+        background-color: #fff
         border-radius: 6px
         margin-bottom: 7px
         box-shadow: 0px 9px 6px 0px rgba(0, 6, 129, 0.06)
@@ -37,7 +39,7 @@
             max-height: 50%
             object-fit: contain
 
-    &-banner 
+    &-banner
         min-width: 160px
         margin: 0 14px 0 0
         width: 160px
@@ -48,23 +50,23 @@
         z-index: 1
         color: #fff
         padding: 12px 14px 10px
-        &__img 
+        &__img
             position: absolute
             width: 100%
             height: 100%
             top: 0
             left: 0
-            z-index: -1 
+            z-index: -1
             object-fit: cover
             pointer-events: none
 
-        &__heading 
+        &__heading
             font-size: 11px
             max-width: 65%
             font-weight: bold
             margin: 0 0 5px
 
-        &__text 
+        &__text
             max-width: 65%
             font-size: 8px
 
@@ -72,15 +74,15 @@
     min-width: 160px
     width: 160px
     margin: 0 14px 14px 0
-    padding: 0 0 11px 0
-    border-radius: 8px
+    padding: 0 0 8px 0
+    border-radius: 6px
     background-color: #fff
     overflow: hidden
     box-shadow: 0px 9px 6px 0px rgba(0, 6, 129, 0.06)
     position: relative
     z-index: 1
 
-    &-tag 
+    &-tag
         padding: 2px 5px
         background-color: $blue
         position: absolute
@@ -90,22 +92,37 @@
         color: #fff
         border-radius: 10px
         font-size: 7px
-        &.red 
+        &.red
             background-color: red
 
-    &-fav 
-        width: 26px
-        height: 26px
+    &-fav
+        width: 28px
+        height: 36px
         position: absolute
-        top: 118px
+        top: 114px
         right: 0
         z-index: 1000
-        background-position: center right 6px
-        background-repeat: no-repeat
-        background-image: url('../img/fav.png')
-        background-size: 14px 14px
+        padding: 6px
+        &::before
+            content: ''
+            display: block
+            width: 16px
+            height: 16px
+            background-image: url('../img/hearts.svg')
+            background-repeat: no-repeat
+            background-size: auto 100%
+            background-position: center left
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            opacity: .5
 
-    &__link 
+        &.active::before
+            opacity: 1
+            background-position: center right
+
+    &__link
         position: absolute
         top: 0
         left: 0
@@ -116,7 +133,7 @@
 
     &-img
         height: 114px
-        border-radius: 8px
+        border-radius: 6px
         overflow: hidden
         margin-bottom: 6px
         img

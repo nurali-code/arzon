@@ -1,44 +1,61 @@
 .btn
-    display: inline-block
-    background-repeat: no-repeat
-    background-position: center center
+    display: inline-flex
+    justify-content: center
+    align-items: center
     font-size: 10px
     font-weight: bold
+    svg
+        max-width: 30px !important
+        max-height: 30px !important
+        stroke: $blue
+
     &-menu
         width: 36px
         height: 36px
         background-color: $blue
-        background-image: url('../img/burger.svg')
-        background-size: 50%
+        svg
+            width: 18px
+            height: 18px
 
     &-account
-        width: 24px
-        height: 24px
-        background-color: transparent
-        background-image: url('../img/account.png')
-        background-size: auto 80% 
+        width: 30px
+        height: 30px
+        svg
+            width: 16px
+            height: 16px
 
     &-location
         color: $blue
-        padding: 10px 10px 10px 15px
-        background-image: url('../img/location.svg'), url('../img/arrow_down.svg')
-        background-position: center left, center right
-        background-size: 10px 10px, 5px auto
+        padding: 10px 0
+        svg
+            &:first-child
+                width: 10px
+                height: 10px
+                margin: 0 4px 0 0
+
+            &:last-child
+                width: 10px
+                height: 10px
+                margin: 0 0 0 1px
 
     &-catalog
-        padding: 2px 10px 
+        padding: 2px 10px
         color: $blue
-        background-image: url('../img/arrow_down.svg')
-        background-position: center right
-        background-size: 5px auto
+        svg
+            width: 9px
+            height: 9px
+
+            margin-left: 4px
 
     &-search
         width: 30px
         height: 30px
         background-color: $blue
         border-radius: 3px
-        background-image: url('../img/search.svg')
-        background-size: auto 50%
+        svg
+            width: 16px
+            height: 16px
+            fill: #fff
 
 [data-noti]
     position: relative
@@ -46,13 +63,12 @@
     &::before
         content: attr(data-noti)
         display: inline-block
-        width: 12px
-        height: 12px
+        padding: 4px 3px 2px
         border-radius: 50%
         background-color: red
         color: #fff
         font-size: 8px
-        line-height: 12px
+        line-height: 60%
         text-align: center
         position: absolute
         top: 0

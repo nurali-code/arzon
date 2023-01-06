@@ -5,23 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kirill Otsebrik</title>
-    <link rel="stylesheet" href="./css/style.css?ver-2123">
+    <title>Arzon</title>
+    <link rel="stylesheet" href="./css/style.css?ver-123456789">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-top">
-            <button class="btn btn-menu"></button>
-            <a href="#" class="logo"><img src="./img/logo.svg" alt="arzon.tj"></a>
-            <button class="btn btn-location">Душанбе</button>
-            <a href="#" class="btn btn-account" data-noti="1"></a>
-        </div>
+    <header class="header fixed">
+        <button class="btn btn-menu">
+            <svg>
+                <use xlink:href="#humburger"></use>
+            </svg>
+        </button>
+        <a href="#" class="logo"><img src="./img/logo.svg" alt="arzon.tj"></a>
+        <button class="btn btn-location">
+            <svg>
+                <use xlink:href="#location"></use>
+            </svg>
+            Душанбе
+            <svg>
+                <use xlink:href="#arrow_down"></use>
+            </svg>
+        </button>
+        <a href="#" class="btn btn-account" data-noti="1">
+            <svg>
+                <use xlink:href="#account"></use>
+            </svg>
+        </a>
         <div class="header-bottom">
-            <button class="btn btn-catalog">Все категории</button>
+            <button class="btn btn-catalog">
+                Все категории
+                <svg>
+                    <use xlink:href="#arrow_down"></use>
+                </svg>
+            </button>
             <form>
                 <input type="search" required placeholder="Что вы ищете?">
-                <button type="submit" class="btn btn-search"></button>
+                <button type="submit" class="btn btn-search">
+                    <svg>
+                        <use xlink:href="#search"></use>
+                    </svg>
+                </button>
             </form>
         </div>
     </header>
@@ -103,14 +126,14 @@
             </div>
             <div class="catalog-banner">
                 <p class="catalog-banner__heading">
-                    Видео камеры <br>
-                    и фототехника
+                    Товары <br>
+                    для школы
                 </p>
                 <p class="catalog-banner__text">
                     Камеры, оптика <br>
                     и аксессуары
                 </p>
-                <img src="./img/ban-1.jpg" alt="ban" class="catalog-banner__img">
+                <img src="./img/ban-2.jpg" alt="ban" class="catalog-banner__img">
             </div>
             <div class="catalog-banner">
                 <p class="catalog-banner__heading">
@@ -127,13 +150,19 @@
     </section>
 
     <section>
-        <h2 class="headline"><a href="#">Новостройки</a></h2>
+        <h2 class="headline">
+            <a href="#">Новостройки
+                <svg>
+                    <use xlink:href="#arrow_down"></use>
+                </svg>
+            </a>
+        </h2>
         <div class="wrap scroll">
             <div class="item">
                 <div class="item-img">
                     <img src="./img/item.jpg" alt="item">
                 </div>
-                <button class="item-fav"></button>
+                <button class="item-fav active"></button>
                 <span class="item-tag pink">Быстрый показ</span>
                 <p class="item__heading">ЖК «Бухоро Палас»</p>
                 <p class="item__price">256 680</p>
@@ -206,7 +235,12 @@
     </section>
 
     <section>
-        <h2 class="headline"><a href="#">Авто</a></h2>
+        <h2 class="headline"><a href="#">
+                Авто
+                <svg>
+                    <use xlink:href="#arrow_down"></use>
+                </svg>
+            </a></h2>
         <div class="wrap scroll">
             <div class="item">
                 <div class="item-img">
@@ -290,7 +324,12 @@
     </section>
 
     <section>
-        <h2 class="headline"><a href="#">Работа</a></h2>
+        <h2 class="headline"><a href="#">
+                Работа
+                <svg>
+                    <use xlink:href="#arrow_down"></use>
+                </svg>
+            </a></h2>
         <div class="wrap scroll">
             <div class="item">
                 <div class="item-img">
@@ -369,7 +408,12 @@
     </section>
 
     <section>
-        <h2 class="headline"><a href="#">Электроника</a></h2>
+        <h2 class="headline"><a href="#">
+                Электроника
+                <svg>
+                    <use xlink:href="#arrow_down"></use>
+                </svg>
+            </a></h2>
         <div class="wrap scroll">
             <div class="item">
                 <div class="item-img">
@@ -447,6 +491,106 @@
 
         </div>
     </section>
+
+    <nav class="navbar">
+        <a href="#" class="navbar__link active">
+            <div class="navbar-icon">
+                <svg>
+                    <use xlink:href="#search"></use>
+                </svg>
+            </div>
+            <span class="navbar__text">Поиск</span>
+        </a>
+        <a href="#" class="navbar__link">
+            <div class="navbar-icon">
+                <svg>
+                    <use xlink:href="#search"></use>
+                </svg>
+            </div>
+            <span class="navbar__text">Избранное</span>
+        </a>
+        <a href="#" class="navbar__link">
+            <div class="navbar-icon add">+</div>
+            <span class="navbar__text">Объявления</span>
+        </a>
+        <a href="#" class="navbar__link">
+            <div class="navbar-icon" data-noti="">
+                <svg>
+                    <use xlink:href="#chat"></use>
+                </svg>
+            </div>
+            <span class="navbar__text">Сообщения</span>
+        </a>
+        <a href="#" class="navbar__link">
+            <div class="navbar-icon">
+                <svg>
+                    <use xlink:href="#account"></use>
+                </svg>
+            </div>
+            <span class="navbar__text">Профиль</span>
+        </a>
+    </nav>
+
+
+
+
+
+
+    <svg class="split" xmlns="http://www.w3.org/2000/svg">
+
+        <symbol id="account" viewBox="0 0 24 24" stroke="#2543a0" fill="none">
+            <circle cx="12" cy="7.25" r="5.73"></circle>
+            <path d="M1.5,23.48l.37-2.05A10.3,10.3,0,0,1,12,13h0a10.3,10.3,0,0,1,10.13,8.45l.37,2.05">
+            </path>
+        </symbol>
+
+        <symbol id="arrow_down" viewBox="0 0 24 24" fill="none">
+            <path d="M19.92 8.95L13.4 15.47C12.63 16.24 11.37 16.24 10.6 15.47L4.08 8.95" stroke-width="1.5"
+                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+
+        <symbol x="0" id="search" y="0" viewBox="0 0 512.005 512.005">
+            <g>
+                <g>
+                    <g>
+                        <path
+                            d="M505.749,475.587l-145.6-145.6c28.203-34.837,45.184-79.104,45.184-127.317c0-111.744-90.923-202.667-202.667-202.667
+                  S0,90.925,0,202.669s90.923,202.667,202.667,202.667c48.213,0,92.48-16.981,127.317-45.184l145.6,145.6
+                  c4.16,4.16,9.621,6.251,15.083,6.251s10.923-2.091,15.083-6.251C514.091,497.411,514.091,483.928,505.749,475.587z
+                   M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z"
+                            data-original="#000000"></path>
+                    </g>
+                </g>
+            </g>
+        </symbol>
+
+        <symbol id="location" x="0" y="0" viewBox="0 0 395.71 395.71">
+            <g>
+                <g>
+                    <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                        c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                        C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                        c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z"
+                        fill="#2543a0" data-original="#000000" class=""></path>
+                </g>
+            </g>
+        </symbol>
+
+        <symbol id="humburger" viewBox="0 0 20 12">
+            <path d="M1 1H19M1 6H19M1 11H19" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
+        </symbol>
+
+        <symbol id="chat" viewBox="0 0 24 24" fill="none">
+            <path
+                d="M8.5 19H8C4 19 2 18 2 13V8C2 4 4 2 8 2H16C20 2 22 4 22 8V13C22 17 20 19 16 19H15.5C15.19 19 14.89 19.15 14.7 19.4L13.2 21.4C12.54 22.28 11.46 22.28 10.8 21.4L9.3 19.4C9.14 19.18 8.77 19 8.5 19V19Z"
+                stroke="#2543a0" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path d="M15.996 11H16.006M11.995 11H12.005M7.995 11H8.003" stroke="#2543a0" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+
+    </svg>
+
 
 
 </body>

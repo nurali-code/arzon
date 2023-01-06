@@ -4,7 +4,6 @@
     box-sizing: border-box
     border: none
     outline: none
-    font: inherit
     transition: inherit
 
 $black: #07080F
@@ -26,7 +25,7 @@ body
     position: relative
     z-index: 1
 
-img, picture, svg
+img, picture
     width: 100%
     max-width: 100%
     display: block
@@ -71,13 +70,12 @@ input
     font-size: 13px
     line-height: 110%
     padding: 0 14px
-    a
+    svg
         display: inline-block
-        padding: 0 10px 0 0
-        background-image: url('../img/arrow_down.svg')
-        background-repeat: no-repeat
-        background-position: center right
-        background-size: 5px auto
+        width: 12px
+        height: 12px
+        vertical-align: middle
+        stroke: $blue !important
 
 .banner
     padding: 6px 0 20px
@@ -117,3 +115,6 @@ hr
     background-color: rgba(255, 255, 255, .3)
     height: 1px
     margin: 20px 0 20px
+
+.split
+    display: none
