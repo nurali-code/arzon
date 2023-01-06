@@ -1,0 +1,94 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    border: none
+    outline: none
+    font: inherit
+    transition: inherit
+
+@import url('https://fonts.googleapis.com/css2?family=Geometria:wght@200;300;400;500;600;700&display=swap')
+
+$black: #07080F
+$bg_color: #e1e7f6
+$blue: #2543a0
+
+body
+    min-height: 100vh
+    color: #000
+    display: flex
+    flex-direction: column
+    background-color: $bg_color
+    font-family: 'Geometria', sans-serif
+
+.container
+    width: 100%
+    max-width: 1100px
+    margin: 0 auto
+    position: relative
+    z-index: 1
+
+img, picture, svg
+    width: 100%
+    max-width: 100%
+    display: block
+
+a,
+button
+    text-decoration: none
+    color: #000
+    transition: all ease .3s
+    background-color: transparent
+    &:active
+        transform: scale(.98)
+
+    &:hover
+        opacity: .8
+
+input 
+    font-size: 10px
+    padding: 0 14px
+    &::placeholder
+        color: #5c6fa7
+
+.wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+
+ol
+    padding: 0 0 0 25px
+    font-weight: 400
+    font-size: 20px
+    line-height: 140%
+
+p
+    font-weight: 400
+    font-size: 20px
+    line-height: 140%
+
+ul
+    list-style: none
+    li
+        font-weight: 400
+        font-size: 20px
+        line-height: 140%
+        padding-left: 20px
+        margin: 0
+        position: relative
+        &::before
+            content: ''
+            display: inline-block
+            position: absolute
+            top: 9px
+            left: 5px
+            width: 7px
+            height: 7px
+            border-radius: 50%
+            background-color: #fff
+
+hr
+    background-color: rgba(255, 255, 255, .3)
+    height: 1px
+    margin: 20px 0 20px
