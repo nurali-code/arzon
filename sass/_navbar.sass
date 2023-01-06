@@ -39,6 +39,7 @@
             width: 34px
             height: 34px
             line-height: 34px
+
     svg
         width: 12px
         height: 12px
@@ -56,8 +57,9 @@
         display: inline-block
         text-align: center
         padding: 7px 2px 14px
+        opacity: 1 !important
         &.active
-            .navbar-icon
+            .navbar-icon:not(.add)
                 opacity: 1
                 background-color: rgba(212, 218, 239, 0.259)
                 box-shadow: inset 0px 1px 3px 0px rgba(37, 68, 161, 0.36)

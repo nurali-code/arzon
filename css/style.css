@@ -333,9 +333,10 @@ body {
           flex-direction: column;
   background-color: #e1e7f6;
   font-family: "Geometria", sans-serif;
+  padding-bottom: 68px;
 }
 body.fixed {
-  padding: 104px 0 0;
+  padding-top: 104px;
 }
 
 .container {
@@ -696,8 +697,9 @@ hr {
   display: inline-block;
   text-align: center;
   padding: 7px 2px 14px;
+  opacity: 1 !important;
 }
-.navbar__link.active .navbar-icon {
+.navbar__link.active .navbar-icon:not(.add) {
   opacity: 1;
   background-color: rgba(212, 218, 239, 0.259);
   -webkit-box-shadow: inset 0px 1px 3px 0px rgba(37, 68, 161, 0.36);
@@ -807,6 +809,10 @@ hr {
   position: fixed;
   z-index: 99999;
   width: 100%;
+  -webkit-animation: fixDown 0.3s ease;
+     -moz-animation: fixDown 0.3s ease;
+       -o-animation: fixDown 0.3s ease;
+          animation: fixDown 0.3s ease;
 }
 .header.fixed::before {
   display: none;
@@ -828,6 +834,53 @@ hr {
   width: calc(100% - 36px);
 }
 
+@-webkit-keyframes fixDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fixDown {
+  0% {
+    -moz-transform: translateY(-100%);
+         transform: translateY(-100%);
+  }
+  100% {
+    -moz-transform: translateY(0);
+         transform: translateY(0);
+  }
+}
+
+@-o-keyframes fixDown {
+  0% {
+    -o-transform: translateY(-100%);
+       transform: translateY(-100%);
+  }
+  100% {
+    -o-transform: translateY(0);
+       transform: translateY(0);
+  }
+}
+
+@keyframes fixDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+       -moz-transform: translateY(-100%);
+         -o-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 .catalog {
   padding: 0;
 }
