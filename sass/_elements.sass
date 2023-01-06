@@ -7,8 +7,6 @@
     font: inherit
     transition: inherit
 
-@import url('https://fonts.googleapis.com/css2?family=Geometria:wght@200;300;400;500;600;700&display=swap')
-
 $black: #07080F
 $bg_color: #e1e7f6
 $blue: #2543a0
@@ -36,7 +34,7 @@ img, picture, svg
 a,
 button
     text-decoration: none
-    color: #000
+    color: inherit
     transition: all ease .3s
     background-color: transparent
     &:active
@@ -45,7 +43,7 @@ button
     &:hover
         opacity: .8
 
-input 
+input
     font-size: 10px
     padding: 0 14px
     &::placeholder
@@ -56,6 +54,33 @@ input
     justify-content: space-between
     align-items: center
     flex-wrap: wrap
+    &.scroll
+        padding: 0 14px
+        flex-wrap: nowrap
+        justify-content: flex-start
+        overflow-x: scroll
+        -ms-overflow-style: none
+        scrollbar-width: none
+        &::-webkit-scrollbar
+            display: none
+
+.headline
+    color: $blue
+    font-weight: bold
+    margin: 0 0 6px
+    font-size: 13px
+    line-height: 110%
+    padding: 0 14px
+    a
+        display: inline-block
+        padding: 0 10px 0 0
+        background-image: url('../img/arrow_down.svg')
+        background-repeat: no-repeat
+        background-position: center right
+        background-size: 5px auto
+
+.banner
+    padding: 6px 0 20px
 
 ol
     padding: 0 0 0 25px
@@ -65,8 +90,8 @@ ol
 
 p
     font-weight: 400
-    font-size: 20px
-    line-height: 140%
+    font-size: 10px
+    line-height: 110%
 
 ul
     list-style: none
