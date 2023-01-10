@@ -353,6 +353,11 @@ img, picture {
   display: block;
 }
 
+svg {
+  width: 12px;
+  height: 12px;
+}
+
 a,
 button {
   text-decoration: none;
@@ -447,8 +452,8 @@ input::placeholder {
 }
 .headline svg {
   display: inline-block;
-  width: 9px;
-  height: 11px;
+  width: 8px;
+  height: 10px;
   vertical-align: middle;
   stroke: #2543a0 !important;
 }
@@ -590,7 +595,7 @@ hr {
 [data-noti]::before {
   content: attr(data-noti);
   display: inline-block;
-  padding: 4px 3px 2px;
+  padding: 3px 3px 2px;
   -webkit-border-radius: 50%;
      -moz-border-radius: 50%;
           border-radius: 50%;
@@ -893,7 +898,7 @@ hr {
   padding: 0;
 }
 .catalog .wrap {
-  padding: 0 14px 14px;
+  padding: 0 0 14px 14px;
 }
 .catalog-item {
   min-width: 72px;
