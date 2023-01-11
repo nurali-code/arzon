@@ -25,6 +25,18 @@
         vertical-align: middle
         margin-left: 12px
 
+    &-actions
+
+    &__chat,
+    &__fav
+        display: none
+        svg
+            fill: #000
+            stroke: #000
+
+    &-nav 
+        display: none
+
     .btn
         &-location
             margin: 0 10px 0 auto
@@ -34,8 +46,9 @@
 
         &-catalog
             width: 30%
+            max-width: 110px
             min-width: 108px
-            padding: 0 10px 
+            padding: 0 10px
             border-right: 1px solid #e1e7f6
 
     &-bottom
@@ -47,12 +60,12 @@
         width: 100%
         max-width: calc( 100% - 24px )
         margin: 14px auto 0
-        
+
         form
             margin: 0 0 0 auto
             position: relative
             height: 37px
-            width: 75%
+            width: 90%
             z-index: 1
             input
                 width: 100%
@@ -76,6 +89,7 @@
 
         &::before
             display: none
+
         .logo
             display: none
 
@@ -95,4 +109,3 @@
         transform: translateY(-100%)
     100%
         transform: translateY(0)
-        

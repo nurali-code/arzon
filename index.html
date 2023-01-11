@@ -17,6 +17,7 @@
             </svg>
         </button>
         <a href="#" class="logo"><img src="./img/logo.svg" alt="arzon.tj"></a>
+
         <button class="btn btn-location">
             <svg>
                 <use xlink:href="#location"></use>
@@ -26,11 +27,31 @@
                 <use xlink:href="#arrow_down"></use>
             </svg>
         </button>
-        <a href="#" class="btn btn-account" data-noti="1">
-            <svg>
-                <use xlink:href="#account"></use>
-            </svg>
-        </a>
+
+        <div class="header-actions">
+            <a href="#" class="header__chat" data-noti="12">
+                <svg>
+                    <use xlink:href="#chat"></use>
+                </svg>
+            </a>
+            <a href="#" class="header__fav" data-noti="12">
+                <svg>
+                    <use xlink:href="#heart"></use>
+                </svg>
+            </a>
+            <a href="#" class="btn btn-account" data-noti="21">
+                <svg>
+                    <use xlink:href="#account"></use>
+                </svg>
+            </a>
+            <a href="#" class="btn btn-main">
+                <svg>
+                    <use xlink:href="#add"></use>
+                </svg>
+                Разместить объявление
+            </a>
+        </div>
+
         <div class="header-bottom">
             <button class="btn btn-catalog">
                 Все категории
@@ -47,6 +68,23 @@
                 </button>
             </form>
         </div>
+
+        <nav class="header-nav">
+            <button class="btn btn-location">
+                <svg>
+                    <use xlink:href="#location"></use>
+                </svg>
+                Душанбе
+                <svg>
+                    <use xlink:href="#arrow_down"></use>
+                </svg>
+            </button>
+            <a href="#" class="header-nav__link">О сайте</a>
+            <a href="#" class="header-nav__link">Для бизнеса</a>
+            <a href="#" class="header-nav__link">Помощь</a>
+            <a href="#" class="header-nav__link">Связаться с нами</a>
+        </nav>
+
     </header>
 
     <section class="catalog">
@@ -403,7 +441,6 @@
                 <p class="item__date">Неделю назад</p>
                 <a href="#" class="item__link"></a>
             </div>
-
         </div>
     </section>
 
@@ -512,13 +549,13 @@
         <a href="#" class="navbar__link">
             <div class="navbar-icon add">
                 <svg>
-                    <use xlink:href="#button_add"></use>
+                    <use xlink:href="#add"></use>
                 </svg>
             </div>
             <span class="navbar__text">Объявления</span>
         </a>
         <a href="#" class="navbar__link">
-            <div class="navbar-icon" data-noti="">
+            <div class="navbar-icon" data-badge="">
                 <svg>
                     <use xlink:href="#chat"></use>
                 </svg>
@@ -589,30 +626,26 @@
             <path d="M1 1H19M1 6H19M1 11H19" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
         </symbol>
 
-        <symbol id="chat" viewBox="0 0 24 24" fill="none">
+        <symbol id="chat" viewBox="0 0 32 32" stroke="none">
             <path
-                d="M8.5 19H8C4 19 2 18 2 13V8C2 4 4 2 8 2H16C20 2 22 4 22 8V13C22 17 20 19 16 19H15.5C15.19 19 14.89 19.15 14.7 19.4L13.2 21.4C12.54 22.28 11.46 22.28 10.8 21.4L9.3 19.4C9.14 19.18 8.77 19 8.5 19V19Z"
-                stroke="#2543a0" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                stroke-linejoin="round" />
-            <path d="M15.996 11H16.006M11.995 11H12.005M7.995 11H8.003" stroke="#2543a0" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" />
+                d="M28 3.75h-24c-1.794 0.002-3.248 1.456-3.25 3.25v18c0.002 1.794 1.456 3.248 3.25 3.25h24c1.794-0.001 3.249-1.456 3.25-3.25v-18c-0.002-1.794-1.456-3.248-3.25-3.25h-0zM4 6.25h24c0.219 0.001 0.415 0.097 0.549 0.248l0.001 0.001-12.55 8.964-12.55-8.964c0.135-0.152 0.331-0.248 0.549-0.249h0zM28 25.75h-24c-0.414-0-0.75-0.336-0.75-0.75v-15.571l12.023 8.588c0.031 0.018 0.069 0.037 0.108 0.054l0.008 0.003c0.031 0.018 0.068 0.037 0.107 0.054l0.008 0.003c0.145 0.070 0.315 0.113 0.494 0.118l0.002 0h0.002c0.181-0.005 0.351-0.048 0.503-0.121l-0.008 0.003c0.046-0.020 0.084-0.039 0.12-0.060l-0.006 0.003c0.047-0.020 0.085-0.040 0.121-0.061l-0.006 0.003 12.023-8.588v15.571c-0 0.414-0.336 0.75-0.75 0.75v0z">
+            </path>
         </symbol>
 
-        <symbol id="button_add" viewBox="0 0 62 62" fill="none">
-            <circle cx="31" cy="31" r="31" fill="#2543A0" />
-            <rect x="29" y="16" width="4" height="31" rx="2" fill="#FFD500" />
-            <rect x="47" y="29" width="4" height="31" rx="2" transform="rotate(90 47 29)" fill="#FFD500" />
-        </symbol>
-
-        <symbol id="arrow_right" viewBox="0 0 9 18" fill="none">
-            <path d="M0.909973 16.92L7.42997 10.4C8.19997 9.63 8.19997 8.37 7.42997 7.6L0.909973 1.08"
-                stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        <symbol id="arrow_right" viewBox="0 0 9 18">
+            <path d="M0.909973 16.92L7.42997 10.4C8.19997 9.63 8.19997 8.37 7.42997 7.6L0.909973 1.08" stroke-width="2"
+                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
         </symbol>
 
         <symbol id="heart" viewBox="0 0 24 24" fill="none">
             <path
                 d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.69001C2 5.60001 4.49 3.10001 7.56 3.10001C9.38 3.10001 10.99 3.98001 12 5.34001C12.5138 4.64588 13.183 4.08173 13.954 3.69275C14.725 3.30377 15.5764 3.10077 16.44 3.10001C19.51 3.10001 22 5.60001 22 8.69001C22 15.69 15.52 19.82 12.62 20.81Z"
-                stroke="#2543A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+
+        <symbol id="add" viewBox="0 0 24 24" fill="none">
+            <path d="M12 6V18" stroke-width="2" stroke-linecap="round" />
+            <path d="M18 12H6" stroke-width="2" stroke-linecap="round" />
         </symbol>
 
     </svg>
