@@ -166,3 +166,64 @@
         font-size: 8px
         margin: 0
         padding: 0 6px 2px
+
+@media screen and ( min-width: 1100px )
+    .catalog
+        &-banners,
+        &-banner
+            display: none
+        .wrap
+            max-width: 1440px
+            margin: 0 auto
+
+        &-item
+            width: 160px
+            min-width: 160px
+            margin: 0 24px 24px 0
+        &-img
+            background-color: #f1f1f1
+            box-shadow: none
+            border-radius: 12px
+            height: 160px
+            margin-bottom: 12px
+
+        &__text
+            font-size: 14px
+            font-weight: 500
+
+    .item
+        width: 340px
+        min-width: 340px
+        box-shadow: none
+        margin: 0 24px 24px 0
+        background-color: transparent
+        &-tag
+            font-size: 12px
+            padding: 4px 9px
+        &-img
+            height: 260px
+            margin-bottom: 14px
+            border-radius: 12px
+
+        &-fav
+            top: 260px
+            &::before
+                right: 0
+
+        &__heading
+            font-size: 18px
+            color: var(--blue)
+            padding: 0
+        &__price
+            font-size: 18px
+            padding: 0
+
+        &__location
+            &::after
+                content: '|'
+        &__location,
+        &__date
+            font-size: 16px
+            display: inline-block
+            vertical-align: middle
+            padding: 0

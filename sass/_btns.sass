@@ -16,6 +16,7 @@
         svg
             width: 18px
             height: 18px
+            stroke: #fff
 
     &-account
         width: 30px
@@ -45,8 +46,9 @@
         svg
             width: 9px
             height: 9px
-
             margin-left: 4px
+            &:first-child
+                display: none
 
     &-search
         width: 30px
@@ -59,16 +61,15 @@
             fill: #fff
 
     &-main
-        display: none
         background-color: var(--blue)
-        color: #fff
+        color: var(--white)
         border-radius: 8px
-        padding: 14px
+        padding: 12px 10px
         font-size: 12px
         svg
-            stroke: #fff
-            width: 11px
-            height: 11px
+            stroke: var(--white)
+            width: 18px
+            height: 18px
 
 [data-noti]
     position: relative
@@ -106,5 +107,58 @@
 
 @media screen and ( min-width: 1100px )
     .btn
+        font-size: 14px
+        line-height: 100%
         &-catalog
             text-transform: capitalize
+            background-color: var(--yelow)
+            border-radius: 8px
+            border: none
+            color: var(--black)
+            min-width: unset
+            max-width: unset
+            width: unset
+            padding: 13px 16px
+            box-shadow: 0px 12px 16px 0px rgba(0, 6, 129, 0.06)
+            margin-right: 8px
+            svg
+                margin: 0 6px 0 0
+                width: 13px
+                height: 11px
+                fill: var(--black)
+                stroke: var(--black)
+                &:first-of-type
+                    display: inline-block
+
+                &:last-of-type
+                    display: none
+
+        &-search
+            width: unset
+            display: inline-block
+            color: var(--white)
+            height: unset
+            border-radius: 8px
+            padding: 10px 16px
+            background-color: var(--black)
+            span
+                vertical-align: middle
+            svg
+                width: 16px
+                height: 16px
+                margin-right: 4px
+                vertical-align: middle
+                fill: var(--white)
+
+        &-location 
+            color: var(--black)
+            svg 
+                stroke: var(--black)
+                fill: var(--black)
+
+    [data-noti]
+        &::before
+            width: 16px
+            height: 16px
+            font-size: 12px
+            line-height: 16px

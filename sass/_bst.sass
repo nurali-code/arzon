@@ -1,5 +1,9 @@
 .d
-    @media screen and ( min-width: 1000px )
-        &-xs
+    &-xs
+        &-block
+            display: none
+        @media screen and ( min-width: 1000px )
             &-none
                 display: none
+            &-block
+                display: inline-block
