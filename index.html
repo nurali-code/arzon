@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
     <title>Arzon</title>
     <link rel="stylesheet" href="./css/style.css?ver-141516">
 </head>
@@ -16,6 +17,7 @@
                 <use xlink:href="#humburger"></use>
             </svg>
         </button>
+
         <a href="#" class="logo"><img src="./img/logo.svg" alt="arzon.tj"></a>
 
         <button class="btn btn-location">
@@ -54,7 +56,7 @@
 
         <div class="header-bottom">
             <button class="btn btn-catalog">
-                Все категории
+                <span class="d-xs-none">Все </span> категории
                 <svg>
                     <use xlink:href="#arrow_down"></use>
                 </svg>
@@ -91,61 +93,91 @@
         <div class="wrap scroll">
             <a href="#" class="catalog-item">
                 <div class="catalog-img">
-                    <img src="./img/house.png" alt="img">
+                    <picture>
+                        <source srcset="./img/house_dark.png" media="(prefers-color-scheme: dark)">
+                        <img src="./img/house.png" alt="img">
+                    </picture>
                 </div>
                 <span class="catalog__text">Недвижимость</span>
             </a>
             <a href="#" class="catalog-item">
                 <div class="catalog-img">
-                    <img src="./img/house.png" alt="img">
+                    <picture>
+                        <source srcset="./img/car_dark.png" media="(prefers-color-scheme: dark)">
+                        <img src="./img/house.png" alt="img">
+                    </picture>
                 </div>
                 <span class="catalog__text">Авто</span>
             </a>
             <a href="#" class="catalog-item">
                 <div class="catalog-img">
-                    <img src="./img/house.png" alt="img">
+                    <picture>
+                        <source srcset="./img/keys_dark.png" media="(prefers-color-scheme: dark)">
+                        <img src="./img/house.png" alt="img">
+                    </picture>
                 </div>
                 <span class="catalog__text">Работа</span>
             </a>
             <a href="#" class="catalog-item">
                 <div class="catalog-img">
-                    <img src="./img/house.png" alt="img">
+                    <picture>
+                        <source srcset="./img/phone_dark.png" media="(prefers-color-scheme: dark)">
+                        <img src="./img/house.png" alt="img">
+                    </picture>
                 </div>
                 <span class="catalog__text">Электроника</span>
             </a>
             <a href="#" class="catalog-item">
                 <div class="catalog-img">
-                    <img src="./img/house.png" alt="img">
+                    <picture>
+                        <source srcset="./img/house_dark.png" media="(prefers-color-scheme: dark)">
+                        <img src="./img/house.png" alt="img">
+                    </picture>
                 </div>
                 <span class="catalog__text">Недвижимость</span>
             </a>
             <a href="#" class="catalog-item">
                 <div class="catalog-img">
-                    <img src="./img/house.png" alt="img">
+                    <picture>
+                        <source srcset="./img/house_dark.png" media="(prefers-color-scheme: dark)">
+                        <img src="./img/house.png" alt="img">
+                    </picture>
                 </div>
                 <span class="catalog__text">Недвижимость</span>
             </a>
             <a href="#" class="catalog-item">
                 <div class="catalog-img">
-                    <img src="./img/house.png" alt="img">
+                    <picture>
+                        <source srcset="./img/house_dark.png" media="(prefers-color-scheme: dark)">
+                        <img src="./img/house.png" alt="img">
+                    </picture>
                 </div>
                 <span class="catalog__text">Авто</span>
             </a>
             <a href="#" class="catalog-item">
                 <div class="catalog-img">
-                    <img src="./img/house.png" alt="img">
+                    <picture>
+                        <source srcset="./img/house_dark.png" media="(prefers-color-scheme: dark)">
+                        <img src="./img/house.png" alt="img">
+                    </picture>
                 </div>
                 <span class="catalog__text">Работа</span>
             </a>
             <a href="#" class="catalog-item">
                 <div class="catalog-img">
-                    <img src="./img/house.png" alt="img">
+                    <picture>
+                        <source srcset="./img/house_dark.png" media="(prefers-color-scheme: dark)">
+                        <img src="./img/house.png" alt="img">
+                    </picture>
                 </div>
                 <span class="catalog__text">Электроника</span>
             </a>
             <a href="#" class="catalog-item">
                 <div class="catalog-img">
-                    <img src="./img/house.png" alt="img">
+                    <picture>
+                        <source srcset="./img/house_dark.png" media="(prefers-color-scheme: dark)">
+                        <img src="./img/house.png" alt="img">
+                    </picture>
                 </div>
                 <span class="catalog__text">Недвижимость</span>
             </a>
@@ -617,7 +649,7 @@
                         c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
                         C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
                         c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z"
-                        fill="#2543a0" data-original="#000000" class=""></path>
+                        data-original="#000000" class=""></path>
                 </g>
             </g>
         </symbol>

@@ -11,6 +11,12 @@ $bg_color: #e1e7f6
 $yelow: #ffd500
 $blue: #2543a0
 
+:root
+    --blue: #2543a0
+    --yelow: #ffd500
+    --white: #fff
+    --black: #07080F
+
 body
     min-height: 100vh
     color: #000
@@ -20,7 +26,7 @@ body
     font-family: 'Geometria', sans-serif
     padding-bottom: 68px
     &.fixed
-        padding-top: 104px 
+        padding-top: 104px
 
 .container
     width: 100%
@@ -34,7 +40,7 @@ img, picture
     max-width: 100%
     display: block
 
-svg 
+svg
     width: 12px
     height: 12px
 
@@ -53,8 +59,9 @@ button
 input
     font-size: 10px
     padding: 0 14px
+    background-color: var(--white)
     &::placeholder
-        color: #5c6fa7
+        color: rgba(var(--blue), .5)
 
 .wrap
     display: flex
@@ -72,7 +79,7 @@ input
             display: none
 
 .headline
-    color: $blue
+    color: var(--blue)
     font-weight: bold
     margin: 0 0 6px
     font-size: 13px
@@ -83,7 +90,7 @@ input
         width: 8px
         height: 10px
         vertical-align: middle
-        stroke: $blue !important
+        stroke: var(--blue) !important
 
 .banner
     padding: 6px 0 20px
@@ -126,3 +133,13 @@ hr
 
 .split
     display: none
+
+@media (prefers-color-scheme: dark)
+    body
+        color: #fff
+        background-color: #2e3034
+
+    :root
+        --blue: #fff
+        --white: #07080F
+        --black: #fff
