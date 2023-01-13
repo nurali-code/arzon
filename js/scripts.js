@@ -19,6 +19,23 @@ $(window).scroll(function () {
 
 /*---------------------------------------------------end*/
 
+if ($('div').hasClass('main-slider')) {
+    $('.main-slider').slick({
+        dots: true,
+        infinite: false,
+        variableWidth: true,
+        centerMode: true,
+        speed: 300,
+        dots: false,
+        slidesToShow: 1,
+        nextArrow: "<button type='button' class='slick-next slick-arrow'><svg><use xlink:href='#arrow_right-2'></use></svg></button>",
+        prevArrow: "<button type='button' class='slick-prev slick-arrow'><svg><use xlink:href='#arrow_right-2'></use></svg></button>",
+    });
+
+}
+
+/*---------------------------------------------------end*/
+
 $('a[href*="#"]').on('click', function (e) {
     e.preventDefault()
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top, }, 500,)

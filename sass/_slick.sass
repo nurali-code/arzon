@@ -29,9 +29,7 @@
 
     &-slider
         padding-bottom: 40px
-        width: calc( 100% + 6px )
-        position: relative
-        left: -3px
+        margin-bottom: 24px
         .slick-track,
         .slick-list
             -webkit-transform: translate3d(0, 0, 0)
@@ -94,34 +92,39 @@
         display: none
 
     &-arrow
-        width: 50px
-        height: 50px
-        background-color: transparent
+        width: 28px
+        height: 28px
+        background-color: rgba(#292929, .6)
         color: transparent
         position: absolute
         top: 50%
-        margin-top: -30px
+        margin-top: -14px
         z-index: 10000
         border: none
+        border-radius: 50%
         background-image: url('../img/slider-arrow.svg')
         background-repeat: no-repeat
         background-position: center center
         background-size: contain
+        svg 
+            width: 16px
+            height: 100%
+            stroke: var(--white)
 
         &::before
             display: none
     &-prev
-        left: -50px
+        left: 24px
         transform: scale(-1) !important
 
     &-next
-        right: -50px
+        right: 24px
 
     &-disabled
         cursor: no-drop
         pointer-events: none
-        filter: grayscale(10)
-        opacity: .5
+        opacity: 0
+        visibility: hidden
     
     &-dots
         display: block

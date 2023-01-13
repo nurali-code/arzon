@@ -54,7 +54,7 @@ button
         transform: scale(.98)
 
     &:hover
-        opacity: .8
+        opacity: .7
 
 input
     font-size: 10px
@@ -134,6 +134,16 @@ hr
 .split
     display: none
 
+.d
+    &-xs
+        &-block
+            display: none
+        @media screen and ( min-width: 1100px )
+            &-none
+                display: none
+            &-block
+                display: inline-block
+
 @media (prefers-color-scheme: dark)
     body
         color: #fff
@@ -144,8 +154,8 @@ hr
         --white: #07080F
         --black: #fff
 
-    .logo 
-        img 
+    .logo
+        img
             filter: grayscale(1) brightness(10)
 
 @media screen and ( min-width: 1100px )
@@ -156,7 +166,6 @@ hr
     .container
         padding: 0 15px
 
-    input 
+    input
         font-size: 14px
         height: 44px
-    

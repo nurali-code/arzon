@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark light">
     <title>Arzon</title>
-    <link rel="stylesheet" href="./css/style.css?ver-141516">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -93,11 +93,20 @@
         </div>
     </header>
 
+    <div class="main-slider">
+        <div class="main-slide"><img src="./img/banner-01.jpg" alt="baner"></div>
+        <div class="main-slide"><img src="./img/banner-02.jpg" alt="baner"></div>
+        <div class="main-slide"><img src="./img/banner-03.jpg" alt="baner"></div>
+        <div class="main-slide"><img src="./img/banner-04.jpg" alt="baner"></div>
+        <div class="main-slide"><img src="./img/banner-05.jpg" alt="baner"></div>
+    </div>
+
     <section class="catalog">
         <div class="wrap scroll">
             <a href="#" class="catalog-item">
                 <div class="catalog-img">
                     <picture>
+                        <source srcset="./img/catalog-1.png" media="(min-width: 1100px)">
                         <source srcset="./img/house_dark.png" media="(prefers-color-scheme: dark)">
                         <img src="./img/house.png" alt="img">
                     </picture>
@@ -107,6 +116,7 @@
             <a href="#" class="catalog-item">
                 <div class="catalog-img">
                     <picture>
+                        <source srcset="./img/catalog-2.png" media="(min-width: 1100px)">
                         <source srcset="./img/car_dark.png" media="(prefers-color-scheme: dark)">
                         <img src="./img/house.png" alt="img">
                     </picture>
@@ -116,6 +126,7 @@
             <a href="#" class="catalog-item">
                 <div class="catalog-img">
                     <picture>
+                        <source srcset="./img/catalog-3.png" media="(min-width: 1100px)">
                         <source srcset="./img/keys_dark.png" media="(prefers-color-scheme: dark)">
                         <img src="./img/house.png" alt="img">
                     </picture>
@@ -125,66 +136,64 @@
             <a href="#" class="catalog-item">
                 <div class="catalog-img">
                     <picture>
+                        <source srcset="./img/catalog-4.png" media="(min-width: 1100px)">
                         <source srcset="./img/phone_dark.png" media="(prefers-color-scheme: dark)">
                         <img src="./img/house.png" alt="img">
                     </picture>
                 </div>
-                <span class="catalog__text">Электроника</span>
+                <span class="catalog__text">Услуги</span>
             </a>
             <a href="#" class="catalog-item">
                 <div class="catalog-img">
                     <picture>
+                        <source srcset="./img/catalog-5.png" media="(min-width: 1100px)">
                         <source srcset="./img/house_dark.png" media="(prefers-color-scheme: dark)">
                         <img src="./img/house.png" alt="img">
                     </picture>
                 </div>
-                <span class="catalog__text">Недвижимость</span>
+                <span class="catalog__text">Смартфоны <br> и Телефоны</span>
             </a>
             <a href="#" class="catalog-item">
                 <div class="catalog-img">
                     <picture>
+                        <source srcset="./img/catalog-6.png" media="(min-width: 1100px)">
                         <source srcset="./img/house_dark.png" media="(prefers-color-scheme: dark)">
                         <img src="./img/house.png" alt="img">
                     </picture>
                 </div>
-                <span class="catalog__text">Недвижимость</span>
+                <span class="catalog__text">Компьютеры <br> и оргтехника</span>
             </a>
             <a href="#" class="catalog-item">
                 <div class="catalog-img">
                     <picture>
+                        <source srcset="./img/catalog-7.png" media="(min-width: 1100px)">
                         <source srcset="./img/house_dark.png" media="(prefers-color-scheme: dark)">
                         <img src="./img/house.png" alt="img">
                     </picture>
                 </div>
-                <span class="catalog__text">Авто</span>
+                <span class="catalog__text">Электроника <br> и бытовая техника</span>
             </a>
             <a href="#" class="catalog-item">
                 <div class="catalog-img">
                     <picture>
+                        <source srcset="./img/catalog-8.png" media="(min-width: 1100px)">
                         <source srcset="./img/house_dark.png" media="(prefers-color-scheme: dark)">
                         <img src="./img/house.png" alt="img">
                     </picture>
                 </div>
-                <span class="catalog__text">Работа</span>
+                <span class="catalog__text">Для дома и дачи</span>
             </a>
             <a href="#" class="catalog-item">
                 <div class="catalog-img">
                     <picture>
+                        <source srcset="./img/catalog-9.png" media="(min-width: 1100px)">
                         <source srcset="./img/house_dark.png" media="(prefers-color-scheme: dark)">
                         <img src="./img/house.png" alt="img">
                     </picture>
                 </div>
-                <span class="catalog__text">Электроника</span>
+                <span class="catalog__text">Детский мир</span>
             </a>
-            <a href="#" class="catalog-item">
-                <div class="catalog-img">
-                    <picture>
-                        <source srcset="./img/house_dark.png" media="(prefers-color-scheme: dark)">
-                        <img src="./img/house.png" alt="img">
-                    </picture>
-                </div>
-                <span class="catalog__text">Недвижимость</span>
-            </a>
+        </div>
         </div>
         <div class="catalog-banners wrap scroll">
             <div class="catalog-banner">
@@ -224,7 +233,7 @@
 
     </section>
 
-    <section>
+    <section class="mob_row">
         <h2 class="headline">
             <a href="#">Новостройки
                 <svg>
@@ -309,7 +318,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="mob_row">
         <h2 class="headline"><a href="#">
                 Авто
                 <svg>
@@ -394,11 +403,11 @@
         </div>
     </section>
 
-    <section class="banner">
+    <section class="banner_row">
         <img src="./img/banner.jpg" alt="banner">
     </section>
 
-    <section>
+    <section class="mob_row">
         <h2 class="headline"><a href="#">
                 Работа
                 <svg>
@@ -481,7 +490,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="mob_row">
         <h2 class="headline"><a href="#">
                 Электроника
                 <svg>
@@ -685,10 +694,16 @@
             <path d="M18 12H6" stroke-width="2" stroke-linecap="round" />
         </symbol>
 
+        <symbol id="arrow_right-2" viewBox="0 0 24 24" fill="none" >
+            <path d="M14.43 5.93L20.5 12L14.43 18.07M3.5 12H20.33"  stroke-width="2"
+                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+
     </svg>
 
     <script src="./js/jquery-3.4.1.min.js"></script>
-    <script src="./js/scripts.js?ver-141516"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/scripts.js"></script>
 
 </body>
 
