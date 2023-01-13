@@ -21,7 +21,6 @@ $(window).scroll(function () {
 
 if ($('div').hasClass('main-slider')) {
     $('.main-slider').slick({
-        dots: true,
         infinite: false,
         variableWidth: true,
         centerMode: true,
@@ -31,7 +30,19 @@ if ($('div').hasClass('main-slider')) {
         nextArrow: "<button type='button' class='slick-next slick-arrow'><svg><use xlink:href='#arrow_right-2'></use></svg></button>",
         prevArrow: "<button type='button' class='slick-prev slick-arrow'><svg><use xlink:href='#arrow_right-2'></use></svg></button>",
     });
-
+}
+if ($('div').hasClass('catalog-items')) {
+    $('.catalog-items').slick({
+        infinite: false,
+        variableWidth: true,
+        speed: 300,
+        dots: false,
+        swipeToSlide: true,
+        slidesToShow: 9,
+        // slidesToScroll: 4,
+        nextArrow: "<button type='button' class='slick-next slick-arrow'><svg><use xlink:href='#arrow_right-2'></use></svg></button>",
+        prevArrow: "<button type='button' class='slick-prev slick-arrow'><svg><use xlink:href='#arrow_right-2'></use></svg></button>",
+    });
 }
 
 /*---------------------------------------------------end*/
