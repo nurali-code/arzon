@@ -27,8 +27,8 @@ if ($('div').hasClass('main-slider')) {
         speed: 300,
         dots: false,
         slidesToShow: 1,
-        nextArrow: "<button type='button' class='slick-next slick-arrow'><svg><use xlink:href='#arrow_right-2'></use></svg></button>",
-        prevArrow: "<button type='button' class='slick-prev slick-arrow'><svg><use xlink:href='#arrow_right-2'></use></svg></button>",
+        // nextArrow: "<button type='button' class='slick-next slick-arrow'><svg><use xlink:href='#arrow_right-2'></use></svg></button>",
+        // prevArrow: "<button type='button' class='slick-prev slick-arrow'><svg><use xlink:href='#arrow_right-2'></use></svg></button>",
     });
 }
 if ($('div').hasClass('catalog-items')) {
@@ -40,8 +40,14 @@ if ($('div').hasClass('catalog-items')) {
         swipeToSlide: true,
         slidesToShow: 9,
         // slidesToScroll: 4,
-        nextArrow: "<button type='button' class='slick-next slick-arrow'><svg><use xlink:href='#arrow_right-2'></use></svg></button>",
-        prevArrow: "<button type='button' class='slick-prev slick-arrow'><svg><use xlink:href='#arrow_right-2'></use></svg></button>",
+        // nextArrow: "<button type='button' class='slick-next slick-arrow'><svg><use xlink:href='#arrow_right-2'></use></svg></button>",
+        // prevArrow: "<button type='button' class='slick-prev slick-arrow'><svg><use xlink:href='#arrow_right-2'></use></svg></button>",
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: "unslick"
+            }
+        ]
     });
 }
 

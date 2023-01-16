@@ -101,17 +101,19 @@
         z-index: 10000
         border: none
         border-radius: 50%
-        background-image: url('../img/slider-arrow.svg')
+        // background-image: url('../img/slider-arrow.svg')
         background-repeat: no-repeat
         background-position: center center
         background-size: contain
-        svg 
+        svg
             width: 16px
             height: 100%
             stroke: #fff
 
         &::before
-            display: none
+            content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'><path d='M12.025 4.94167L17.0833 10L12.025 15.0583M2.91666 10H16.9417' stroke='white' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/></svg>")
+            display: block
+            transform: scale(.7)
     &-prev
         left: 24px
         transform: scale(-1) !important
@@ -124,7 +126,7 @@
         pointer-events: none
         opacity: 0
         visibility: hidden
-    
+
     &-dots
         display: block
         position: absolute
@@ -157,11 +159,11 @@
                 background-color: #fff
 
     @media screen and ( max-width: 1200px )
-        &-arrow 
+        &-arrow
             width: 20px
             height: 20px
-        &-prev 
+        &-prev
             left: -15px
-        
-        &-next 
+
+        &-next
             right: -15px

@@ -6,13 +6,14 @@
         content: ''
         display: block
         width: 100%
-        height: 36px
+        height: 38px
         top: 0
         left: 0
         background-color: var(--white)
         border-radius: 0 0 12px 0
         position: absolute
         z-index: -1
+        pointer-events: none
         @media (prefers-color-scheme: dark)
             background-color: var(--white)
 
@@ -30,7 +31,7 @@
         margin-left: 12px
 
     &-actions
-        margin: 0 10px 0 auto
+        margin: 0 14px 0 auto
 
     &__chat,
     &__fav
@@ -44,7 +45,6 @@
 
     .btn
         &-account
-            margin-right: 14px
 
         &-catalog
             width: 30%
@@ -102,16 +102,15 @@
         .logo
             display: none
 
-        .btn
-            &-location,
-            &-account
+        .header
+            &-actions
+                
                 display: none
-
-        .header-bottom
-            border-radius: 0
-            max-width: 100%
-            margin: 0
-            width: calc( 100% - 36px )
+            &-bottom
+                border-radius: 0
+                max-width: 100%
+                margin: 0 0 0 auto
+                width: calc( 100% - 38px )
 
         @media (prefers-color-scheme: dark)
             background-color: $blue
