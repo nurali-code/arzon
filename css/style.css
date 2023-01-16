@@ -564,6 +564,9 @@ hr {
   main {
     padding: 28px 0 0;
   }
+  main .container {
+    border-top: 1px solid #eee;
+  }
 }
 .btn {
   display: -webkit-inline-box;
@@ -1286,9 +1289,6 @@ hr {
     background-color: var(--white);
     padding: 22px 0 0;
     margin: 0;
-  }
-  .header .container {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
   .header::before {
     display: none;
