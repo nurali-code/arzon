@@ -40,12 +40,51 @@ if ($('div').hasClass('catalog-items')) {
         swipeToSlide: true,
         slidesToShow: 7,
         // slidesToScroll: 4,
-        // nextArrow: "<button type='button' class='slick-next slick-arrow'><svg><use xlink:href='#arrow_right-2'></use></svg></button>",
-        // prevArrow: "<button type='button' class='slick-prev slick-arrow'><svg><use xlink:href='#arrow_right-2'></use></svg></button>",
         responsive: [
             {
                 breakpoint: 1100,
                 settings: "unslick"
+            }
+        ]
+    });
+}
+if ($('div').hasClass('card-img')) {
+    $('.card-slider').slick({
+        infinite: false,
+        speed: 300,
+        arrows: false,
+        dots: false,
+        swipeToSlide: true,
+        slidesToShow: 1,
+        asNavFor: '.card-nav',
+        fade: true,
+        // slidesToScroll: 4,
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: "unslick"
+            }
+        ]
+    });
+    $('.card-nav').slick({
+        vertical: true,
+        infinite: false,
+        draggable: true,
+        // variableWidth: true,
+        dots: false,
+        focusOnSelect: true,
+        verticalSwiping: true,
+        arrows: false,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        asNavFor: '.card-slider',
+        responsive: [
+            {
+                variableWidth: false,
+                breakpoint: 1170,
+                settings: {
+                    vertical: false,
+                }
             }
         ]
     });
