@@ -323,6 +323,10 @@ td, th {
   --black: #07080F;
 }
 
+main {
+  padding: 0;
+}
+
 body {
   min-height: 100vh;
   color: #000;
@@ -557,6 +561,9 @@ hr {
     font-size: 14px;
     height: 44px;
   }
+  main {
+    padding: 28px 0 0;
+  }
 }
 .btn {
   display: -webkit-inline-box;
@@ -650,6 +657,7 @@ hr {
           border-radius: 8px;
   padding: 11px 18px 10px 10px;
   font-size: 12px;
+  vertical-align: middle;
 }
 .btn-main svg {
   stroke: var(--white);
@@ -761,6 +769,19 @@ hr {
   .btn-location svg {
     stroke: var(--black);
     fill: var(--black);
+  }
+  .btn-outline {
+    vertical-align: middle;
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    padding: 11px 18px 10px 10px;
+  }
+  .btn-outline svg {
+    stroke: var(--blue);
+    fill: var(--blue);
   }
   [data-noti]::before {
     width: 16px;
@@ -1266,6 +1287,9 @@ hr {
     padding: 22px 0 0;
     margin: 0;
   }
+  .header .container {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
   .header::before {
     display: none;
   }
@@ -1692,6 +1716,20 @@ hr {
   display: none;
 }
 
+.path__link {
+  display: none;
+  color: transparent;
+  font-size: 0px;
+}
+.path__link:nth-last-of-type(2) {
+  display: inline-block;
+}
+.path__link:nth-last-of-type(2)::after {
+  content: "Назад";
+  font-size: 16px;
+  color: var(--blue);
+}
+
 @media screen and (min-width: 1100px) {
   .catalog-banners, .catalog-banner {
     display: none;
@@ -1866,7 +1904,7 @@ hr {
   .main-slide {
     margin: 0 24px 0 0;
     width: 1440px;
-    max-width: 97vw;
+    max-width: 96vw;
     aspect-ratio: 16/3.4;
     max-height: 300px;
     -webkit-border-radius: 12px;
@@ -1881,5 +1919,28 @@ hr {
     height: 100%;
     -o-object-position: center center;
        object-position: center center;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .path__link {
+    color: var(--black);
+    opacity: 0.5;
+    display: inline-block;
+    padding: 20px 0;
+    font-size: 16px;
+  }
+  .path__link::before {
+    content: "*";
+    display: inline-block;
+    padding: 0 6px 0 3px;
+  }
+  .path__link::after {
+    display: none;
+  }
+  .path__link:first-child::before {
+    display: none;
+  }
+  .path__link:last-of-type {
+    pointer-events: none;
   }
 }/*# sourceMappingURL=style.css.map */

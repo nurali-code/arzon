@@ -38,7 +38,7 @@ if ($('div').hasClass('catalog-items')) {
         speed: 300,
         dots: false,
         swipeToSlide: true,
-        slidesToShow: 9,
+        slidesToShow: 7,
         // slidesToScroll: 4,
         // nextArrow: "<button type='button' class='slick-next slick-arrow'><svg><use xlink:href='#arrow_right-2'></use></svg></button>",
         // prevArrow: "<button type='button' class='slick-prev slick-arrow'><svg><use xlink:href='#arrow_right-2'></use></svg></button>",

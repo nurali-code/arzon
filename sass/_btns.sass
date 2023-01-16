@@ -66,6 +66,7 @@
         border-radius: 8px
         padding: 11px 18px 10px 10px
         font-size: 12px
+        vertical-align: middle
         svg
             stroke: var(--white)
             width: 18px
@@ -150,11 +151,21 @@
                 vertical-align: middle
                 fill: var(--white)
 
-        &-location 
+        &-location
             color: var(--black)
-            svg 
+            svg
                 stroke: var(--black)
                 fill: var(--black)
+
+        &-outline
+            vertical-align: middle
+            border: 2px solid var(--blue)
+            color: var(--blue)
+            border-radius: 8px
+            padding: 11px 18px 10px 10px
+            svg
+                stroke: var(--blue)
+                fill: var(--blue)
 
     [data-noti]
         &::before
