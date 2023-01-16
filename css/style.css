@@ -1811,7 +1811,7 @@ hr {
   .catalog-row .item {
     margin: 0 1% 1.5% 0;
   }
-  .catalog-row .item:nth-of-type(4) {
+  .catalog-row .item:nth-child(4n+4) {
     margin-right: 0;
   }
 }
