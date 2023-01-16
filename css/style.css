@@ -801,7 +801,6 @@ hr {
 }
 .slick-slider {
   padding-bottom: 40px;
-  margin-bottom: 24px;
 }
 .slick-slider .slick-track,
 .slick-slider .slick-list {
@@ -1564,9 +1563,6 @@ hr {
   max-width: 65%;
   font-size: 8px;
 }
-.catalog-items {
-  padding-bottom: 0;
-}
 .catalog-row {
   display: none;
 }
@@ -1860,6 +1856,7 @@ hr {
     display: -ms-flexbox;
     display: flex;
     padding: 0;
+    margin-bottom: 24px;
   }
   .main-slide {
     margin: 0 24px 0 0;
