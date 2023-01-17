@@ -183,31 +183,110 @@
 
 .path
     width: 100%
+    padding: 13px 0
     &__link
         display: none
         color: transparent
         font-size: 0px
         &:nth-last-of-type(2)
             display: inline-block
+            padding: 4px 0 0 12px
+            background-repeat: no-repeat
+            background-position: left center
+            background-image: url('../img/icons/arrow__left.svg')
+            background-size: 6px auto
             &::after
                 content: 'Назад'
-                font-size: 16px
+                font-size: 13px
+                display: inline-block
+                line-height: 130%
                 color: var(--blue)
 
 .card
-    .path 
+    font-size: 13px
+    line-height: 120%
+    .path
         order: 2
+
     &-nav
         display: none
 
-    &-img 
+    &-img
         order: 1
+        width: calc( 100% + 30px )
+        max-width: unset
+        position: relative
+        left: -15px
 
     &-slider
         width: 100%
 
     &-slide
-        height: 300px
+        height: 100vw
+        iframe
+            width: 100% !important
+            height: 100% !important
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+    &-info
+        order: 4
+
+    &-descr
+        order: 5
+
+    .btn
+        &-share,
+        &-fav
+            position: absolute
+            top: 100vw
+            width: 38px
+            right: 0
+            height: 51px
+            z-index: 100
+            svg
+                width: 18px
+                height: 18px
+        &-share
+            right: 38px
+
+    &__headline
+        font-size: 24px
+        font-weight: normal
+        line-height: 130%
+        order: 3
+        margin: 0 0 6px
+
+    &__subheading
+        font: inherit
+        line-height: 120%
+        font-weight: bold
+        padding: 10px 0
+        color: var(--blue)
+        border:
+            top: 1px solid rgba(0, 0, 0, .1)
+            bottom: 1px solid rgba(0, 0, 0, .1)
+
+    &-list
+        li
+            display: flex
+            justify-content: space-between
+            padding: 0
+            font: inherit
+            font-weight: 500
+            &::before
+                display: none
+
+            .right
+                font-weight: normal
+
+    &-price
+        font-size: 24px
+        font-weight: bold
+        margin: 0 0 15px
 
 @media screen and ( min-width: 1100px )
     .catalog
@@ -374,6 +453,7 @@
     .card
         .container
             align-items: flex-start
+
         &-img
             width: 60%
             order: 2
@@ -384,7 +464,6 @@
 
         &-slider
             width: calc( 100% - 140px )
-            float: right
 
         &-slide
             width: 100%
@@ -393,30 +472,34 @@
             border-radius: 16px
             overflow: hidden
             img
-                width: 100%
-                height: 100%
                 object-fit: contain
-                background-color: #eee
 
         &-nav
-            float: left
+            display: block
             width: 120px
             padding: 0
             position: relative
             // height: 480px
             overflow: hidden
             &-slide
-                opacity: .4
-                border-radius: 12px
+                opacity: .3
+                border-radius: 10px
                 overflow: hidden
                 width: 100%
                 height: 100px !important
+                background-color: #eee
                 border-radius: 20px
+                cursor: pointer
                 margin-bottom: 10px
+                iframe
+                    width: 100% !important
+                    height: 100% !important
+
                 img
                     width: 100%
                     height: 100%
                     object-fit: cover
+
             .slick
                 &-current
                     opacity: 1

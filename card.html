@@ -54,7 +54,7 @@
                 </a>
             </div>
 
-            <div class="header-bottom">
+            <div class="header-bottom mob-none">
                 <button class="btn btn-catalog">
                     <svg>
                         <use xlink:href="#humburger"></use>
@@ -70,7 +70,7 @@
                         <svg>
                             <use xlink:href="#search"></use>
                         </svg>
-                        <span class="d-xs-block">Найти</span>
+                        <span class="pc-block">Найти</span>
                     </button>
                 </form>
             </div>
@@ -93,7 +93,6 @@
         </div>
     </header>
 
-
     <main class="card">
         <div class="container wrap">
             <nav class="path">
@@ -102,7 +101,8 @@
                 <a href="#" class="path__link">Huawei</a>
                 <a href="#" class="path__link">Телефон Huawei Honor 30 Pro, 128Gb</a>
             </nav>
-            <div class="card-img">
+
+            <div class="card-img wrap">
                 <div class="card-nav">
                     <div class="card-nav-slide"><img src="./img/item.jpg" alt="img"></div>
                     <div class="card-nav-slide"><img src="./img/item-2.jpg" alt="img"></div>
@@ -117,14 +117,20 @@
                 </div>
             </div>
 
-            <h1 class="card__headline">Телефон Huawei Honor 30 Pro, 128Gb</h1>
+            <h1 class="card__headline">Xiaomi Redmi note 9, 4Gb/128, Arctic White, Новый</h1>
 
             <div class="card-info">
+                <button class="btn btn-share">
+                    <svg>
+                        <use xlink:href="#share"></use>
+                    </svg>
+                    <span class="pc-block">В избранное</span>
+                </button>
                 <button class="btn btn-fav">
                     <svg>
                         <use xlink:href="#heart"></use>
                     </svg>
-                    <span class="b-xs-block">В избранное</span>
+                    <span class="pc-block">В избранное</span>
                 </button>
                 <p class="card-price">2 800 сом.</p>
                 <button class="btn btn-main">
@@ -159,17 +165,17 @@
                 </p>
             </div>
             <div class="card-descr">
-                <h3>Характеристики</h3>
-                <ul>
-                    <li>Модель телефона</li>
-                    <li>Состояние техники</li>
-                    <li>Объем памяти</li>
-                    <li>Цвет</li>
-                    <li>Модель телефона</li>
-                    <li>Состояние техники</li>
-                    <li>Объем памяти</li>
+                <h3 class="card__subheading">Характеристики</h3>
+                <ul class="card-list">
+                    <li>Модель телефона <span class="right">Honor 30 Pro</span></li>
+                    <li>Состояние техники <span class="right">Honor 30 Pro</span></li>
+                    <li>Объем памяти <span class="right">Honor 30 Pro</span></li>
+                    <li>Цвет <span class="right">Honor 30 Pro</span></li>
+                    <li>Модель телефона <span class="right">Honor 30 Pro</span></li>
+                    <li>Состояние техники <span class="right">Honor 30 Pro</span></li>
+                    <li>Объем памяти <span class="right">Honor 30 Pro</span></li>
                 </ul>
-                <h3>Описание</h3>
+                <h3 class="card__subheading">Описание</h3>
                 <p>
                     Предлагаю вашему вниманию новые iPhone 14 Pro.
                     Имеются все цвета и объёмы памяти.
@@ -309,6 +315,13 @@
             <path d="M14.43 5.93L20.5 12L14.43 18.07M3.5 12H20.33" stroke-width="2" stroke-miterlimit="10"
                 stroke-linecap="round" stroke-linejoin="round" />
         </symbol>
+
+        <symbol id="share" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M16.96 6.17C18.96 7.56 20.34 9.77 20.62 12.32M3.48999 12.37C3.61571 11.1472 4.0021 9.9655 4.6231 8.90462C5.2441 7.84374 6.08529 6.92831 7.08999 6.22M8.18999 20.94C9.34999 21.53 10.67 21.86 12.06 21.86C13.4 21.86 14.66 21.56 15.79 21.01M12.06 7.7C12.7973 7.7 13.5044 7.40711 14.0257 6.88576C14.5471 6.36441 14.84 5.6573 14.84 4.92C14.84 4.1827 14.5471 3.47559 14.0257 2.95424C13.5044 2.43289 12.7973 2.14 12.06 2.14C11.3227 2.14 10.6156 2.43289 10.0942 2.95424C9.57288 3.47559 9.27999 4.1827 9.27999 4.92C9.27999 5.6573 9.57288 6.36441 10.0942 6.88576C10.6156 7.40711 11.3227 7.7 12.06 7.7ZM4.82999 19.92C5.56729 19.92 6.27439 19.6271 6.79574 19.1058C7.3171 18.5844 7.60999 17.8773 7.60999 17.14C7.60999 16.4027 7.3171 15.6956 6.79574 15.1742C6.27439 14.6529 5.56729 14.36 4.82999 14.36C4.09269 14.36 3.38558 14.6529 2.86423 15.1742C2.34288 15.6956 2.04999 16.4027 2.04999 17.14C2.04999 17.8773 2.34288 18.5844 2.86423 19.1058C3.38558 19.6271 4.09269 19.92 4.82999 19.92ZM19.17 19.92C19.9073 19.92 20.6144 19.6271 21.1357 19.1058C21.6571 18.5844 21.95 17.8773 21.95 17.14C21.95 16.4027 21.6571 15.6956 21.1357 15.1742C20.6144 14.6529 19.9073 14.36 19.17 14.36C18.4327 14.36 17.7256 14.6529 17.2042 15.1742C16.6829 15.6956 16.39 16.4027 16.39 17.14C16.39 17.8773 16.6829 18.5844 17.2042 19.1058C17.7256 19.6271 18.4327 19.92 19.17 19.92Z"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+
 
     </svg>
 

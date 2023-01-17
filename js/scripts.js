@@ -58,11 +58,12 @@ if ($('div').hasClass('card-img')) {
         slidesToShow: 1,
         asNavFor: '.card-nav',
         fade: true,
-        // slidesToScroll: 4,
         responsive: [
             {
                 breakpoint: 1100,
-                settings: "unslick"
+                settings: {
+                    fade: false,
+                }
             }
         ]
     });
@@ -70,7 +71,10 @@ if ($('div').hasClass('card-img')) {
         vertical: true,
         infinite: false,
         draggable: true,
-        // variableWidth: true,
+        swipeToSlide: () => {
+            $('.card-nav-slide').lenght >= 4 ? ret = true : ret = false;
+            return ret;
+        },
         dots: false,
         focusOnSelect: true,
         verticalSwiping: true,
@@ -80,11 +84,8 @@ if ($('div').hasClass('card-img')) {
         asNavFor: '.card-slider',
         responsive: [
             {
-                variableWidth: false,
-                breakpoint: 1170,
-                settings: {
-                    vertical: false,
-                }
+                breakpoint: 1100,
+                settings: "unslick"
             }
         ]
     });
