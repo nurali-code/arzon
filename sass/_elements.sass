@@ -140,7 +140,7 @@ hr
 
 .mob
     @media screen and ( max-width: 1100px )
-        &-none 
+        &-none
             display: none !important
 
 .pc
@@ -151,6 +151,16 @@ hr
             display: inline-block
         &-none
             display: none
+
+.seler
+    &__rate
+        padding: 0 2px 0 20px
+        color: #b0b2b9
+        background-image: url('../img/rate.svg')
+        background-repeat: no-repeat
+        background-position: center left
+        background-size: 14px 14px
+        margin-left: 6px
 
 @media (prefers-color-scheme: dark)
     body
@@ -176,6 +186,6 @@ hr
         height: 44px
 
     main
-        padding: 28px 0 0
         .container
+            padding: 28px 15px 0
             border-top: 1px solid #eee

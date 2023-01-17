@@ -50,6 +50,9 @@
             &:first-child
                 display: none
 
+        span
+            padding-right: 2px
+
     &-search
         width: 30px
         height: 30px
@@ -82,6 +85,12 @@
         color: var(--blue)
         svg
             stroke: var(--blue)
+
+    &-share,
+    &-fav
+        svg
+            width: 18px
+            height: 18px
 
 [data-noti]
     position: relative
@@ -168,15 +177,26 @@
                 stroke: var(--black)
                 fill: var(--black)
 
+        &-main,
         &-outline
-            vertical-align: middle
-            border: 2px solid var(--blue)
-            color: var(--blue)
+            padding: 14px 16px
             border-radius: 8px
-            padding: 11px 18px 10px 10px
+            justify-content: flex-start
             svg
-                stroke: var(--blue)
-                fill: var(--blue)
+                width: 18px
+                height: 18px
+                margin-right: 8px
+        &-outline
+            padding: 13px 15px
+            span
+                padding-left: 3px
+
+        &-share,
+        &-fav
+            text-align: left
+            svg
+                width: 22px
+                height: 22px
 
     [data-noti]
         &::before

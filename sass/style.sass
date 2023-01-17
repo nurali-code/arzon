@@ -177,6 +177,10 @@
         margin: 0
         padding: 0 6px 2px
 
+    iframe
+        width: 100% !important
+        height: 100% !important
+
 .main
     &-slider
         display: none
@@ -207,7 +211,6 @@
 
 .card
     font-size: 13px
-    line-height: 120%
     .path
         order: 2
 
@@ -238,13 +241,16 @@
             object-fit: cover
 
     &-info
+        display: flex
+        flex-direction: column
         order: 4
         width: 100%
-        .wrap 
+        .wrap
+            order: 5
             justify-content: space-between
-        .btn 
+        .btn
             width: 48%
-            margin-bottom: 16px
+            margin-bottom: 15px
 
     &-descr
         width: 100%
@@ -252,6 +258,10 @@
         border:
             top: 1px solid rgba(0, 0, 0, .1)
             bottom: 1px solid rgba(0, 0, 0, .1)
+
+        p
+            font-size: 13px
+            line-height: 145%
 
     .btn
         &-share,
@@ -262,21 +272,19 @@
             right: 0
             height: 51px
             z-index: 100
-            svg
-                width: 18px
-                height: 18px
+
         &-share
             right: 38px
 
     &__headline
-        font-size: 24px
+        font-size: 23px
         font-weight: normal
-        line-height: 130%
+        line-height: 120%
         order: 3
-        margin: 0 0 6px
+        margin: 0 0 4px
 
     &__subheading
-        font: inherit
+        font-size: 14px
         line-height: 120%
         font-weight: bold
         padding: 10px 0
@@ -303,6 +311,47 @@
         font-size: 24px
         font-weight: bold
         margin: 0 0 15px
+
+    &-user
+        order: 4
+        font-size: 13px
+        margin: 0 0 15px
+        &__name
+            font-weight: bold
+
+    &__reviews
+        color: var(--blue)
+        &::before
+            content: "("
+        &::after
+            content: ")"
+
+    &__status
+        margin: 10px 0 0
+        display: inline-block
+        padding: 2px 9px
+        border-radius: 6px
+        border: 1px solid #b0b2b9
+
+    &__location
+        order: 6
+        padding: 2px 0 2px 18px
+        position: relative
+        font-size: 13px
+        margin-bottom: 12px
+        svg
+            position: absolute
+            left: 0
+            top: 4px
+            width: 10px
+            height: 10px
+
+        a
+            color: #2544a1
+
+    &__min
+        order: 7
+        margin-bottom: 20px
 
 @media screen and ( min-width: 1100px )
     .catalog
@@ -371,7 +420,7 @@
         box-shadow: none
         margin: 0 24px 24px 0
         background-color: transparent
-        overflow: visible
+        padding-bottom: 0
         &-tag
             font-size: 12px
             padding: 4px 9px
@@ -388,14 +437,6 @@
             font-size: 16px
             line-height: 100%
             padding: 12px 0
-            &__rate
-                padding: 0 0 0 22px
-                color: #b0b2b9
-                background-image: url('../img/rate.svg')
-                background-repeat: no-repeat
-                background-position: center left
-                background-size: 14px 14px
-                margin-left: 8px
 
         &-fav
             top: 67%
@@ -451,15 +492,16 @@
             color: var(--black)
             opacity: .5
             display: inline-block
-            padding: 20px 0
+            padding: 20px 0 !important
             font-size: 16px
+            background-image: none !important
             &::before
                 content: '*'
                 display: inline-block
                 padding: 0 6px 0 3px
 
             &::after
-                display: none
+                display: none !important
 
             &:first-child::before
                 display: none
@@ -469,16 +511,27 @@
 
     .card
         .container
-            align-items: flex-start
+            justify-content: flex-start
+            align-items: stretch
+
+        .path
+            order: 1
 
         &-img
             width: 60%
+            max-width: 710px
+            height: 450px
             order: 2
             left: 0
+            margin-bottom: 40px
+            overflow: hidden
 
         &__headline
+            font-weight: bold
+            font-size: 36px
             width: 100%
             order: 1
+            margin-bottom: 40px
 
         &-slider
             height: unset
@@ -525,8 +578,76 @@
 
         &-info
             width: 35%
+            position: relative
+            padding-bottom: 40px
+            z-index: 1
             order: 3
+            max-width: 320px
+            margin-left: 40px
+            margin-bottom: 40px
+            .wrap
+                display: block
+                max-width: 300px
+
+            .btn
+                min-width: 210px
+                margin-bottom: 8px
 
         &-descr
             order: 4
             width: 100%
+            max-width: 710px
+            border: none
+            p
+                font-size: 16px
+
+        .btn
+            &-share,
+            &-fav
+                height: unset
+                width: unset
+                display: flex
+                justify-content: flex-start
+                max-width: 60%
+                position: static
+                font-weight: normal
+                color: var(--blue)
+                svg
+                    margin-right: 8px
+                    stroke: #b0b2b9
+            &-fav
+                margin-bottom: 22px
+
+        &__location
+            font-size: 16px
+
+        &__min
+            position: absolute
+            bottom: 0
+            left: 0
+            color: #9b9fa3
+            font-size: 14px
+            line-height: 130%
+            p
+                line-height: 130%
+                font-size: 14px
+
+        &__subheading
+            padding: 0
+            margin-bottom: 26px
+            font-size: 24px
+            line-height: 130%
+            color: var(--black)
+
+        &-list
+            width: 100%
+            display: flex
+            flex-wrap: wrap
+            li
+                width: 48%
+                border: none
+                font-size: 14px
+                line-height: 130%
+                padding: 0
+                margin-bottom: 15px
+                font-weight: bold
