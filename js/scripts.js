@@ -10,11 +10,17 @@ $('.item-fav, .navbar__link').on('click', function () {
 
 /*---------------------------------------------------end*/
 
+const OFS = $('header').outerHeight();
 $(window).scroll(function () {
-    if ($(window).scrollTop() >= 104) $('header, body').addClass('fixed');
-    else $('header, body').removeClass('fixed');
-    // if ($(window).offset().top) { $('header, .navbar').addClass('anim'); }
-    // else { $('header, .navbar').removeClass('anim') }
+    if ($(window).scrollTop() >= 104) {
+        $('body').css('paddingTop', OFS);
+        $('header').addClass('fixed');
+    }
+    else {
+        $('body').css('paddingTop', '0');
+        $('header, body').removeClass('fixed')
+    };
+
 });
 
 /*---------------------------------------------------end*/

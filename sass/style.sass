@@ -202,6 +202,9 @@
                 line-height: 130%
                 color: var(--blue)
 
+        @media (prefers-color-scheme: dark)
+            filter: brightness(10)
+
 .card
     font-size: 13px
     line-height: 120%
@@ -213,12 +216,14 @@
 
     &-img
         order: 1
-        width: calc( 100% + 30px )
+        width: 100vw
         max-width: unset
         position: relative
         left: -15px
 
     &-slider
+        overflow: hidden
+        height: 100vw
         width: 100%
 
     &-slide
@@ -236,7 +241,11 @@
         order: 4
 
     &-descr
+        width: 100%
         order: 5
+        border:
+            top: 1px solid rgba(0, 0, 0, .1)
+            bottom: 1px solid rgba(0, 0, 0, .1)
 
     .btn
         &-share,
@@ -266,21 +275,22 @@
         font-weight: bold
         padding: 10px 0
         color: var(--blue)
-        border:
-            top: 1px solid rgba(0, 0, 0, .1)
-            bottom: 1px solid rgba(0, 0, 0, .1)
 
     &-list
         li
-            display: flex
-            justify-content: space-between
-            padding: 0
+            padding: 8px 0
             font: inherit
             font-weight: 500
+            border-bottom: 1px solid rgba(0, 0, 0, .05)
+            &:last-of-type
+                border: none
             &::before
                 display: none
 
             .right
+                min-width: 40%
+                float: right
+                display: inline-block
                 font-weight: normal
 
     &-price
@@ -294,7 +304,7 @@
         &-banner
             display: none
         .wrap
-            max-width: 1440px
+            // max-width: 1440px
             margin: 0 auto
 
         &-item
@@ -343,14 +353,15 @@
             align-items: flex-start
             padding: 0 14px 14px !important
             .item
-                margin: 0 1% 1.5% 0
+                width: 24%
+                margin-right: calc( 4% / 3 )
                 &:nth-child(4n+4)
                     margin-right: 0
 
     .item
         width: 340px
-        min-width: 259px
-        max-width: 24.2%
+        min-width: 257px
+        max-width: 24%
         box-shadow: none
         margin: 0 24px 24px 0
         background-color: transparent
@@ -457,6 +468,7 @@
         &-img
             width: 60%
             order: 2
+            left: 0
 
         &__headline
             width: 100%
