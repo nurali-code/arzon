@@ -622,8 +622,8 @@ hr {
   fill: var(--blue);
 }
 .btn-location svg:first-child {
-  width: 8px;
-  height: 9px;
+  width: 10px;
+  height: 10px;
   margin: 0 4px 0 0;
 }
 .btn-location svg:last-child {
@@ -656,20 +656,32 @@ hr {
   height: 16px;
   fill: #fff;
 }
-.btn-main {
+.btn-main, .btn-outline {
   background-color: var(--blue);
   color: var(--white);
-  -webkit-border-radius: 8px;
-     -moz-border-radius: 8px;
-          border-radius: 8px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
   padding: 11px 18px 10px 10px;
   font-size: 12px;
+  font-weight: normal;
   vertical-align: middle;
+  min-width: 135px;
 }
-.btn-main svg {
+.btn-main svg, .btn-outline svg {
   stroke: var(--white);
-  width: 18px;
-  height: 18px;
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+.btn-outline svg {
+  stroke: var(--blue);
 }
 
 [data-noti] {
@@ -1814,6 +1826,18 @@ hr {
      -moz-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4;
+  width: 100%;
+}
+.card-info .wrap {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.card-info .btn {
+  width: 48%;
+  margin-bottom: 16px;
 }
 .card-descr {
   width: 100%;
@@ -2122,6 +2146,7 @@ hr {
             order: 1;
   }
   .card-slider {
+    height: unset;
     width: -webkit-calc(100% - 140px);
     width: -moz-calc(100% - 140px);
     width: calc(100% - 140px);

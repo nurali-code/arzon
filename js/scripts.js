@@ -10,10 +10,10 @@ $('.item-fav, .navbar__link').on('click', function () {
 
 /*---------------------------------------------------end*/
 
-const OFS = $('header').outerHeight();
+const TOP_OFFEST = $('header').outerHeight();
 $(window).scroll(function () {
-    if ($(window).scrollTop() >= 104) {
-        $('body').css('paddingTop', OFS);
+    if ($(window).scrollTop() >= (TOP_OFFEST + 10)) {
+        $('body').css('paddingTop', TOP_OFFEST);
         $('header').addClass('fixed');
     }
     else {
