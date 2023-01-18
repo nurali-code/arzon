@@ -310,10 +310,10 @@ td, th {
           box-sizing: border-box;
   border: none;
   outline: none;
-  -webkit-transition: inherit;
-  -o-transition: inherit;
-  -moz-transition: inherit;
-  transition: inherit;
+}
+
+html, body {
+  font-family: "Geometria", sans-serif;
 }
 
 :root {
@@ -345,9 +345,6 @@ body {
   background-color: #e1e7f6;
   font-family: "Geometria", sans-serif;
   padding-bottom: 68px;
-}
-body.fixed {
-  padding-top: 104px;
 }
 
 .container {
@@ -1981,6 +1978,8 @@ hr {
   content: ")";
 }
 .card__status {
+  font-size: 13px;
+  line-height: 100%;
   margin: 10px 0 0;
   display: inline-block;
   padding: 2px 9px;
