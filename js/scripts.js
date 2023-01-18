@@ -33,8 +33,6 @@ if ($('div').hasClass('main-slider')) {
         speed: 300,
         dots: false,
         slidesToShow: 1,
-        // nextArrow: "<button type='button' class='slick-next slick-arrow'><svg><use xlink:href='#arrow_right-2'></use></svg></button>",
-        // prevArrow: "<button type='button' class='slick-prev slick-arrow'><svg><use xlink:href='#arrow_right-2'></use></svg></button>",
     });
 }
 if ($('div').hasClass('catalog-items')) {
@@ -45,7 +43,6 @@ if ($('div').hasClass('catalog-items')) {
         dots: false,
         swipeToSlide: true,
         slidesToShow: 7,
-        // slidesToScroll: 4,
         responsive: [
             {
                 breakpoint: 1100,
@@ -63,6 +60,7 @@ if ($('div').hasClass('card-img')) {
         swipeToSlide: true,
         slidesToShow: 1,
         asNavFor: '.card-nav',
+        touchThreshold: 9,
         fade: true,
         responsive: [
             {
