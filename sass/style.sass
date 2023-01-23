@@ -86,7 +86,7 @@
     display: inline-block
     min-width: 167px
     width: 167px
-    margin: 0 14px 14px 0
+    margin: 0 14px 0 0
     padding: 0 0 8px 0
     border-radius: 6px
     background-color: var(--white)
@@ -109,32 +109,15 @@
         &.red
             background-color: red
 
-    &-fav
-        width: 28px
-        height: 36px
-        position: absolute
-        top: 114px
-        right: 0
-        z-index: 1000
-        padding: 6px
-        &::before
-            content: ''
-            display: block
-            width: 16px
-            height: 16px
-            background-image: url('../img/hearts.svg')
-            background-repeat: no-repeat
-            background-size: auto 100%
-            background-position: center left
+    .btn
+        &-save
+            width: 28px
+            height: 36px
             position: absolute
-            top: 50%
-            left: 50%
-            transform: translate(-50%, -50%)
-            opacity: .5
-
-        &.active::before
-            opacity: 1
-            background-position: center right
+            top: 114px
+            right: 0
+            z-index: 1000
+            padding: 6px
 
     &__link
         position: absolute
@@ -255,26 +238,50 @@
     &-descr
         width: 100%
         order: 5
-        border:
-            top: 1px solid rgba(0, 0, 0, .1)
-            bottom: 1px solid rgba(0, 0, 0, .1)
 
         p
             font-size: 13px
             line-height: 145%
 
+        .btn-denger
+            margin: 14px 0
+
+        .dropdown
+            border:
+                top: 1px solid rgba(0, 0, 0, .05)
+                bottom: 1px solid rgba(0, 0, 0, .05)
+            &-btn
+                &::after
+                    float: right
+                    padding-right: 10px
+                    font-size: 9px
+                    content: "\e90e"
+                    font-family: "arzon_fonts" !important
+                &.active::after
+                    content: '\e908'
+
+            &-content
+                display: none
+                padding: 5px 0
+                border-bottom: 1px solid rgba(0, 0, 0, .05)
+
     .btn
         &-share,
-        &-fav
+        &-save
             position: absolute
             top: 100vw
-            width: 38px
+            width: 42px
             right: 0
             height: 51px
             z-index: 100
+            text-align: center
+            color: var(--blue)
+            font-size: 15px
 
         &-share
             right: 38px
+            &::before
+                margin: 0
 
     &__headline
         font-size: 23px
@@ -328,10 +335,10 @@
 
     &__status
         font-size: 13px
-        line-height: 100%
+        line-height: 110%
         margin: 10px 0 0
         display: inline-block
-        padding: 2px 9px 
+        padding: 2px 9px
         border-radius: 6px
         border: 1px solid #b0b2b9
 
@@ -341,12 +348,11 @@
         position: relative
         font-size: 13px
         margin-bottom: 12px
-        svg
+        .i
+            font-size: 12px
             position: absolute
             left: 0
             top: 4px
-            width: 10px
-            height: 10px
 
         a
             color: #2544a1
@@ -533,7 +539,7 @@
             font-size: 36px
             width: 100%
             order: 1
-            margin-bottom: 40px
+            margin-bottom: 24px
 
         &-slider
             height: unset
@@ -602,23 +608,41 @@
             border: none
             p
                 font-size: 16px
+                line-height: 160%
+
+            .dropdown
+                margin-bottom: 24px
+                border-top: none
+                &-content
+                    padding-bottom: 24px
+                    display: block !important
+
+                &-btn::after
+                    display: none
 
         .btn
             &-share,
-            &-fav
+            &-save
                 height: unset
                 width: unset
-                display: flex
-                justify-content: flex-start
                 max-width: 60%
                 position: static
                 font-weight: normal
                 color: var(--blue)
-                svg
+                text-align: left
+                color: #b0b2b9
+                margin-bottom: 4px
+                .i
+                    margin-right: 4px
+                    display: inline-block
+                    vertical-align: middle
+            &-save
+                margin-bottom: 20px
+                &::before
+                    color: #b0b2b9
+                    display: inline-block
+                    vertical-align: middle
                     margin-right: 8px
-                    stroke: #b0b2b9
-            &-fav
-                margin-bottom: 22px
 
         &__location
             font-size: 16px
@@ -651,5 +675,5 @@
                 font-size: 14px
                 line-height: 130%
                 padding: 0
-                margin-bottom: 15px
+                margin-bottom: 20px
                 font-weight: bold

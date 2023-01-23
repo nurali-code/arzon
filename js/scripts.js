@@ -4,7 +4,7 @@ $('.btn-menu').on('click', () => {
     $('body').prepend("<div class='overlay'></div>");
 })
 
-$('.item-fav, .navbar__link').on('click', function () {
+$('.btn-save, .navbar__link').on('click', function () {
     $(this).toggleClass('active')
 })
 
@@ -20,6 +20,16 @@ $(window).scroll(function () {
         $('body').css('paddingTop', '0');
         $('header, body').removeClass('fixed')
     };
+
+});
+
+/*---------------------------------------------------end*/
+
+$('.dropdown-btn').on('click', function () {
+    if (window.innerWidth <= 1100) {
+        $(this).toggleClass('active')
+        $(this).next().slideToggle(200)
+    } else { $(this).next().slideDown(200) }
 
 });
 
@@ -51,6 +61,7 @@ if ($('div').hasClass('catalog-items')) {
         ]
     });
 }
+
 if ($('div').hasClass('card-img')) {
     $('.card-slider').slick({
         infinite: false,
@@ -67,6 +78,7 @@ if ($('div').hasClass('card-img')) {
                 breakpoint: 1100,
                 settings: {
                     fade: false,
+                    infinite: true,
                 }
             }
         ]
