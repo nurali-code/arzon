@@ -11,7 +11,6 @@ html, body
     font-family: 'Geometria', sans-serif
 
 $black: #07080F
-$bg_color: #e1e7f6
 $yelow: #ffd500
 $blue: #2543a0
 
@@ -20,19 +19,22 @@ $blue: #2543a0
     --yelow: #ffd500
     --white: #fff
     --black: #07080F
+    --bg-color: #e1e7f6
 
 main
     padding: 0
 
 body
     min-height: 100vh
-    color: #000
+    color: var(--black)
     display: flex
     flex-direction: column
-    background-color: $bg_color
+    background-color: var(--bg-color)
     font-family: 'Geometria', sans-serif
     padding-bottom: 68px
-    
+    &.active
+        overflow: hidden
+
 .container
     width: 100%
     max-width: 1470px
@@ -91,7 +93,7 @@ input
     font-size: 13px
     line-height: 110%
     padding: 0 14px
-    .i 
+    .i
         font-size: 9px
 
 .banner
@@ -163,15 +165,30 @@ hr
 section
     padding: 0 0 14px
 
+.overlay
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    z-index: 99999
+    height: 110vh
+    background-color: rgba(0, 0, 0, .7)
+    opacity: 0
+    animation: opc .2s ease forwards
+
+@keyframes opc
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
 @media (prefers-color-scheme: dark)
-    body
-        color: #fff
-        background-color: #2e3034 !important
 
     :root
         --blue: #fff
         --white: #07080F
         --black: #fff
+        --bg-color: #2e3034
 
     .logo
         img
@@ -180,7 +197,6 @@ section
 @media screen and ( min-width: 1100px )
     body
         background-color: var(--white)
-        color: var(--black)
 
     input
         font-size: 14px
