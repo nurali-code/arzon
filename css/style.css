@@ -2209,11 +2209,10 @@ section {
     line-height: 100%;
     padding: 12px 0;
   }
-  .item-fav {
+  .item .btn-save {
+    width: 36px;
     top: 67%;
-  }
-  .item-fav::before {
-    right: 0;
+    font-size: 22px;
   }
   .item__heading {
     font-size: 18px;
