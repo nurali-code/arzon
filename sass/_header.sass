@@ -249,6 +249,13 @@
                     width: 37%
                     max-width: 400px
 
+        @media (prefers-color-scheme: dark)
+            background-color: transparent
+            &::before
+                display: block
+                background: linear-gradient(0deg, rgba(255, 255, 255, 0) 3%, rgb(0, 0, 0) 40%)
+                height: 100%
+
 @keyframes fixDown
     0%
         transform: translateY(-100%)
