@@ -10,7 +10,7 @@
         height: 41px
         background-color: $blue
         font-size: 16px
-        color: var(--white)
+        color: #fff
 
     &-account
         width: 35px
@@ -23,7 +23,7 @@
         font-size: 11px
         color: var(--blue)
         padding: 10px 0
-        
+
         .i
             font-size: 10px
             display: inline-block
@@ -102,6 +102,15 @@
 
         &.active::before
             content: "\e909"
+
+    &-filter
+        color: var(--blue)
+        font-size: 13px
+        font-weight: bold
+        padding: 10px 0
+        .i
+            font-weight: bold
+            margin-right: 4px
 
 [data-noti]
     position: relative

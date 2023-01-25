@@ -24,6 +24,11 @@ $blue: #2543a0
 main
     padding: 0
 
+h1
+    font-size: 24px
+    line-height: 120%
+    margin: 0 0 10px
+
 body
     min-height: 100vh
     color: var(--black)
@@ -67,9 +72,33 @@ button
 input
     font-size: 10px
     padding: 0 14px
+    height: 38px
+    font-size: 13px
+    border-radius: 8px
+    border: 1px solid var(--black)
     background-color: var(--white)
+    box-sizing: border-box !important
     &::placeholder
-        color: rgba(var(--blue), .5)
+        color: #5c6fa7
+        font-size: 12px
+
+.search-form
+    width: 100%
+    position: relative
+    z-index: 1
+    margin: 0 0 14px
+    input
+        width: 100%
+        border-radius: 6px
+        box-shadow: 0px 10px 6px 0px rgba(0, 6, 129, 0.06)
+
+    .btn
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 4px
+        z-index: 1
+        color: #fff
 
 .wrap
     display: flex
@@ -176,6 +205,44 @@ section
     opacity: 0
     animation: opc .2s ease forwards
 
+.sorting
+    position: relative
+    z-index: 222
+
+    &__heading
+        font-weight: 700
+        font-size: 13px
+        padding: 10px 0
+        color: var(--blue)
+        &::before
+            font-size: 11px
+            color: var(--blue)
+            content: "\e91b"
+            font-family: "arzon_fonts" !important
+            margin-right: 4px
+
+    @media screen and ( max-width: 1100px )
+        &__btn
+            display: block
+            width: 100%
+            text-align: left
+            font-size: 13px
+            line-height: auto
+            padding: 4px 16px
+            &.active
+                display: inline-block
+        &-content
+            position: absolute
+            max-width: 80vw
+            width: 200px
+            top: 105%
+            left: -4px
+            padding: 10px 0
+            border-radius: 6px
+            z-index: -1
+            background-color: var(--white)
+            box-shadow: 0px -9px 6px 0px rgb(0 6 129 / 6%)
+
 @keyframes opc
     0%
         opacity: 0
@@ -206,3 +273,16 @@ section
         .container
             padding: 28px 15px 0
             border-top: 1px solid #eee
+
+    h1
+        font-size: 36px
+        margin-bottom: 24px
+
+    .sorting
+        &__heading
+            display: none
+
+        &__btn
+
+        &-content
+            display: block !important

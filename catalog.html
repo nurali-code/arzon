@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light">
     <title>Arzon</title>
-    <link rel="stylesheet" href="./css/style.css?ver-151617">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./css/style.css?ver-141516">
 </head>
 
 <body>
@@ -27,7 +26,7 @@
                 <a href="#" class="btn btn-main"><i class="i i-plus"></i> Разместить объявление</a>
             </div>
 
-            <div class="header-bottom">
+            <div class="header-bottom mob-none">
                 <button class="btn btn-catalog">
                     <i class="i i-menu"></i> Категории
                     <i class="i i-keyboard_arrow_down"></i>
@@ -190,125 +189,159 @@
         </ul>
     </header>
 
-    <main class="card">
-        <div class="container wrap">
+    
+    <main class="categoris">
+        <div class="container">
             <nav class="path">
                 <a href="#" class="path__link">Телефоны и смартфоны</a>
                 <a href="#" class="path__link">Мобильные телефоны</a>
                 <a href="#" class="path__link">Huawei</a>
                 <a href="#" class="path__link">Телефон Huawei Honor 30 Pro, 128Gb</a>
             </nav>
-
-            <div class="card-img wrap">
-                <div class="card-nav">
-                    <div class="card-nav-slide"><img loading="lazy" src="./img/item.jpg" alt="img"></div>
-                    <div class="card-nav-slide"><img loading="lazy" src="./img/item-2.jpg" alt="img"></div>
-                    <div class="card-nav-slide"><img loading="lazy" src="./img/item-3.jpg" alt="img"></div>
-                    <div class="card-nav-slide"><img loading="lazy" src="./img/item-4.jpg" alt="img"></div>
+            <h1>Купить телефоны Samsung в Таджикистане</h1>
+            <form class="search-form">
+                <input type="search" required placeholder="Что вы ищете?">
+                <button type="submit" class="btn btn-search">
+                    <i class="i i-search"></i> <span class="pc-block">Найти</span>
+                </button>
+            </form>
+            <div class="wrap">
+                <div class="categoris-navbar">
+                    <div class="wrap">
+                        <a href="#" class="categoris-item">
+                            <span>Телефоны и плашеты</span>
+                            <img src="./img/house.png" alt="item">
+                        </a>
+                        <a href="#" class="categoris-item">
+                            <span>Товары для компьютера</span>
+                            <img src="./img/house.png" alt="item">
+                        </a>
+                        <a href="#" class="categoris-item">
+                            <span>Игры, приставки и программы</span>
+                            <img src="./img/house.png" alt="item">
+                        </a>
+                        <a href="#" class="categoris-item">
+                            <span>Оргтехника и расходники</span>
+                            <img src="./img/house.png" alt="item">
+                        </a>
+                        <a href="#" class="categoris-item">
+                            <span>Ноутбуки</span>
+                            <img src="./img/house.png" alt="item">
+                        </a>
+                        <a href="#" class="categoris-item">
+                            <span>Фото и видео техника</span>
+                            <img src="./img/house.png" alt="item">
+                        </a>
+                    </div>
                 </div>
-                <div class="card-slider">
-                    <div class="card-slide">
-                        <a href="./img/item.jpg" data-fancybox="gallery">
-                            <img src="./img/item.jpg" alt="img">
-                        </a>
+                <div class="categoris-content">
+                    <div class="wrap categoris-content-actions">
+                        <div class="sorting">
+                            <button class="sorting__heading dropdown-btn">Сортировка</button>
+                            <div class="sorting-content dropdown-content">
+                                <button class="sorting__btn">По популярности</button>
+                                <button class="sorting__btn">По цене</button>
+                                <button class="sorting__btn">По дате</button>
+                            </div>
+                        </div>
+                        <button class="btn btn-filter">
+                            <i class="i i-filter"></i>Фильтр
+                        </button>
                     </div>
-                    <div class="card-slide">
-                        <a href="./img/item-2.jpg" data-fancybox="gallery">
-                            <img src="./img/item-2.jpg" alt="img">
-                        </a>
-                    </div>
-                    <div class="card-slide">
-                        <a href="./img/item-3.jpg" data-fancybox="gallery">
-                            <img src="./img/item-3.jpg" alt="img">
-                        </a>
-                    </div>
-                    <div class="card-slide">
-                        <a href="./img/item-4.jpg" data-fancybox="gallery">
-                            <img src="./img/item-4.jpg" alt="img">
-                        </a>
+                    <div class="wrap item-wrapper">
+                        <div class="item">
+                            <div class="item-img">
+                                <img src="./img/item.jpg" alt="item">
+                            </div>
+                            <button class="btn-save active"></button>
+                            <span class="item-tag pink">Быстрый показ</span>
+                            <p class="item__heading">ЖК «Бухоро Палас»</p>
+                            <p class="item-seler">
+                                Продавец <span class="seler__rate">4.6</span>
+                            </p>
+                            <p class="item__price">256 680</p>
+                            <p class="item__location">Душанбе, ул. Бухоро 27 </p>
+                            <p class="item__date">Неделю назад</p>
+                            <a href="#" class="item__link"></a>
+                        </div>
+                        <div class="item">
+                            <div class="item-img">
+                                <img src="./img/item-2.jpg" alt="item">
+                            </div>
+                            <button class="btn-save"></button>
+                            <span class="item-tag red">Хорошая цена</span>
+                            <p class="item__heading">ЖК «Бухоро Палас»</p>
+                            <p class="item-seler">
+                                Продавец <span class="seler__rate">4.6</span>
+                            </p>
+                            <p class="item__price">256 680</p>
+                            <p class="item__location">Душанбе, ул. Бухоро 27 </p>
+                            <p class="item__date">Неделю назад</p>
+                            <a href="#" class="item__link"></a>
+                        </div>
+                        <div class="item">
+                            <div class="item-img">
+                                <img src="./img/item-3.jpg" alt="item">
+                            </div>
+                            <button class="btn-save"></button>
+                            <span class="item-tag red">Хорошая цена</span>
+                            <p class="item__heading">ЖК «Бухоро Палас»</p>
+                            <p class="item-seler">
+                                Продавец <span class="seler__rate">4.6</span>
+                            </p>
+                            <p class="item__price">256 680</p>
+                            <p class="item__location">Душанбе, ул. Бухоро 27 </p>
+                            <p class="item__date">Неделю назад</p>
+                            <a href="#" class="item__link"></a>
+                        </div>
+                        <div class="item">
+                            <div class="item-img">
+                                <img src="./img/item-4.jpg" alt="item">
+                            </div>
+                            <button class="btn-save"></button>
+                            <span class="item-tag">Хорошая цена</span>
+                            <p class="item__heading">ЖК «Бухоро Палас»</p>
+                            <p class="item-seler">
+                                Продавец <span class="seler__rate">4.6</span>
+                            </p>
+                            <p class="item__price">256 680</p>
+                            <p class="item__location">Душанбе, ул. Бухоро 27 </p>
+                            <p class="item__date">Неделю назад</p>
+                            <a href="#" class="item__link"></a>
+                        </div>
+                        <div class="item">
+                            <div class="item-img">
+                                <img src="./img/item-5.jpg" alt="item">
+                            </div>
+                            <button class="btn-save"></button>
+                            <span class="item-tag">Хорошая цена</span>
+                            <p class="item__heading">ЖК «Бухоро Палас»</p>
+                            <p class="item-seler">
+                                Продавец <span class="seler__rate">4.6</span>
+                            </p>
+                            <p class="item__price">256 680</p>
+                            <p class="item__location">Душанбе, ул. Бухоро 27 </p>
+                            <p class="item__date">Неделю назад</p>
+                            <a href="#" class="item__link"></a>
+                        </div>
+                        <div class="item">
+                            <div class="item-img">
+                                <img src="./img/item-6.jpg" alt="item">
+                            </div>
+                            <button class="btn-save"></button>
+                            <span class="item-tag">Хорошая цена</span>
+                            <p class="item__heading">ЖК «Бухоро Палас»</p>
+                            <p class="item-seler">
+                                Продавец <span class="seler__rate">4.6</span>
+                            </p>
+                            <p class="item__price">256 680</p>
+                            <p class="item__location">Душанбе, ул. Бухоро 27 </p>
+                            <p class="item__date">Неделю назад</p>
+                            <a href="#" class="item__link"></a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <h1 class="card__headline">Xiaomi Redmi note 9, 4Gb/128, Arctic White, Новый</h1>
-
-            <div class="card-info">
-                <button class="btn-share">
-                    <i class="i i-share"></i>
-                    <span class="pc-block">Педелится</span>
-                </button>
-                <button class="btn-save">
-                    <span class="pc-block">В избранное</span>
-                </button>
-                <p class="card-price">2 800 сом.</p>
-                <div class="wrap">
-                    <button class="btn btn-main">
-                        <i class="i i-phone-call"></i>
-                        <span class="pc-block">Показать телефон</span>
-                        <span class="pc-none">Позвонить</span>
-                    </button>
-                    <button class="btn btn-outline">
-                        <i class="i i-chat"></i>
-                        Написать <span class="pc-block">сообщение</span>
-                    </button>
-                </div>
-                <p class="card-user">
-                    <span class="card-user__name">Супер Продавец</span>
-                    <span class="seler__rate">4.6</span>
-                    <span class="card__reviews">48 отзывов</span> <br>
-                    <span class="card__status">Проверенный продавец</span>
-                </p>
-                <p class="card__location">
-                    <i class="i i-location"></i>
-                    Улица Абулькасима Лахути, 24, Душанбе <a href="#">На карте</a>
-                </p>
-                <div class="card__min">
-                    <span class="card__id">№ 26369</span>
-                    <span class="card__online">сегодня в 11:07</span>
-                    <p class="card__views">1183 просмотра (+453 сегодня)</p>
-                </div>
-            </div>
-
-            <div class="card-descr">
-                <div class="dropdown mobile">
-                    <h3 class="card__subheading dropdown-btn">Характеристики</h3>
-                    <div class="dropdown-content">
-                        <ul class="card-list">
-                            <li>Модель телефона <span class="right">Honor 30 Pro</span></li>
-                            <li>Состояние техники <span class="right">Б/у</span></li>
-                            <li>Объем памяти <span class="right">128 Гб</span></li>
-                            <li>Цвет <span class="right">Черный</span></li>
-                            <li>Модель телефона <span class="right">Honor 30 Pro</span></li>
-                            <li>Состояние техники <span class="right">Б/у</span></li>
-                            <li>Объем памяти <span class="right">128 Гб</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="dropdown mobile">
-                    <h3 class="card__subheading dropdown-btn">Описание</h3>
-                    <div class="dropdown-content">
-                        <p>
-                            Предлагаю вашему вниманию новые iPhone 14 Pro. <br>
-                            Имеются все цвета и объёмы памяти. <br>
-                            Телефоны все оригинальные, не вскрытые, не активированные, в заводских пломбах. <br>
-                            При встрече любые проверки приветствуются. <br>
-                            Готов предложить ваш лучшую цену. <br>
-                            Цена в объявлении указана за Американскую модель iPhone 14 Pro Max E-sim 256Gb в цвете Gold.
-                            <br>
-                            В наличии так же есть все цвета и страны производителей, уточняйте нужную модель в
-                            сообщениях. <br>
-                            Работает Trade in, можете обменять свой телефон на новый
-                            Самовывоз. <br>
-                            Есть курьерская доставка
-                        </p>
-                    </div>
-                </div>
-                <button class="btn btn-outline btn-denger">
-                    <i class="i i-warning"></i>
-                    Пожаловаться на объявление
-                </button>
-            </div>
-
         </div>
     </main>
 
@@ -336,9 +369,7 @@
     </nav>
 
     <script src="./js/jquery-3.4.1.min.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/scripts.js?ver-151617"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="./js/scripts.js?ver-141516"></script>
 
 </body>
 
