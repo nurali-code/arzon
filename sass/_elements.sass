@@ -19,6 +19,7 @@ $blue: #2543a0
     --yelow: #ffd500
     --white: #fff
     --black: #07080F
+    --gray: #a7adb3
     --bg-color: #e1e7f6
 
 main
@@ -46,7 +47,6 @@ body
     margin: 0 auto
     padding: 0 15px
     position: relative
-    z-index: 1
 
 img, picture
     width: 100%
@@ -81,6 +81,22 @@ input
     &::placeholder
         color: #5c6fa7
         font-size: 12px
+
+select
+    width: 100%
+    display: block
+    appearance: none
+    background-color: var(--white)
+    border: 1px solid var(--gray)
+    border-radius: 8px
+    padding: 0 12px
+    height: 40px
+    background-image: url('../img/arrow_down.svg')
+    background-repeat: no-repeat
+    background-position: center right 10px
+    background-size: 15px 15px
+    &::placeholder
+        color: var(--gray)
 
 .search-form
     width: 100%
@@ -232,6 +248,7 @@ section
             &.active
                 display: inline-block
         &-content
+            display: none
             position: absolute
             max-width: 80vw
             width: 200px
@@ -283,6 +300,12 @@ section
             display: none
 
         &__btn
+            font-size: 14px
+            margin: 0 22px 0 0
+            color: var(--blue)
+            &.active
+                font-weight: 700
+                color: var(--black)
 
         &-content
             display: block !important

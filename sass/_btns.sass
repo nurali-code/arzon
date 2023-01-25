@@ -147,6 +147,49 @@
         top: 0
         right: 0
 
+.inp
+    &-wrap
+        margin-bottom: 22px
+        label
+            display: block
+            margin: 0 0 12px
+            font-size: 14px
+            font-weight: bold
+        .wrap
+            flex-wrap: nowrap
+            select
+                width: 48%
+
+        select, input 
+            font-size: 14px
+
+    &-radio
+        label
+            position: relative
+            font-weight: normal
+            padding: 2px 0 2px 26px
+            &::before
+                content: ''
+                font-size: 8px
+                line-height: 17px
+                text-align: center
+                display: inline-block
+                position: absolute
+                left: 0
+                top: 2px
+                width: 16px
+                border-radius: 4px
+                height: 16px
+                border: 1px solid var(--gray)
+        input
+            display: none
+            &:checked ~ label::before
+                font-family: "arzon_fonts" !important
+                background-color: var(--blue)
+                color: var(--white)
+                content: "\e90e"
+                border-color: var(--blue)
+
 @media screen and ( min-width: 1100px )
     .btn
         font-size: 14px

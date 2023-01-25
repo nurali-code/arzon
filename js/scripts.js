@@ -16,6 +16,8 @@ $('.btn-catalog, .header-catalog__close').on('click', function () {
 
 })
 
+
+
 $('.btn-save, .navbar__link').on('click', function () {
     $(this).toggleClass('active')
 })
