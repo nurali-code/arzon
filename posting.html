@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light">
     <title>Arzon</title>
-    <link rel="stylesheet" href="./css/style.css?ver-141516">
+    <link rel="stylesheet" href="./css/style.css?ver-151617">
 </head>
 
 <body>
@@ -26,13 +26,13 @@
                 <a href="#" class="btn btn-main"><i class="i i-plus"></i> Разместить объявление</a>
             </div>
 
-            <div class="header-bottom mob-none">
+            <div class="header-bottom">
                 <button class="btn btn-catalog">
                     <i class="i i-menu"></i> Категории
                     <i class="i i-keyboard_arrow_down"></i>
                 </button>
                 <form>
-                    <input type="text" required placeholder="Что вы ищете?">
+                    <input type="search" required placeholder="Что вы ищете?">
                     <button type="submit" class="btn btn-search">
                         <i class="i i-search"></i> <span class="pc-block">Найти</span>
                     </button>
@@ -189,8 +189,7 @@
         </ul>
     </header>
 
-
-    <main class="categoris">
+    <main class="posting">
         <div class="container">
             <nav class="path">
                 <a href="#" class="path__link">Телефоны и смартфоны</a>
@@ -199,243 +198,17 @@
                 <a href="#" class="path__link">Телефон Huawei Honor 30 Pro, 128Gb</a>
             </nav>
 
-            <h1>Купить телефоны Samsung в Таджикистане <span class="amount">855</span></h1>
-
-            <form class="search-form">
-                <input type="search" required placeholder="Что вы ищете?">
-                <button type="submit" class="btn btn-search">
-                    <i class="i i-search"></i> <span class="pc-block">Найти</span>
-                </button>
-            </form>
+            <h1>Разместить объявление</h1>
 
             <div class="wrap">
-                <div class="categoris-navbar">
-                    <div class="wrap">
-                        <p class="categoris__subheading">Телефоны и смартфоны</p>
-                        <a href="#" class="categoris-item">
-                            <span>Телефоны и плашеты</span>
-                            <span class="amount">855</span>
-                            <img src="./img/house.png" alt="item">
-                        </a>
-                        <a href="#" class="categoris-item">
-                            <span>Товары для компьютера</span>
-                            <span class="amount">855</span>
-                            <img src="./img/house.png" alt="item">
-                        </a>
-                        <a href="#" class="categoris-item">
-                            <span>Игры, приставки и программы</span>
-                            <span class="amount">855</span>
-                            <img src="./img/house.png" alt="item">
-                        </a>
-                        <a href="#" class="categoris-item">
-                            <span>Оргтехника и расходники</span>
-                            <span class="amount">855</span>
-                            <img src="./img/house.png" alt="item">
-                        </a>
-                        <a href="#" class="categoris-item">
-                            <span>Ноутбуки</span>
-                            <span class="amount">855</span>
-                            <img src="./img/house.png" alt="item">
-                        </a>
-                        <a href="#" class="categoris-item">
-                            <span>Фото и видео техника</span>
-                            <span class="amount">855</span>
-                            <img src="./img/house.png" alt="item">
-                        </a>
-                    </div>
-                    <div class="categoris-filter">
-                        <div class="inp-wrap">
-                            <label for="manufacturer">Производитель</label>
-                            <select id="manufacturer">
-                                <option hidden>Виберите производителя</option>
-                                <option value="1">Samsung</option>
-                                <option value="2">Apple</option>
-                                <option value="3">Samsung</option>
-                                <option value="4">Apple</option>
-                                <option value="5">Samsung</option>
-                            </select>
-                        </div>
-                        <div class="inp-wrap">
-                            <label for="model">Модель</label>
-                            <select id="model">
-                                <option hidden>Виберите модель</option>
-                                <option value="1">Samsung</option>
-                                <option value="2">Apple</option>
-                                <option value="3">Samsung</option>
-                                <option value="4">Apple</option>
-                                <option value="5">Samsung</option>
-                            </select>
-                        </div>
-                        <div class="inp-wrap">
-                            <label id="memory">Объем памяти, GB</label>
-                            <div class="wrap">
-                                <select id="memory">
-                                    <option value="1">от 2 Gb</option>
-                                    <option value="2">от 4 Gb</option>
-                                    <option value="3">от 8 Gb</option>
-                                    <option value="4">от 16 Gb</option>
-                                    <option value="5">от 32 Gb</option>
-                                    <option value="6">от 64 Gb</option>
-                                    <option value="7">от 128 Gb</option>
-                                    <option value="8">от 256 Gb</option>
-                                    <option value="9">от 512 Gb</option>
-                                    <option value="10">от 10024 Gb</option>
-                                </select>
-                                <select id="memory2">
-                                    <option value="1">до 2 Gb</option>
-                                    <option value="2">до 4 Gb</option>
-                                    <option value="3">до 8 Gb</option>
-                                    <option value="4">до 16 Gb</option>
-                                    <option value="5">до 32 Gb</option>
-                                    <option value="6">до 64 Gb</option>
-                                    <option value="7">до 128 Gb</option>
-                                    <option value="8">до 256 Gb</option>
-                                    <option value="9">до 512 Gb</option>
-                                    <option value="10">до 10024 Gb</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="inp-wrap">
-                            <label>Состояние товара</label>
-                            <div class="inp-radio">
-                                <input type="radio" name="condition" id="condition_new">
-                                <label for="condition_new">Новый</label>
-                            </div>
-                            <div class="inp-radio">
-                                <input type="radio" name="condition" id="condition_PU">
-                                <label for="condition_PU">Б/у</label>
-                            </div>
-                            <div class="inp-radio">
-                                <input type="radio" name="condition" id="condition_spares">
-                                <label for="condition_spares">На запчасти</label>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="categoris-content">
-                    <div class="wrap categoris-content-actions">
-                        <div class="sorting">
-                            <button class="sorting__heading dropdown-btn">Сортировка</button>
-                            <div class="sorting-content dropdown-content">
-                                <button class="sorting__btn active">По популярности</button>
-                                <button class="sorting__btn">По цене</button>
-                                <button class="sorting__btn">По дате</button>
-                            </div>
-                        </div>
-                        <button class="btn btn-filter">
-                            <i class="i i-filter"></i>Фильтр
-                        </button>
-                    </div>
-                    <div class="wrap item-wrapper">
-                        <div class="item">
-                            <div class="item-img">
-                                <img src="./img/item.jpg" alt="item">
-                            </div>
-                            <button class="btn-save active"></button>
-                            <span class="item-tag pink">Быстрый показ</span>
-                            <p class="item__heading">ЖК «Бухоро Палас»</p>
-                            <p class="item-seler">
-                                Продавец <span class="seler__rate">4.6</span>
-                            </p>
-                            <p class="item__price">256 680</p>
-                            <p class="item__location">Душанбе, ул. Бухоро 27 </p>
-                            <p class="item__date">Неделю назад</p>
-                            <a href="#" class="item__link"></a>
-                        </div>
-                        <div class="item">
-                            <div class="item-img">
-                                <img src="./img/item-2.jpg" alt="item">
-                            </div>
-                            <button class="btn-save"></button>
-                            <span class="item-tag red">Хорошая цена</span>
-                            <p class="item__heading">ЖК «Бухоро Палас»</p>
-                            <p class="item-seler">
-                                Продавец <span class="seler__rate">4.6</span>
-                            </p>
-                            <p class="item__price">256 680</p>
-                            <p class="item__location">Душанбе, ул. Бухоро 27 </p>
-                            <p class="item__date">Неделю назад</p>
-                            <a href="#" class="item__link"></a>
-                        </div>
-                        <div class="item">
-                            <div class="item-img">
-                                <img src="./img/item-3.jpg" alt="item">
-                            </div>
-                            <button class="btn-save"></button>
-                            <span class="item-tag red">Хорошая цена</span>
-                            <p class="item__heading">ЖК «Бухоро Палас»</p>
-                            <p class="item-seler">
-                                Продавец <span class="seler__rate">4.6</span>
-                            </p>
-                            <p class="item__price">256 680</p>
-                            <p class="item__location">Душанбе, ул. Бухоро 27 </p>
-                            <p class="item__date">Неделю назад</p>
-                            <a href="#" class="item__link"></a>
-                        </div>
-                        <div class="item">
-                            <div class="item-img">
-                                <img src="./img/item-4.jpg" alt="item">
-                            </div>
-                            <button class="btn-save"></button>
-                            <span class="item-tag">Хорошая цена</span>
-                            <p class="item__heading">ЖК «Бухоро Палас»</p>
-                            <p class="item-seler">
-                                Продавец <span class="seler__rate">4.6</span>
-                            </p>
-                            <p class="item__price">256 680</p>
-                            <p class="item__location">Душанбе, ул. Бухоро 27 </p>
-                            <p class="item__date">Неделю назад</p>
-                            <a href="#" class="item__link"></a>
-                        </div>
-                        <div class="item">
-                            <div class="item-img">
-                                <img src="./img/item-5.jpg" alt="item">
-                            </div>
-                            <button class="btn-save"></button>
-                            <span class="item-tag">Хорошая цена</span>
-                            <p class="item__heading">ЖК «Бухоро Палас»</p>
-                            <p class="item-seler">
-                                Продавец <span class="seler__rate">4.6</span>
-                            </p>
-                            <p class="item__price">256 680</p>
-                            <p class="item__location">Душанбе, ул. Бухоро 27 </p>
-                            <p class="item__date">Неделю назад</p>
-                            <a href="#" class="item__link"></a>
-                        </div>
-                        <div class="item">
-                            <div class="item-img">
-                                <img src="./img/item-6.jpg" alt="item">
-                            </div>
-                            <button class="btn-save"></button>
-                            <span class="item-tag">Хорошая цена</span>
-                            <p class="item__heading">ЖК «Бухоро Палас»</p>
-                            <p class="item-seler">
-                                Продавец <span class="seler__rate">4.6</span>
-                            </p>
-                            <p class="item__price">256 680</p>
-                            <p class="item__location">Душанбе, ул. Бухоро 27 </p>
-                            <p class="item__date">Неделю назад</p>
-                            <a href="#" class="item__link"></a>
-                        </div>
-                    </div>
+                <div class="posting-last">
+                    <p class="heading">Canon EOS 80D body (пробег 10100)</p>
+                    <p class="heading">Электроника · Фототехника</p>
                 </div>
             </div>
+
         </div>
     </main>
-
-    <footer class="footer">
-        <div class="container wrap">
-            <a class="footer__link" href="#">Реклама на сайте</a>
-            <a class="footer__link" href="#">Как пополнить баланс</a>
-            <a class="footer__link" href="#">Контакты</a>
-            <a class="footer__link" href="#">Платные функции </a>
-            <a class="footer__link" href="#">Карта сайтая</a>
-            <a class="footer__link" href="#">Помощь</a>
-            <p class="footer__text">© 2023 Arzon</p>
-        </div>
-    </footer>
-
 
     <nav class="navbar">
         <a href="#" class="navbar__link active">
@@ -460,9 +233,9 @@
         </a>
     </nav>
 
-
     <script src="./js/jquery-3.4.1.min.js"></script>
-    <script src="./js/scripts.js?ver-141516"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/scripts.js?ver-151617"></script>
 
 </body>
 
