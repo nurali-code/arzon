@@ -1,21 +1,10 @@
 
-$('.btn-catalog, .header-catalog__close').on('click', function () {
-    $('body').toggleClass('active');
-    if (window.innerWidth <= 1100) {
-        $('.header-catalog').slideToggle(200);
-
-    } else if ($('.header-catalog').hasClass('active')) {
-        $('.overlay').remove()
-        $('.header-catalog').removeClass('active');
-
-    } else {
-        $('.header-catalog').toggleClass('active');
-        $('body').prepend("<div class='overlay'></div>");
-    }
-
-
+$('.categories__heading').on('click', function () {
+    $('.categories-list').removeClass('active');
+    $('.categories__heading').next().removeClass('active');
+    $(this).parent('.categories-list').toggleClass('active');
+    $(this).next().addClass('active');
 })
-
 
 
 $('.btn-save, .navbar__link').on('click', function () {
