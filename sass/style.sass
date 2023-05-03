@@ -514,11 +514,10 @@
         font-size: 16px
         margin: 14px 0 40px
         font-weight: 600
-        box-shadow: 0px 0px 20px 0px rgb(37 68 161 / 40%)
         text-align: center
         .i
             display: block
-            font-size: 20px
+            font-size: 25px
             vertical-align: middle
             margin: 0 6px 4px 0
 
@@ -527,12 +526,15 @@
         line-height: 130%
         margin-bottom: 10px
 
-    &__text 
+    &__text
+        font-size: 12px
         margin-bottom: 14px
 
     section
-        padding: 14px 0
+        padding: 20px 0
         border-bottom: 1px solid rgba(0, 0, 0, .1)
+        &.last
+            border: none
 
     .wrap
         margin-bottom: 14px
@@ -552,82 +554,110 @@
             label
                 margin-bottom: 6px
         &-radio
-            max-width: 48%
+            // max-width: 48%
             label
                 margin-bottom: 6px
                 .descr
                     font-size: 10px
 
-.categories
-    width: 100%
-    border: 1px solid var(--gray)
-    border-radius: 16px
-    overflow: hidden
-    background-color: var(--white)
-    padding: 10px 0
-    &-list
+    iframe
         width: 100%
+        max-width: 720px
+        margin: 0
+        border: none
 
-    li
-        padding-left: 0
-        &::before,
-        &::after
-            display: none
-
-    &-header
-        position: sticky
-        top: 0
-        left: 0
-        z-index: 100
-
-    &__close
-        padding: 13px 15px
-        font-weight: 500
-        font-size: 16px
-        line-height: 120%
-        width: 100%
-        text-align: left
-        transform: none !important
-        background-color: var(--white)
-        margin-bottom: 10px
-        box-shadow: 0 2px 2px 0 rgb(0 0 0 / 8%), 0 0 2px 0 rgb(0 0 0 / 4%)
-        .i
-            font-size: 13px
-            margin-right: 8px
-
-    &.active
-        display: block
-
-    &-list
-        width: 100%
-        &.active
-            opacity: 1
-            background-color: rgba(0, 0, 0, .05)
-
-    &__heading
-        width: 100%
-        text-align: left
-        padding: 10px 30px 10px 20px
-        font-size: 14px
-        line-height: 120%
-        font-weight: 500
-        opacity: 1 !important
-
-    &-underlist
-        display: none
-        padding: 0 0 10px
-        // background-color: var(--white)
-        border-bottom: 1px solid var(--gray)
-
-        &.active
-            display: block
-
-    &__link
-        display: block
-        font-size: 12px
-        line-height: 130%
-        padding: 10px 25px 10px 20px
+    &-img
+        display: inline-block
+        margin: 0 5px 5px 0
+        width: 120px
+        height: 80px
+        border-radius: 5px
+        overflow: hidden
         position: relative
+        z-index: 1
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+        button
+            position: absolute
+            z-index: 1
+            top: 5px
+            right: 5px
+            font-weight: normal
+            background-color: rgba(0, 0, 0, .4)
+            color: #fff
+            width: 25px
+            line-height: 25px
+            height: 25px
+            border-radius: 50%
+
+    &-catalog
+        background-color: #fff
+        border: 1px solid #eee
+        overflow: hidden
+        border-radius: 8px
+        margin-bottom: 40px
+        &-main,
+        &-second,
+        &-third
+            li
+                padding: 0
+                font-size: 14px
+                color: #9aa1a9
+                button,
+                a
+                    font-size: 14px
+                    line-height: 130%
+                    width: 100%
+                    display: block
+                    text-align: left
+                    padding: 8px 20px
+                    color: #000
+                &::before,
+                &::after
+                    display: none
+
+        &-second,
+        &-third
+            ul
+                display: none
+
+        &__link
+            &.active
+                font-weight: bold
+                background-color: #eee
+        &__mainlink
+            display: none !important
+        &__heading
+            display: block
+            padding: 8px 20px
+
+        &-value
+            justify-content: flex-start
+
+            h3
+                min-width: 232px
+                margin-bottom: 12px
+            p
+                font-size: 16px
+                color: var(--blue)
+                span
+                    &::after
+                        content: '/'
+                        display: inline-block
+                        padding: 0 5px 0 10px
+                        color: #000
+
+                    &:last-of-type::after
+                        display: none
+
+    &-footer
+        padding: 20px 0 0
+        .btn
+            margin: 0 15px 10px 0
+            
 
 @media screen and ( min-width: 1100px )
     .catalog
@@ -1014,15 +1044,26 @@
                 .item
 
     .posting
+        &__heading
+            font-size: 24px
+            line-height: 21px
+            margin-bottom: 28px
+        &__text
+            font-size: 14px
+            margin: 0 0 30px
+        section
+            padding: 47px 0
+
         &-last
+            width: 100%
+            max-width: 340px
             padding: 30px 30px 25px
-            max-width: 31%
-            &-wrap 
+            &-wrap
                 gap: 24px
                 align-items: stretch
                 justify-content: flex-start
 
-            &__img 
+            &__img
                 width: 120px
                 height: 90px
                 margin-bottom: 17px
@@ -1031,22 +1072,85 @@
             &__category
                 font-size: 14px
 
-            .btn 
+            .btn
                 font-size: 14px
                 justify-content: center
-                padding: 15px 30px 
+                padding: 12px 16px
+                border-radius: 8px
                 width: unset
 
             &__delete
                 font-size: 14px
                 margin-top: 6px
 
-        &-add 
+        &-add
+            margin: 0
             display: flex
             align-items: center
-            flex-wrap: wrap
             justify-content: center
-            margin: 0
-            width: 31%
-            .i 
+            width: 100%
+            max-width: 340px
+            font-size: 24px
+            .i
+                font-size: 32px
                 width: 100%
+                margin-bottom: 16px
+
+        &-catalog
+            display: flex
+            border: 1px solid #eee
+            border-right: none
+            overflow: hidden
+            border-radius: 15px
+            margin-bottom: 40px
+            li
+                padding: 0
+                font-size: 14px
+                color: #9aa1a9
+                button,
+                a
+                    font-size: 14px
+                    line-height: 130%
+                    width: 100%
+                    display: block
+                    text-align: left
+                    padding: 8px 20px
+                    color: #000
+                &::before,
+                &::after
+                    display: none
+
+            &-main,
+            &-second,
+            &-third
+                border-right: 1px solid #eee
+                width: 33%
+                padding: 10px 0
+
+            &__link
+                &.active
+                    font-weight: bold
+                    background-color: #eee
+            &__mainlink
+                display: none !important
+            &__heading
+                display: block
+                padding: 8px 20px
+
+            &-value
+                justify-content: flex-start
+
+                h3
+                    min-width: 232px
+                p
+                    font-size: 24px
+                    color: var(--blue)
+                    span
+                        &::after
+                            content: '/'
+                            display: inline-block
+                            padding: 0 5px 0 10px
+                            color: #000
+
+                        &:last-of-type::after
+                            display: none

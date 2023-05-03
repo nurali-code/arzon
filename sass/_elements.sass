@@ -34,6 +34,7 @@ body
     min-height: 100vh
     color: var(--black)
     display: flex
+    font-size: 13px
     flex-direction: column
     background-color: var(--bg-color)
     font-family: 'Geometria', sans-serif
@@ -78,9 +79,15 @@ textarea
     border-radius: 8px
     background-color: var(--white)
     box-sizing: border-box !important
+    background-repeat: no-repeat
+    background-position: center right 14px
+    background-size: 14px auto 
     &::placeholder
         color: #5c6fa7
         font-size: 12px
+
+    &.currect
+        background-image: url('../img/check.svg')
 
 textarea
     height: unset
@@ -90,6 +97,7 @@ textarea
 
 select
     width: 100%
+    font-size: 13px
     display: block
     appearance: none
     background-color: var(--white)
@@ -273,6 +281,41 @@ section
             background-color: var(--white)
             box-shadow: 0px -9px 6px 0px rgb(0 6 129 / 6%)
 
+fieldset
+    display: block
+    padding: 0
+    border: none
+    margin: 0 0 16px
+    label
+        font-size: 13px
+        display: block
+        margin-bottom: 4px
+
+    input,
+    select,
+    textarea,
+    .col
+        width: 100%
+        max-width: 266px
+        &.wide
+            max-width: 486px
+
+    input, textarea
+        width: 100%
+        display: block
+        background-color: var(--white)
+        border: 1px solid var(--gray)
+        border-radius: 8px
+        padding: 0 12px
+        height: 40px
+
+    textarea
+        height: unset
+        padding: 12px
+
+.fade
+    opacity: .5
+
 @keyframes opc
     0%
         opacity: 0
@@ -299,6 +342,9 @@ section
     input
         font-size: 14px
         height: 44px
+    select,
+    textarea
+        font-size: 14px
 
     main
         .container
@@ -323,3 +369,11 @@ section
 
         &-content
             display: block !important
+
+    fieldset
+        display: flex
+        label
+            font-size: 14px
+            min-width: 232px
+            padding-right: 12px
+            margin-bottom: 0
