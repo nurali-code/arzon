@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light">
     <title>Arzon</title>
-    <link rel="stylesheet" href="./css/style.css?ver-161718">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -92,74 +92,128 @@
 
             <section>
                 <h3 class="posting__heading">Выберите категорию</h3>
-                <ul class="categories">
-                    <li class="categories-list">
-                        <button class="categories__heading">Недвижимость</button>
-                        <ul class="categories-underlist">
+                <div class="categories">
+                    <ul class="categories-main">
+                        <li>
+                            <button class="categories__heading" data-categories-tab="2">Недвижимость</button>
+                        </li>
+                        <li>
+                            <button class="categories__heading">Транспорт</button>
+                        </li>
+                        <li>
+                            <button class="categories__heading">Работа</button>
+                        </li>
+                        <li>
+                            <button class="categories__heading">Личные вещи</button>
+                        </li>
+                        <li>
+                            <button class="categories__heading">Услуги</button>
+                        </li>
+                        <li>
+                            <button class="categories__heading">Электроника</button>
+                        </li>
+                    </ul>
+                    <div class="categories-second">
+                        <ul data-categories-id="1">
                             <li><a href="#" class="categories__link">Все категории</a></li>
-                            <li><a href="#" class="categories__link">Купить жильё</a></li>
-                            <li><a href="#" class="categories__link">Снять посуточно</a></li>
-                            <li><a href="#" class="categories__link">Снять долгосрочно</a></li>
-                            <li><a href="#" class="categories__link">Коммерческая недвижимость</a></li>
-                            <li><a href="#" class="categories__link">Другие категории</a></li>
+                            <li><a href="#" class="categories__heading">Купить жильё</a></li>
+                            <li><a href="#" class="categories__heading">Снять посуточно</a></li>
+                            <li><a href="#" class="categories__heading">Снять долгосрочно</a></li>
+                            <li><a href="#" class="categories__heading">Коммерческая недвижимость</a></li>
+                            <li><a href="#" class="categories__heading">Другие категории</a></li>
                         </ul>
-                    </li>
-                    <li class="categories-list">
-                        <button class="categories__heading">Транспорт</button>
-                        <ul class="categories-underlist">
+                        <ul data-categories-id="2">
                             <li><a href="#" class="categories__link">Все категории</a></li>
-                            <li><a href="#" class="categories__link">Купить жильё</a></li>
-                            <li><a href="#" class="categories__link">Снять посуточно</a></li>
-                            <li><a href="#" class="categories__link">Снять долгосрочно</a></li>
-                            <li><a href="#" class="categories__link">Коммерческая недвижимость</a></li>
-                            <li><a href="#" class="categories__link">Другие категории</a></li>
+                            <li><button class="categories__heading">Купить жильё</button></li>
+                            <li><button class="categories__heading">Снять посуточно</button></li>
+                            <li><button class="categories__heading">Снять долгосрочно</button></li>
+                            <li><button class="categories__heading">Коммерческая недвижимость</button></li>
+                            <li><button class="categories__heading">Другие категории</button></li>
                         </ul>
-                    </li>
-                    <li class="categories-list">
-                        <button class="categories__heading">Работа</button>
-                        <ul class="categories-underlist">
+                        <ul data-categories-id="3">
                             <li><a href="#" class="categories__link">Все категории</a></li>
-                            <li><a href="#" class="categories__link">Купить жильё</a></li>
-                            <li><a href="#" class="categories__link">Снять посуточно</a></li>
-                            <li><a href="#" class="categories__link">Снять долгосрочно</a></li>
-                            <li><a href="#" class="categories__link">Коммерческая недвижимость</a></li>
-                            <li><a href="#" class="categories__link">Другие категории</a></li>
+                            <li><button class="categories__heading">Купить жильё</button></li>
+                            <li><button class="categories__heading">Снять посуточно</button></li>
+                            <li><button class="categories__heading">Снять долгосрочно</button></li>
+                            <li><button class="categories__heading">Коммерческая недвижимость</button></li>
+                            <li><button class="categories__heading">Другие категории</button></li>
                         </ul>
-                    </li>
-                    <li class="categories-list">
-                        <button class="categories__heading">Личные вещи</button>
-                        <ul class="categories-underlist">
+                        <ul data-categories-id="4">
                             <li><a href="#" class="categories__link">Все категории</a></li>
-                            <li><a href="#" class="categories__link">Купить жильё</a></li>
-                            <li><a href="#" class="categories__link">Снять посуточно</a></li>
-                            <li><a href="#" class="categories__link">Снять долгосрочно</a></li>
-                            <li><a href="#" class="categories__link">Коммерческая недвижимость</a></li>
-                            <li><a href="#" class="categories__link">Другие категории</a></li>
+                            <li><button class="categories__heading">Купить жильё</button></li>
+                            <li><button class="categories__heading">Снять посуточно</button></li>
+                            <li><button class="categories__heading">Снять долгосрочно</button></li>
+                            <li><button class="categories__heading">Коммерческая недвижимость</button></li>
+                            <li><button class="categories__heading">Другие категории</button></li>
                         </ul>
-                    </li>
-                    <li class="categories-list">
-                        <button class="categories__heading">Услуги</button>
-                        <ul class="categories-underlist">
+                        <ul data-categories-id="5">
                             <li><a href="#" class="categories__link">Все категории</a></li>
-                            <li><a href="#" class="categories__link">Купить жильё</a></li>
-                            <li><a href="#" class="categories__link">Снять посуточно</a></li>
-                            <li><a href="#" class="categories__link">Снять долгосрочно</a></li>
-                            <li><a href="#" class="categories__link">Коммерческая недвижимость</a></li>
-                            <li><a href="#" class="categories__link">Другие категории</a></li>
+                            <li><button class="categories__heading">Купить жильё</button></li>
+                            <li><button class="categories__heading">Снять посуточно</button></li>
+                            <li><button class="categories__heading">Снять долгосрочно</button></li>
+                            <li><button class="categories__heading">Коммерческая недвижимость</button></li>
+                            <li><button class="categories__heading">Другие категории</button></li>
                         </ul>
-                    </li>
-                    <li class="categories-list">
-                        <button class="categories__heading">Электроника</button>
-                        <ul class="categories-underlist">
+                        <ul data-categories-id="6">
                             <li><a href="#" class="categories__link">Все категории</a></li>
-                            <li><a href="#" class="categories__link">Купить жильё</a></li>
-                            <li><a href="#" class="categories__link">Снять посуточно</a></li>
-                            <li><a href="#" class="categories__link">Снять долгосрочно</a></li>
-                            <li><a href="#" class="categories__link">Коммерческая недвижимость</a></li>
-                            <li><a href="#" class="categories__link">Другие категории</a></li>
+                            <li><button class="categories__heading">Купить жильё</button></li>
+                            <li><button class="categories__heading">Снять посуточно</button></li>
+                            <li><button class="categories__heading">Снять долгосрочно</button></li>
+                            <li><button class="categories__heading">Коммерческая недвижимость</button></li>
+                            <li><button class="categories__heading">Другие категории</button></li>
                         </ul>
-                    </li>
-                </ul>
+                    </div>
+                    <div class="categories-third">
+                        <ul data-categories-id="7">
+                            <li><a href="#" class="categories__link">Все категории</a></li>
+                            <li><button class="categories__heading">Купить жильё</button></li>
+                            <li><button class="categories__heading">Снять посуточно</button></li>
+                            <li><button class="categories__heading">Снять долгосрочно</button></li>
+                            <li><button class="categories__heading">Коммерческая недвижимость</button></li>
+                            <li><button class="categories__heading">Другие категории</button></li>
+                        </ul>
+                        <ul data-categories-id="8">
+                            <li><a href="#" class="categories__link">Все категории</a></li>
+                            <li><button class="categories__heading">Купить жильё</button></li>
+                            <li><button class="categories__heading">Снять посуточно</button></li>
+                            <li><button class="categories__heading">Снять долгосрочно</button></li>
+                            <li><button class="categories__heading">Коммерческая недвижимость</button></li>
+                            <li><button class="categories__heading">Другие категории</button></li>
+                        </ul>
+                        <ul data-categories-id="9">
+                            <li><a href="#" class="categories__link">Все категории</a></li>
+                            <li><button class="categories__heading">Купить жильё</button></li>
+                            <li><button class="categories__heading">Снять посуточно</button></li>
+                            <li><button class="categories__heading">Снять долгосрочно</button></li>
+                            <li><button class="categories__heading">Коммерческая недвижимость</button></li>
+                            <li><button class="categories__heading">Другие категории</button></li>
+                        </ul>
+                        <ul data-categories-id="10">
+                            <li><a href="#" class="categories__link">Все категории</a></li>
+                            <li><button class="categories__heading">Купить жильё</button></li>
+                            <li><button class="categories__heading">Снять посуточно</button></li>
+                            <li><button class="categories__heading">Снять долгосрочно</button></li>
+                            <li><button class="categories__heading">Коммерческая недвижимость</button></li>
+                            <li><button class="categories__heading">Другие категории</button></li>
+                        </ul>
+                        <ul data-categories-id="11">
+                            <li><a href="#" class="categories__link">Все категории</a></li>
+                            <li><button class="categories__heading">Купить жильё</button></li>
+                            <li><button class="categories__heading">Снять посуточно</button></li>
+                            <li><button class="categories__heading">Снять долгосрочно</button></li>
+                            <li><button class="categories__heading">Коммерческая недвижимость</button></li>
+                            <li><button class="categories__heading">Другие категории</button></li>
+                        </ul>
+                        <ul data-categories-id="12">
+                            <li><a href="#" class="categories__link">Все категории</a></li>
+                            <li><button class="categories__heading">Купить жильё</button></li>
+                            <li><button class="categories__heading">Снять посуточно</button></li>
+                            <li><button class="categories__heading">Снять долгосрочно</button></li>
+                            <li><button class="categories__heading">Коммерческая недвижимость</button></li>
+                            <li><button class="categories__heading">Другие категории</button></li>
+                        </ul>
+                    </div>
+                </div>
             </section>
 
             <section>
@@ -275,7 +329,7 @@
 
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="./js/scripts.js?ver-161718"></script>
+    <script src="./js/scripts.js"></script>
 
 </body>
 
