@@ -32,20 +32,18 @@
         display: flex
         align-items: center
         justify-content: center
-        background-color: var(--white)
+        // background-color: var(--white)
         border-radius: 6px
         margin-bottom: 7px
+        overflow: hidden
         box-shadow: 0px 9px 6px 0px rgba(0, 6, 129, 0.06)
 
-        img, picture
-            max-width: 50%
-            max-height: 50%
-            object-fit: contain
-            display: block
-        picture
-            img
-                max-width: 100%
-                max-height: 38px
+        img, picture, picture img
+            width: 100%
+            height: 100%
+            max-width: 100%
+            max-height: 100%
+            object-fit: cover
 
     &-banner
         min-width: 167px
@@ -601,11 +599,16 @@
             border-radius: 50%
 
     &-catalog
-        background-color: #fff
-        border: 1px solid #eee
-        overflow: hidden
-        border-radius: 8px
         margin-bottom: 40px
+        @media screen and ( max-width: 1100px )
+            ul
+                background-color: #fff
+                border-bottom: none
+                border: 1px solid #eee
+                overflow: hidden
+                border-radius: 8px
+                margin-bottom: 10px
+
         &-main,
         &-second,
         &-third
@@ -628,6 +631,7 @@
 
         &-second,
         &-third
+            border-top: none
             ul
                 display: none
 
@@ -1059,6 +1063,11 @@
                 .item
 
     .posting
+        &-main,
+        &-second,
+        &-third
+            border: 1px solid #eee
+
         &__heading
             font-size: 24px
             line-height: 21px
