@@ -13,32 +13,14 @@
 <body>
     <header class="header">
         <div class="container">
-            <button class="btn btn-menu" data-modal="menu"><i class="i i-menu"></i></button>
+            <button class="btn btn-menu"><i class="i i-menu"></i></button>
             <a href="./index.html" class="logo"><img loading="lazy" src="./img/logo.svg" alt="arzon.tj"></a>
 
             <div class="header-actions">
-                <select class="header-location">
-                    <option>Истаравшан</option>
-                    <option>Душанбе</option>
-                    <option>Бохтар</option>
-                    <option>Вахдат</option>
-                    <option>Ваҳдат</option>
-                    <option>Гиссар</option>
-                    <option>Ҳисор</option>
-                    <option>Истиклол</option>
-                    <option>Исфара</option>
-                    <option>Канибадам</option>
-                    <option>Куляб</option>
-                    <option>Левакант</option>
-                    <option>Левақанд</option>
-                    <option>Нурек</option>
-                    <option>Пенджикент</option>
-                    <option>Рогун</option>
-                    <option>Турсунзаде</option>
-                    <option>Хорог</option>
-                    <option>Худжанд</option>
-                </select>
-                <!-- <a href="#" class="btn header__chat" data-noti="12"><i class="i i-chat"></i></a>
+                <!-- <button class="btn btn-location">
+                    <i class="i i-location"></i> Душанбе <i class="i i-keyboard_arrow_down"></i>
+                </button>
+                <a href="#" class="btn header__chat" data-noti="12"><i class="i i-chat"></i></a>
                 <a href="#" class="btn header__fav" data-noti="12"><i class="i i-heart-o"></i></a>
                 <a href="#" class="btn btn-account" data-noti="21"><i class="i i-user"></i></a> -->
                 <a href="./posting.html" class="btn btn-main"><i class="i i-plus"></i> Разместить объявление</a>
@@ -57,33 +39,15 @@
                 </form>
             </div>
 
-            <div class="header-nav">
-                <select class="header-location">
-                    <option>Истаравшан</option>
-                    <option>Душанбе</option>
-                    <option>Бохтар</option>
-                    <option>Вахдат</option>
-                    <option>Ваҳдат</option>
-                    <option>Гиссар</option>
-                    <option>Ҳисор</option>
-                    <option>Истиклол</option>
-                    <option>Исфара</option>
-                    <option>Канибадам</option>
-                    <option>Куляб</option>
-                    <option>Левакант</option>
-                    <option>Левақанд</option>
-                    <option>Нурек</option>
-                    <option>Пенджикент</option>
-                    <option>Рогун</option>
-                    <option>Турсунзаде</option>
-                    <option>Хорог</option>
-                    <option>Худжанд</option>
-                </select>
+            <nav class="header-nav">
+                <button class="btn btn-location">
+                    <i class="i i-location"></i> Душанбе <i class="i i-keyboard_arrow_down"></i>
+                </button>
                 <a href="./about.html" class="header-nav__link">О сайте</a>
                 <a href="./business.html" class="header-nav__link">Для бизнеса</a>
                 <a href="./help.html" class="header-nav__link">Помощь</a>
                 <a href="./feedback.html" class="header-nav__link">Связаться с нами</a>
-            </div>
+            </nav>
         </div>
     </header>
 
@@ -837,7 +801,7 @@
         </div>
     </footer>
 
-    <div class="modal modal-catalog" id="catalog">
+    <div class="modal" id="catalog">
         <div class="modal-content">
             <ul class="menu-catalog">
                 <li class="menu-catalog-header">
@@ -898,6 +862,55 @@
                                 <li><a href="#" class="menu__link">10+ комнатные</a></li>
                             </ul>
                         </li>
+                        <li>
+                            <a href="#" class="menu__link">Комнаты</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="#" class="menu__link">Продажа комнат</a></li>
+                                <li><a href="#" class="menu__link">Долгосрочная аренда комнат</a></li>
+                                <li><a href="#" class="menu__link">Посуточная аренда комнат</a></li>
+                            </ul>
+                        </li>
+																								<li>
+																									<a href="#" class="menu__link">Дома (хавли) и дачи</a>
+																									<button class="menu__next"></button>
+																									<ul class="menu-underlist">
+																													<li><a href="#" class="menu__link">Продажа домов (хавли) и дач</a></li>
+																													<li><a href="#" class="menu__link">Долгосрочная аренда домов (хавли) и дач</a></li>
+																													<li><a href="#" class="menu__link">Посуточная аренда домов (хавли) и дач</a></li>
+																									</ul>
+																					</li>
+																					<li>
+																						<a href="#" class="menu__link">Помещения</a>
+																						<button class="menu__next"></button>
+																						<ul class="menu-underlist">
+																										<li><a href="#" class="menu__link">Продажа офисов</a></li>
+																										<li><a href="#" class="menu__link">Аренда офисов</a></li>
+																										<li><a href="#" class="menu__link">Посуточная аренда комнат</a></li>
+																										<li><a href="#" class="menu__link">Аренда складов</a></li>
+																										<li><a href="#" class="menu__link">Торговый центр</a></li>
+																										<li><a href="#" class="menu__link">Другие помещения</a></li>
+																						</ul>
+																		</li>
+																		<li>
+																			<a href="#" class="menu__link">Земельные участки</a>
+																			<button class="menu__next"></button>
+																			<ul class="menu-underlist">
+																							<li><a href="#" class="menu__link">Продажа земельных участков с постройкой</a></li>
+																							<li><a href="#" class="menu__link">Аренда земельных участков с постройкой</a></li>
+																			</ul>
+															</li>
+															<li>
+																<a href="#" class="menu__link">Гаражи</a>
+																<button class="menu__next"></button>
+																<ul class="menu-underlist">
+																				<li><a href="#" class="menu__link">Продажа гаражей</a></li>
+																				<li><a href="#" class="menu__link">Аренда гаражей</a></li>
+																	</ul>
+												</li>
+												<li>
+													<a href="#" class="menu__link">Вагончики, бытовки, вагон-дома</a>
+									</li>
                     </ul>
                 </li>
                 <li>
@@ -905,20 +918,31 @@
                     <button class="menu__next"></button>
                     <ul class="menu-list">
                         <li>
-                            <a href="#" class="menu__link">Продажа квартир</a>
+                            <a href="#" class="menu__link">Легковые авто</a>
                             <button class="menu__next"></button>
                             <ul class="menu-underlist">
-                                <li><a href="./realestate.html" class="menu__link">1 комнатные</a></li>
-                                <li><a href="./realestate.html" class="menu__link">2 комнатные</a></li>
-                                <li><a href="./realestate.html" class="menu__link">3 комнатные</a></li>
-                                <li><a href="./realestate.html" class="menu__link">4 комнатные</a></li>
-                                <li><a href="./realestate.html" class="menu__link">5 комнатные</a></li>
-                                <li><a href="./realestate.html" class="menu__link">6 комнатные</a></li>
-                                <li><a href="./realestate.html" class="menu__link">7 комнатные</a></li>
-                                <li><a href="./realestate.html" class="menu__link">8 комнатные</a></li>
-                                <li><a href="./realestate.html" class="menu__link">9 комнатные</a></li>
-                                <li><a href="./realestate.html" class="menu__link">10 комнатные</a></li>
-                                <li><a href="./realestate.html" class="menu__link">10+ комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Samsung</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Audi</a></li>
+                                <li><a href="./realestate.html" class="menu__link">BMW</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Chevrolet</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Daewoo</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Ford</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Honda</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Hyundai</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Kia</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Land Rover</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Lexus</a></li>
+																																<li><a href="./realestate.html" class="menu__link">Mercedes-Benz</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Mitsubishi</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Nissan</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Opel</a></li>
+                                <li><a href="./realestate.html" class="menu__link">SsangYong</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Skoda</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Honda</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Hyundai</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Kia</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Land Rover</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Lexus</a></li>
                             </ul>
                         </li>
                         <li>
@@ -1018,23 +1042,6 @@
         </div>
     </div>
 
-    <div class="modal modal-catalog" id="menu">
-        <div class="modal-content">
-            <nav>
-                <a href="./about.html" class="header-nav__link">О сайте</a>
-                <a href="./business.html" class="header-nav__link">Для бизнеса</a>
-                <a href="./help.html" class="header-nav__link">Помощь</a>
-                <a href="./feedback.html" class="header-nav__link">Связаться с нами</a>
-                <hr>
-                <a href="./advertising.html">Реклама на сайте</a>
-                <a href="./balance.html">Как пополнить баланс</a>
-                <a href="./contacts.html">Контакты</a>
-                <a href="./paid.html">Платные функции </a>
-                <a href="./map.html">Карта сайтая</a>
-            </nav>
-        </div>
-    </div>
-
     <nav class="navbar">
         <a href="./help.html" class="navbar__link active">
             <span class="navbar-icon"><i class="i i-search"></i></span>
@@ -1061,10 +1068,6 @@
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/scripts.js"></script>
-
-
-    <tbody>
-
 
 </body>
 

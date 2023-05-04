@@ -10,16 +10,15 @@
     padding: 0
     box-sizing: border-box
     &-content
-        width: 94%
-        min-height: 100px
-        max-height: 98%
+        width: 90%
+        max-height: 95%
         display: block
         position: absolute
         top: 50%
         left: 50%
         transform: translate(-50%, -50%)
         background-color: #fff
-        max-width: 400px
+        max-width: 1000px
         overflow-y: scroll
         color: $black
         text-align: left
@@ -48,8 +47,17 @@
             &-wrap
                 margin-bottom: 15px
 
-    &-close,
-    &-close_itself
+        nav 
+            padding: 40px 0
+            hr 
+                height: 1px
+                background-color: #eee
+                margin: 20px 0
+            a 
+                display: block
+                padding: 15px
+
+    &-close
         position: absolute
         top: 32px
         right: 32px
@@ -67,102 +75,21 @@
     &.is-open
         display: block
 
-    &#modal-calc
-        // display: block
-        .descr
-            display: block
-            font-size: 11px
-            opacity: .6
-
+    &-catalog
         .modal
             &-content
-                padding: 40px 50px 40px
-                max-width: 1100px
-
-            &-close
-                color: #fff
-                // top: -20px
-                // right: -20px
-
-        .wrap
-            align-items: flex-start
-
-        .inp
-            width: 32%
-
-            &-wrap
-                width: 32%
-                input,
-                select
-                    max-width: 100%
-
-        .btn
-            margin-top: 20px
-            min-width: 300px
-
-        .currencies
-            font-size: 14px
-            margin: 25px auto 0 20px
-            opacity: .6
-
-    &-review
-        .modal-content
-            max-width: 500px
-
-        input,
-        textarea 
-            max-width: 100%
-
-    &-resulte
-        display: none
-        padding: 40px 0 0
-        overflow-y: scroll
-        -ms-overflow-style: none
-        scrollbar-width: none
-        &::-webkit-scrollbar
-            display: none
-            width: 0
-            height: 0
-
-        table
-
-        .btn
-            box-shadow: none
-
-    &#modal-calcForm
-        .modal
-            &-content
-                max-width: 450px
-
-        table
-            opacity: .7
-            input
-                pointer-events: none
-                text-align: right
                 border-radius: 0
-                font-size: 12px
-                border: none
-                height: 20px
+                left: 0
+                top: 0
+                transform: none
                 padding: 0
-                background-color: transparent
-                width: 100%
-                margin: 0
-
-            td
-                padding: 6px 10px
-                font-size: 12px
-                min-width: 80px !important
-                white-space: break-spaces !important
-
-            thead
-                input
-                    text-align: left
-                    font-weight: bold
-                    font-size: 14px
+                height: 100%
+                max-width: 500px
+                max-height: 100%
 
     @media screen and ( max-width: 1170px )
         &-content
-            max-width: 400px
+            // max-width: 400px
             padding: 30px 20px 35px
             .headline
                 font-size: 24px
@@ -171,27 +98,11 @@
             .btn
                 width: 100%
 
-        &-close,
-        &-close_itself
-            top: 24px
-            right: 24px
-            width: 24px
-            height: 24px
-            font-size: 14px
-
-        &#modal-calc
-            .modal
-                &-content
-                    width: 98%
-                    padding: 40px 30px 40px
-                    max-width: 100%
-
-            .inp-wrap
-                width: 49%
+        &-close
 
     @media screen and ( max-width: 700px )
         &-content
-            max-width: 400px
+            // max-width: 400px
             padding: 25px 16px 30px
             border-radius: 14px
             .headline
@@ -199,34 +110,93 @@
                 line-height: 22px
                 margin-bottom: 15px
 
-        &-close,
-        &-close_itself
+        &-close
             top: 17px
             right: 16px
             font-size: 14px
 
-        &#modal-calc
-            background-color: #fff
+        &#catalog
             .modal
                 &-content
-                    top: 0
-                    left: 0
-                    transform: none !important
-                    max-width: 100%
-                    width: 100%
-                    border-radius: 0
-                    min-height: 100%
-                    max-height: 100%
-                    padding: 30px 15px
+                    padding: 0 
 
-                    .wrap
-                        justify-content: flex-start
+.menu
+    &-catalog
+        position: relative
+        height: 450px
+        &-header
+            background-color: #eee
+            border-bottom: none !important
 
-                    .inp
-                        width: unset
-                        min-width: 40%
-                        max-width: 100%
-                        display: block
-                        &-wrap
-                            width: 100%
-                            margin-bottom: 10px
+        &__close
+            padding: 15px 
+            font-size: 20px
+            width: 100%
+            text-align: left
+            &::after
+                float: right
+                font-size: 14px
+                text-align: center
+                opacity: .6
+                width: 30px
+                height: 30px
+                line-height: 30px
+                border-radius: 50%
+                border: 1px solid #000
+                content: '✖'
+                display: inline-block
+                vertical-align: middle
+                margin: 0 10px 2px 0
+
+        ul
+            width: 100%
+            display: none
+            padding-left: 15px
+            background-color: rgba(0,0,0,.05)
+
+        li
+            display: flex
+            flex-wrap: wrap
+            padding: 0
+            z-index: 1
+            transition: all ease .3s
+            border-bottom: 1px solid rgba($blue, .2)
+            &:last-of-type
+                border-bottom: none
+            &::before
+                display: none
+
+    &-list
+        width: 100%
+
+    &__link
+        max-width: 70%
+        padding: 12px 20px
+        font-size: 14px
+        line-height: 140%
+        display: inline-block
+        vertical-align: middle
+        &:hover
+            text-decoration: underline
+
+    &__next
+        width: 30%
+        margin: 0 0 0 auto 
+        opacity: .4
+        display: inline-block
+        vertical-align: middle
+        background-image: url('../img/icons/arrow_down.svg')
+        background-repeat: no-repeat
+        background-position: right 30px center
+        background-size: auto 20px
+        transform-origin: 50% 50%
+        transition: none
+        &:hover
+            opacity: 1
+        &.active
+            background-position: left 30px center
+            transform: rotate(180deg)
+
+    @media screen and ( max-width: 700px )
+        &__link
+            font-size: 12px
