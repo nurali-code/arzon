@@ -448,8 +448,6 @@
             margin: 0 0 4px
 
 .posting
-    .container
-        padding-top: 0
 
     &-last
         display: inline-block
@@ -569,12 +567,21 @@
     &-img
         display: inline-block
         margin: 0 5px 5px 0
-        width: 120px
+        width: 116px
         height: 80px
         border-radius: 5px
         overflow: hidden
         position: relative
+        min-width: unset
         z-index: 1
+        label
+            display: block
+            padding: 0
+            width: 100%
+            height: 100%
+            min-width: unset
+        input
+            display: none
         img
             width: 100%
             height: 100%
@@ -657,7 +664,15 @@
         padding: 20px 0 0
         .btn
             margin: 0 15px 10px 0
-            
+
+.article
+    p
+        font-size: 14px
+        line-height: 140%
+        margin-bottom: 14px
+
+    article
+        margin-bottom: 40px
 
 @media screen and ( min-width: 1100px )
     .catalog
@@ -1154,3 +1169,12 @@
 
                         &:last-of-type::after
                             display: none
+
+    .article
+        .container
+            padding-top: 0
+        p
+            font-size: 16px
+            margin-bottom: 20px
+
+        article

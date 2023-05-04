@@ -53,13 +53,6 @@
 
     <main class="posting">
         <div class="container">
-            <nav class="path">
-                <a href="#" class="path__link">Телефоны и смартфоны</a>
-                <a href="#" class="path__link">Мобильные телефоны</a>
-                <a href="#" class="path__link">Huawei</a>
-                <a href="#" class="path__link">Телефон Huawei Honor 30 Pro, 128Gb</a>
-            </nav>
-
             <h1>Разместить объявление</h1>
 
             <div class="wrap posting-last-wrap">
@@ -95,125 +88,146 @@
             <section>
                 <h3 class="posting__heading">Выберите категорию</h3>
                 <div class="posting-catalog">
-                    <ul class="posting-catalog-main">
+                    <ul class="posting-catalog-parent posting-catalog-main">
                         <li>
-                            <button class="posting-catalog__heading active" data-catalog-tab="2">Недвижимость</button>
+                            <button class="posting-catalog__link active" data-catalog-tab="1">Недвижимость</button>
                         </li>
                         <li>
-                            <button class="posting-catalog__heading">Транспорт</button>
+                            <button class="posting-catalog__link" data-catalog-tab="2">Транспорт</button>
                         </li>
                         <li>
-                            <button class="posting-catalog__heading">Работа</button>
+                            <button class="posting-catalog__link" data-catalog-tab="3">Работа</button>
                         </li>
                         <li>
-                            <button class="posting-catalog__heading">Личные вещи</button>
+                            <button class="posting-catalog__link" data-catalog-tab="4">Личные вещи</button>
                         </li>
                         <li>
-                            <button class="posting-catalog__heading">Услуги</button>
+                            <button class="posting-catalog__link" data-catalog-tab="5">Услуги</button>
                         </li>
                         <li>
-                            <button class="posting-catalog__heading">Электроника</button>
+                            <button class="posting-catalog__link" data-catalog-tab="6">Электроника</button>
                         </li>
                     </ul>
-                    <div class="posting-catalog-second">
-                        <ul data-catalog-id="1" style="display: block;">
+                    <div class="posting-catalog-parent posting-catalog-second">
+                        <ul data-catalog-id="1">
                             <li><span class="posting-catalog__heading">Телефоны и смартфоны</span></li>
-                            <li><a href="#" class="posting-catalog__mainlink">Все категории</a></li>
-                            <li><a href="#" class="posting-catalog__link">Купить жильё</a></li>
-                            <li><a href="#" class="posting-catalog__link">Снять посуточно</a></li>
-                            <li><a href="#" class="posting-catalog__link">Снять долгосрочно</a></li>
-                            <li><a href="#" class="posting-catalog__link">Коммерческая недвижимость</a></li>
-                            <li><a href="#" class="posting-catalog__link">Другие категории</a></li>
+                            <li><button class="posting-catalog__mainlink">Все категории</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="7">Купить жильё</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="8">Снять посуточно</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="9">Снять долгосрочно</button>
+                            </li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="10">Коммерческая
+                                    недвижимость</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="11">Другие категории</button>
+                            </li>
                         </ul>
                         <ul data-catalog-id="2">
-                            <li><a href="#" class="posting-catalog__mainlink">Все категории</a></li>
-                            <li><button class="posting-catalog__link">Купить жильё</button></li>
-                            <li><button class="posting-catalog__link">Снять посуточно</button></li>
-                            <li><button class="posting-catalog__link">Снять долгосрочно</button></li>
-                            <li><button class="posting-catalog__link">Коммерческая недвижимость</button></li>
-                            <li><button class="posting-catalog__link">Другие категории</button></li>
+                            <li><span class="posting-catalog__heading">Телефоны и смартфоны</span></li>
+                            <li><button class="posting-catalog__mainlink">Все категории</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="7">Купить жильё</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="8">Снять посуточно</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="9">Снять долгосрочно</button>
+                            </li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="10">Коммерческая
+                                    недвижимость</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="11">Другие категории</button>
+                            </li>
                         </ul>
                         <ul data-catalog-id="3">
-                            <li><a href="#" class="posting-catalog__mainlink">Все категории</a></li>
-                            <li><button class="posting-catalog__link">Купить жильё</button></li>
-                            <li><button class="posting-catalog__link">Снять посуточно</button></li>
-                            <li><button class="posting-catalog__link">Снять долгосрочно</button></li>
-                            <li><button class="posting-catalog__link">Коммерческая недвижимость</button></li>
-                            <li><button class="posting-catalog__link">Другие категории</button></li>
+                            <li><span class="posting-catalog__heading">Телефоны и смартфоны</span></li>
+                            <li><button class="posting-catalog__mainlink">Все категории</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="7">Купить жильё</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="8">Снять посуточно</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="9">Снять долгосрочно</button>
+                            </li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="10">Коммерческая
+                                    недвижимость</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="11">Другие категории</button>
+                            </li>
                         </ul>
                         <ul data-catalog-id="4">
-                            <li><a href="#" class="posting-catalog__mainlink">Все категории</a></li>
-                            <li><button class="posting-catalog__link">Купить жильё</button></li>
-                            <li><button class="posting-catalog__link">Снять посуточно</button></li>
-                            <li><button class="posting-catalog__link">Снять долгосрочно</button></li>
-                            <li><button class="posting-catalog__link">Коммерческая недвижимость</button></li>
-                            <li><button class="posting-catalog__link">Другие категории</button></li>
+                            <li><span class="posting-catalog__heading">Телефоны и смартфоны</span></li>
+                            <li><button class="posting-catalog__mainlink">Все категории</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="7">Купить жильё</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="8">Снять посуточно</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="9">Снять долгосрочно</button>
+                            </li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="10">Коммерческая
+                                    недвижимость</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="11">Другие категории</button>
+                            </li>
                         </ul>
                         <ul data-catalog-id="5">
-                            <li><a href="#" class="posting-catalog__mainlink">Все категории</a></li>
-                            <li><button class="posting-catalog__link">Купить жильё</button></li>
-                            <li><button class="posting-catalog__link">Снять посуточно</button></li>
-                            <li><button class="posting-catalog__link">Снять долгосрочно</button></li>
-                            <li><button class="posting-catalog__link">Коммерческая недвижимость</button></li>
-                            <li><button class="posting-catalog__link">Другие категории</button></li>
+                            <li><span class="posting-catalog__heading">Телефоны и смартфоны</span></li>
+                            <li><button class="posting-catalog__mainlink">Все категории</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="7">Купить жильё</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="8">Снять посуточно</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="9">Снять долгосрочно</button>
+                            </li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="10">Коммерческая
+                                    недвижимость</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="11">Другие категории</button>
+                            </li>
                         </ul>
                         <ul data-catalog-id="6">
-                            <li><a href="#" class="posting-catalog__mainlink">Все категории</a></li>
+                            <li><span class="posting-catalog__heading">Телефоны и смартфоны</span></li>
+                            <li><button class="posting-catalog__mainlink">Все категории</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="7">Купить жильё</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="8">Снять посуточно</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="9">Снять долгосрочно</button>
+                            </li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="10">Коммерческая
+                                    недвижимость</button></li>
+                            <li><button class="posting-catalog__link" data-catalog-tab="11">Другие категории</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="posting-catalog-parent posting-catalog-third">
+                        <ul data-catalog-id="7">
+                            <li><span class="posting-catalog__heading">Рации</span></li>
+                            <li><button class="posting-catalog__mainlink">Все категории</button></li>
                             <li><button class="posting-catalog__link">Купить жильё</button></li>
                             <li><button class="posting-catalog__link">Снять посуточно</button></li>
                             <li><button class="posting-catalog__link">Снять долгосрочно</button></li>
                             <li><button class="posting-catalog__link">Коммерческая недвижимость</button></li>
                             <li><button class="posting-catalog__link">Другие категории</button></li>
                         </ul>
-                    </div>
-                    <div class="posting-catalog-third">
-                        <ul data-catalog-id="7" style="display: block;">
-                            <li><a href="#" class="posting-catalog__mainlink">Все категории</a></li>
-                            <li><button class="posting-catalog__heading">Купить жильё</button></li>
-                            <li><button class="posting-catalog__heading">Снять посуточно</button></li>
-                            <li><button class="posting-catalog__heading">Снять долгосрочно</button></li>
-                            <li><button class="posting-catalog__heading">Коммерческая недвижимость</button></li>
-                            <li><button class="posting-catalog__heading">Другие категории</button></li>
-                        </ul>
                         <ul data-catalog-id="8">
-                            <li><a href="#" class="posting-catalog__mainlink">Все категории</a></li>
-                            <li><button class="posting-catalog__heading">Купить жильё</button></li>
-                            <li><button class="posting-catalog__heading">Снять посуточно</button></li>
-                            <li><button class="posting-catalog__heading">Снять долгосрочно</button></li>
-                            <li><button class="posting-catalog__heading">Коммерческая недвижимость</button></li>
-                            <li><button class="posting-catalog__heading">Другие категории</button></li>
+                            <li><span class="posting-catalog__heading">Рации</span></li>
+                            <li><button class="posting-catalog__mainlink">Все категории</button></li>
+                            <li><button class="posting-catalog__link">Купить жильё</button></li>
+                            <li><button class="posting-catalog__link">Снять посуточно</button></li>
+                            <li><button class="posting-catalog__link">Снять долгосрочно</button></li>
+                            <li><button class="posting-catalog__link">Коммерческая недвижимость</button></li>
+                            <li><button class="posting-catalog__link">Другие категории</button></li>
                         </ul>
                         <ul data-catalog-id="9">
-                            <li><a href="#" class="posting-catalog__mainlink">Все категории</a></li>
-                            <li><button class="posting-catalog__heading">Купить жильё</button></li>
-                            <li><button class="posting-catalog__heading">Снять посуточно</button></li>
-                            <li><button class="posting-catalog__heading">Снять долгосрочно</button></li>
-                            <li><button class="posting-catalog__heading">Коммерческая недвижимость</button></li>
-                            <li><button class="posting-catalog__heading">Другие категории</button></li>
+                            <li><span class="posting-catalog__heading">Рации</span></li>
+                            <li><button class="posting-catalog__mainlink">Все категории</button></li>
+                            <li><button class="posting-catalog__link">Купить жильё</button></li>
+                            <li><button class="posting-catalog__link">Снять посуточно</button></li>
+                            <li><button class="posting-catalog__link">Снять долгосрочно</button></li>
+                            <li><button class="posting-catalog__link">Коммерческая недвижимость</button></li>
+                            <li><button class="posting-catalog__link">Другие категории</button></li>
                         </ul>
                         <ul data-catalog-id="10">
-                            <li><a href="#" class="posting-catalog__mainlink">Все категории</a></li>
-                            <li><button class="posting-catalog__heading">Купить жильё</button></li>
-                            <li><button class="posting-catalog__heading">Снять посуточно</button></li>
-                            <li><button class="posting-catalog__heading">Снять долгосрочно</button></li>
-                            <li><button class="posting-catalog__heading">Коммерческая недвижимость</button></li>
-                            <li><button class="posting-catalog__heading">Другие категории</button></li>
+                            <li><span class="posting-catalog__heading">Рации</span></li>
+                            <li><button class="posting-catalog__mainlink">Все категории</button></li>
+                            <li><button class="posting-catalog__link">Купить жильё</button></li>
+                            <li><button class="posting-catalog__link">Снять посуточно</button></li>
+                            <li><button class="posting-catalog__link">Снять долгосрочно</button></li>
+                            <li><button class="posting-catalog__link">Коммерческая недвижимость</button></li>
+                            <li><button class="posting-catalog__link">Другие категории</button></li>
                         </ul>
                         <ul data-catalog-id="11">
-                            <li><a href="#" class="posting-catalog__mainlink">Все категории</a></li>
-                            <li><button class="posting-catalog__heading">Купить жильё</button></li>
-                            <li><button class="posting-catalog__heading">Снять посуточно</button></li>
-                            <li><button class="posting-catalog__heading">Снять долгосрочно</button></li>
-                            <li><button class="posting-catalog__heading">Коммерческая недвижимость</button></li>
-                            <li><button class="posting-catalog__heading">Другие категории</button></li>
+                            <li><span class="posting-catalog__heading">Рации</span></li>
+                            <li><button class="posting-catalog__mainlink">Все категории</button></li>
+                            <li><button class="posting-catalog__link">Купить жильё</button></li>
+                            <li><button class="posting-catalog__link">Снять посуточно</button></li>
+                            <li><button class="posting-catalog__link">Снять долгосрочно</button></li>
+                            <li><button class="posting-catalog__link">Коммерческая недвижимость</button></li>
+                            <li><button class="posting-catalog__link">Другие категории</button></li>
                         </ul>
-                        <ul data-catalog-id="12">
-                            <li><a href="#" class="posting-catalog__mainlink">Все категории</a></li>
-                            <li><button class="posting-catalog__heading">Купить жильё</button></li>
-                            <li><button class="posting-catalog__heading">Снять посуточно</button></li>
-                            <li><button class="posting-catalog__heading">Снять долгосрочно</button></li>
-                            <li><button class="posting-catalog__heading">Коммерческая недвижимость</button></li>
-                            <li><button class="posting-catalog__heading">Другие категории</button></li>
                     </div>
                 </div>
                 <div class="posting-catalog-value wrap">
@@ -315,14 +329,11 @@
                         Фотографии <br>
                         <span class="fade">1 из 6</span>
                     </label>
-                    <div class="col">
-                        <div class="posting-img">
-                            <img src="img/catalog-6.png" alt="img">
-                            <button>&#10006;</button>
-                        </div>
-                        <div class="posting-img">
+                    <div class="col wide">
+                        <label for="inpFile" class="posting-img">
                             <img src="img/holder.png" alt="img">
-                        </div>
+                            <input type="file" id="inpFile" class="fileInput" multiple>
+                        </label>
                     </div>
                 </fieldset>
             </section>
