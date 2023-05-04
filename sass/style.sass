@@ -377,6 +377,7 @@
         margin-bottom: 20px
 
 .categoris
+    padding-top: 20px
     h1
         margin-bottom: 10px
 
@@ -444,6 +445,29 @@
         padding: 10px 0
         &-actions
             margin: 0 0 4px
+
+    &-list
+        li
+            width: 49%
+            padding: 0
+            &::before
+                display: none
+
+        a
+            font-size: 12px
+            padding: 2px 0
+
+            &:hover
+                text-decoration: underline
+        span
+            opacity: .5
+
+    &-catalog
+        padding: 10px 0
+        gap: 14px
+        justify-content: flex-start
+        .catalog-item
+            margin: 0
 
 .posting
 
@@ -670,6 +694,9 @@
             margin: 0 15px 10px 0
 
 .article
+    .container
+        padding-top: 20px
+
     p
         font-size: 14px
         line-height: 140%
@@ -677,6 +704,77 @@
 
     article
         margin-bottom: 40px
+
+    .inp-absolute
+        margin-bottom: 24px
+
+    h3
+        font-size: 18px
+        margin-bottom: 12px
+
+    .question
+        &-wrap
+            align-items: flex-start
+            justify-content: flex-start
+        &-item
+            width: 100%
+            li
+                line-height: 100%
+                &::before
+                    background-color: var(--blue)
+                    top: 50%
+                    margin-top: -3.5px
+
+            a
+                vertical-align: middle
+                display: inline-block
+                padding: 4px 0
+                font-size: 12px
+                line-height: 140%
+
+.realstate
+    .container
+        border: none
+    
+    &-pop
+        .container
+            margin-bottom: 25px
+        .wrap
+            gap: 8px
+            justify-content: flex-start
+            margin-bottom: 14px
+        select
+            max-width: unset
+            width: unset
+            padding-right: 30px
+
+@media screen and ( min-width: 700px )
+    .categoris
+        &-list
+            li
+                width: 32%
+            a
+                padding: 8px 0
+
+    .realstate
+        &-pop
+            .container
+                background-color: #ecf0f8
+                border-radius: 16px
+                padding: 40px
+            .wrap
+                gap: 14px
+
+            select
+                min-width: 150px
+
+    .article
+        .question
+            &-wrap
+                gap: 24px 5%
+            &-item
+                width: 45%
+                li
 
 @media screen and ( min-width: 1100px )
     .catalog
@@ -1004,8 +1102,7 @@
                 font-weight: bold
 
     .categoris
-        .container
-            padding-top: 0
+        padding-top: 0
 
         h1
             margin-bottom: 20px
@@ -1061,6 +1158,15 @@
 
             &-wrapper
                 .item
+
+        &-list
+            li
+                width: 24%
+            a
+                font-size: 14px
+
+        &-catalog
+            gap: 25px
 
     .posting
         &-main,
@@ -1187,3 +1293,29 @@
             margin-bottom: 20px
 
         article
+
+    .realstate
+        &-pop
+            .container
+                padding: 70px
+
+    .article
+        h3
+            font-size: 24px
+            margin-bottom: 24px
+        .container
+            padding-top: 40px
+
+        .inp-absolute
+            margin-bottom: 60px
+
+        .question
+            &-wrap
+                gap: 40px 2%
+            &-item
+                width: 32%
+
+                a
+                    display: inline-block
+                    padding: 4px 0
+                    font-size: 14px

@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light">
+    <meta name="color-scheme" content="dark light">
     <title>Arzon</title>
-    <link rel="stylesheet" href="./css/style.css?ver-161718">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 </head>
 
@@ -18,16 +18,16 @@
             <a href="./index.html" class="logo"><img loading="lazy" src="./img/logo.svg" alt="arzon.tj"></a>
 
             <div class="header-actions">
-                <button class="btn btn-location">
+                <!-- <button class="btn btn-location">
                     <i class="i i-location"></i> Душанбе <i class="i i-keyboard_arrow_down"></i>
                 </button>
                 <a href="#" class="btn header__chat" data-noti="12"><i class="i i-chat"></i></a>
                 <a href="#" class="btn header__fav" data-noti="12"><i class="i i-heart-o"></i></a>
-                <a href="#" class="btn btn-account" data-noti="21"><i class="i i-user"></i></a>
-                <a href="#" class="btn btn-main"><i class="i i-plus"></i> Разместить объявление</a>
+                <a href="#" class="btn btn-account" data-noti="21"><i class="i i-user"></i></a> -->
+                <a href="./posting.html" class="btn btn-main"><i class="i i-plus"></i> Разместить объявление</a>
             </div>
 
-            <div class="header-bottom mob-none">
+            <div class="header-bottom">
                 <button class="btn btn-catalog">
                     <i class="i i-menu"></i> Категории
                     <i class="i i-keyboard_arrow_down"></i>
@@ -44,10 +44,10 @@
                 <button class="btn btn-location">
                     <i class="i i-location"></i> Душанбе <i class="i i-keyboard_arrow_down"></i>
                 </button>
-                <a href="#" class="header-nav__link">О сайте</a>
-                <a href="#" class="header-nav__link">Для бизнеса</a>
-                <a href="#" class="header-nav__link">Помощь</a>
-                <a href="#" class="header-nav__link">Связаться с нами</a>
+                <a href="./about.html" class="header-nav__link">О сайте</a>
+                <a href="./business.html" class="header-nav__link">Для бизнеса</a>
+                <a href="./help.html" class="header-nav__link">Помощь</a>
+                <a href="./feedback.html" class="header-nav__link">Связаться с нами</a>
             </nav>
         </div>
     </header>
@@ -176,18 +176,18 @@
 
     <footer class="footer">
         <div class="container wrap">
-            <a class="footer__link" href="#">Реклама на сайте</a>
-            <a class="footer__link" href="#">Как пополнить баланс</a>
-            <a class="footer__link" href="#">Контакты</a>
-            <a class="footer__link" href="#">Платные функции </a>
-            <a class="footer__link" href="#">Карта сайтая</a>
-            <a class="footer__link" href="#">Помощь</a>
+            <a class="footer__link" href="./advertising.html">Реклама на сайте</a>
+            <a class="footer__link" href="./balance.html">Как пополнить баланс</a>
+            <a class="footer__link" href="./contacts.html">Контакты</a>
+            <a class="footer__link" href="./paid.html">Платные функции </a>
+            <a class="footer__link" href="./map.html">Карта сайтая</a>
+            <a class="footer__link" href="./help.html">Помощь</a>
             <p class="footer__text">© 2023 Arzon</p>
         </div>
     </footer>
 
     <nav class="navbar">
-        <a href="#" class="navbar__link active">
+        <a href="./help.html" class="navbar__link active">
             <span class="navbar-icon"><i class="i i-search"></i></span>
             <span class="navbar__text">Поиск</span>
         </a>
@@ -195,7 +195,7 @@
             <span class="navbar-icon"><i class="i i-heart-o"></i></span>
             <span class="navbar__text">Избранное</span>
         </a>
-        <a href="#" class="navbar__link">
+        <a href="./posting.html" class="navbar__link">
             <div class="navbar-icon add"><i class="i i-plus"></i></div>
             <span class="navbar__text">Объявления</span>
         </a>
@@ -208,10 +208,9 @@
             <span class="navbar__text">Профиль</span>
         </a>
     </nav>
-
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="./js/scripts.js?ver-161718"></script>
+    <script src="./js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 </body>

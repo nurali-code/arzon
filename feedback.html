@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="EN">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark light">
     <title>Arzon</title>
-    <link rel="stylesheet" href="./css/style.css?ver-161718">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -17,12 +17,12 @@
             <a href="./index.html" class="logo"><img loading="lazy" src="./img/logo.svg" alt="arzon.tj"></a>
 
             <div class="header-actions">
-                <button class="btn btn-location">
+                <!-- <button class="btn btn-location">
                     <i class="i i-location"></i> Душанбе <i class="i i-keyboard_arrow_down"></i>
                 </button>
                 <a href="#" class="btn header__chat" data-noti="12"><i class="i i-chat"></i></a>
                 <a href="#" class="btn header__fav" data-noti="12"><i class="i i-heart-o"></i></a>
-                <a href="#" class="btn btn-account" data-noti="21"><i class="i i-user"></i></a>
+                <a href="#" class="btn btn-account" data-noti="21"><i class="i i-user"></i></a> -->
                 <a href="./posting.html" class="btn btn-main"><i class="i i-plus"></i> Разместить объявление</a>
             </div>
 
@@ -43,62 +43,47 @@
                 <button class="btn btn-location">
                     <i class="i i-location"></i> Душанбе <i class="i i-keyboard_arrow_down"></i>
                 </button>
-                <a href="#" class="header-nav__link">О сайте</a>
-                <a href="#" class="header-nav__link">Для бизнеса</a>
-                <a href="#" class="header-nav__link">Помощь</a>
-                <a href="#" class="header-nav__link">Связаться с нами</a>
+                <a href="./about.html" class="header-nav__link">О сайте</a>
+                <a href="./business.html" class="header-nav__link">Для бизнеса</a>
+                <a href="./help.html" class="header-nav__link">Помощь</a>
+                <a href="./feedback.html" class="header-nav__link">Связаться с нами</a>
             </nav>
         </div>
     </header>
-
+    
     <main class="article">
         <div class="container">
-            <nav class="path">
-                <a href="#" class="path__link">Поиск по вопросам</a>
-                <a href="#" class="path__link">Сколько проверяют объявление</a>
-            </nav>
-            <h1>Сколько проверяют объявление</h1>
-            <article>
-                <p>
-                    В среднем модерация рекламных объявлений занимает несколько часов, но в отдельных случаях
-                    рассмотрение может проходить и дольше. По окончании проверки вы получите уведомление на почту или по
-                    sms.
-                    <br>
-                    <br>
-                    В среднем модерация рекламных объявлений занимает несколько часов, но в отдельных случаях
-                    рассмотрение может проходить и дольше. По окончании проверки вы получите уведомление на почту или по
-                    sms.
-                    <br>
-                    <br>
-                    В среднем модерация рекламных объявлений занимает несколько часов, но в отдельных случаях
-                    рассмотрение может проходить и дольше. По окончании проверки вы получите уведомление на почту или по
-                    sms.
+            <h1 class="posting__heading">Обратная связь</h1>
+            <fieldset>
+                <label>Ваше имя</label>
+                <input class="wide" type="text" placeholder="Владимир">
+            </fieldset>
+            <fieldset>
+                <label>Сообщение</label>
+                <textarea cols="30" class="wide" rows="14" placeholder="Сообщение (2000 знаков)"
+                    data-listener-added_efb9d116="true"></textarea>
+            </fieldset>
 
-                </p>
-            </article>
-
-            <div class="article-form">
-                <p><strong>Статья была полезна?</strong></p>
-                <button class="btn btn-main mr-15">Да</button>
-                <button class="btn btn-outline mr-15">Нет</button>
+            <div class="posting-footer">
+                <button class="btn btn-main">Отправить</button>
             </div>
         </div>
     </main>
 
     <footer class="footer">
         <div class="container wrap">
-            <a class="footer__link" href="#">Реклама на сайте</a>
-            <a class="footer__link" href="#">Как пополнить баланс</a>
-            <a class="footer__link" href="#">Контакты</a>
-            <a class="footer__link" href="#">Платные функции </a>
-            <a class="footer__link" href="#">Карта сайтая</a>
-            <a class="footer__link" href="#">Помощь</a>
+            <a class="footer__link" href="./advertising.html">Реклама на сайте</a>
+            <a class="footer__link" href="./balance.html">Как пополнить баланс</a>
+            <a class="footer__link" href="./contacts.html">Контакты</a>
+            <a class="footer__link" href="./paid.html">Платные функции </a>
+            <a class="footer__link" href="./map.html">Карта сайтая</a>
+            <a class="footer__link" href="./help.html">Помощь</a>
             <p class="footer__text">© 2023 Arzon</p>
         </div>
     </footer>
 
     <nav class="navbar">
-        <a href="#" class="navbar__link active">
+        <a href="./help.html" class="navbar__link active">
             <span class="navbar-icon"><i class="i i-search"></i></span>
             <span class="navbar__text">Поиск</span>
         </a>
@@ -122,7 +107,7 @@
 
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="./js/scripts.js?ver-161718"></script>
+    <script src="./js/scripts.js"></script>
 
 </body>
 
