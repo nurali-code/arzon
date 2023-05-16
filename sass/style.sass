@@ -480,6 +480,9 @@
         border-radius: 12px
         background-color: var(--white)
 
+        &-wrap
+            align-items: stretch
+
         &__img
             width: 100px
             height: 80px
@@ -523,6 +526,24 @@
             padding: 6px
             font-size: 12px
             color: red
+
+        &-activity
+            margin-bottom: 8px
+            img
+                width: 14px
+                display: inline
+                vertical-align: middle
+                margin: 0 0 1px
+            span
+                white-space: nowrap
+                display: inline-block
+                font-size: 11px
+                padding: 0 8px 0 0
+            i
+                font-size: 10px
+            mark
+                background-color: transparent
+                color: red
 
     &-add
         display: inline-block
@@ -696,7 +717,7 @@
 
 .article
     .contacts, .advertising
-        li 
+        li
             &::before
                 display: none
     .container
@@ -741,7 +762,7 @@
 .realstate
     .container
         border: none
-    
+
     &-pop
         .container
             margin-bottom: 25px
@@ -756,6 +777,65 @@
 
     .item-wrapper
         padding: 0 15px
+
+.cp
+    &-wrapper
+        align-items: flex-start
+    &-banner
+        display: block
+        overflow: hidden
+        margin-bottom: 14px
+        img
+            display: block
+            border-radius: 14px
+
+    &-user
+        position: relative
+        padding: 12px 0 12px 60px
+        margin-bottom: 14px
+        &__img
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            object-fit: cover
+            position: absolute
+            top: 0
+            left: 0
+        &__name
+            margin: 0 0 4px
+        &__rate
+            img
+                width: 12px
+                height: 12px
+                object-fit: contain
+                display: inline-block
+                vertical-align: middle
+    &-navbar
+        width: 100%
+    &-nav
+        display: flex
+        width: 100vw
+        position: relative
+        left: -15px
+        gap: 10px
+        overflow-x: scroll
+        padding: 5px
+        margin-bottom: 14px
+        a
+            white-space: nowrap
+            padding: 10px
+            border-radius: 5px
+            order: 2
+            &.active
+                background-color: #fff
+                font-weight: bold
+                order: 1
+
+            .right
+                display: none
+        [data-noti]::before
+            top: 2%
+            right: 10%
 
 @media screen and ( min-width: 700px )
     .categoris
@@ -1222,6 +1302,19 @@
                 font-size: 14px
                 margin-top: 6px
 
+            &-activity
+                margin-bottom: 10px
+                img
+                    width: 22px
+                    margin: 0 0 3px
+                span
+                    padding: 0 18px 0 0
+                i
+                    font-size: 13px
+                mark
+                    background-color: transparent
+                    color: red
+
         &-add
             margin: 0
             display: flex
@@ -1328,3 +1421,59 @@
                     display: inline-block
                     padding: 4px 0
                     font-size: 14px
+
+    .cp
+        &-banner
+            margin-bottom: 25px
+        &-user
+            position: static
+            padding: 0
+            margin-bottom: 25px
+            &__img
+                position: static
+                width: 120px
+                height: 120px
+                border-radius: 50%
+                object-fit: cover
+                display: block
+                margin-bottom: 25px
+            &__name
+                font-size: 16px
+                margin: 0 0 12px
+            &__rate
+                font-size: 16px
+                img
+                    width: 17px
+                    height: 17px
+                    margin: 0 2px 0 0
+                    object-fit: contain
+                    display: inline-block
+                    vertical-align: top
+
+        &-nav
+            display: block
+            width: 100%
+            left: 0
+            overflow: visible
+            border: 1px solid #eee
+            border-radius: 12px
+            padding: 14px 0
+            margin: 0
+            a
+                width: 100%
+                display: block
+                border-radius: 0
+                padding: 10px 31px
+                white-space: normal
+                .right
+                    float: right
+                    display: inline
+                &.active
+                    background-color: #e8ebf1
+
+        &-navbar
+            display: block
+            width: 23%
+
+        &-content
+            width: 75%

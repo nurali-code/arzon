@@ -168,6 +168,7 @@ $(function () {
     }
     $('[data-modal]').on('click', function (e) {
         e.preventDefault();
+        hideModals();
         $(this).toggleClass('active')
         showModal('#' + $(this).attr("data-modal"));
     });

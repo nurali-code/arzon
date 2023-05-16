@@ -47,13 +47,13 @@
             &-wrap
                 margin-bottom: 15px
 
-        nav 
+        nav
             padding: 40px 0
-            hr 
+            hr
                 height: 1px
                 background-color: #eee
                 margin: 20px 0
-            a 
+            a
                 display: block
                 padding: 15px
 
@@ -61,12 +61,8 @@
         position: absolute
         top: 32px
         right: 32px
-        border-radius: 50%
         font-size: 20px
-        background-color: rgba($black, .2)
         color: $black
-        width: 36px
-        height: 36px
 
     &.active
         visibility: visible
@@ -87,6 +83,22 @@
                 max-width: 500px
                 max-height: 100%
 
+    &__heading
+        font-size: 36px
+        left: 120%
+        margin-bottom: 30px
+
+    &-form
+        form 
+            .wrap 
+                margin-top: 40px
+                max-width: 400px
+                button
+                    margin: 0 0 10px
+        .modal-content
+            padding: 70px 80px
+            max-width: 860px
+
     @media screen and ( max-width: 1170px )
         &-content
             // max-width: 400px
@@ -98,7 +110,17 @@
             .btn
                 width: 100%
 
-        &-close
+        &__heading
+            font-size: 28px
+            margin-bottom: 25px
+
+        &-form
+            fieldset
+                input, select
+                    max-width: 100%
+            .modal-content
+                padding: 30px 20px
+                max-width: 460px
 
     @media screen and ( max-width: 700px )
         &-content
@@ -113,12 +135,12 @@
         &-close
             top: 17px
             right: 16px
-            font-size: 14px
+            font-size: 20px
 
         &#catalog
             .modal
                 &-content
-                    padding: 0 
+                    padding: 0
 
 .menu
     &-catalog
@@ -129,7 +151,7 @@
             border-bottom: none !important
 
         &__close
-            padding: 15px 
+            padding: 15px
             font-size: 20px
             width: 100%
             text-align: left
@@ -181,7 +203,7 @@
 
     &__next
         width: 30%
-        margin: 0 0 0 auto 
+        margin: 0 0 0 auto
         opacity: .4
         display: inline-block
         vertical-align: middle
