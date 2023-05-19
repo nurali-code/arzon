@@ -135,6 +135,35 @@
                     margin-right: 30px
                     margin-bottom: 10px
 
+    &-notification
+        display: block
+        width: 100%
+        font-size: 12px
+        padding-bottom: 22px
+        margin-bottom: 22px
+        border-bottom: 1px solid rgba($gray, .5)
+        p
+            font-size: 12px
+        &__label
+            font-weight: bold
+            margin: 0 0 6px
+        &__date
+            color: $gray
+            margin: 0
+        &__back
+            color: $blue
+            margin-bottom: 14px
+            display: inline-block
+
+        &__text
+            margin-top: 20px
+            line-height: 130%
+
+    article.cp-notification
+        margin: 0
+        padding: 0
+        border: none
+
     @media screen and ( min-width: 1100px )
         &-banner
             margin-bottom: 25px
@@ -228,3 +257,15 @@
                         width: 64.5%
                         margin-bottom: 0
                         margin-right: 30px
+
+        &-notification
+            font-size: 14px
+            padding-bottom: 32px
+            margin-bottom: 32px
+            p
+                font-size: 14px
+
+            &__label
+                margin: 0 0 10px
+            &__date
+                margin: 0 0 2px
