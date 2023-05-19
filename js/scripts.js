@@ -62,6 +62,13 @@ $(window).scroll(function () {
 
 /*---------------------------------------------------end*/
 
+$('.cp-review__btn').on('click', function () {
+    $(this).fadeOut(200)
+    $(this).parents('.cp-review').find('.cp-review-form').fadeIn()
+});
+
+/*---------------------------------------------------end*/
+
 $('.dropdown-btn, .header-catalog__heading').on('click', function () {
     $(this).toggleClass('active')
     $(this).next().slideToggle(200)
