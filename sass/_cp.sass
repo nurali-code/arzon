@@ -1,0 +1,197 @@
+.cp
+    &-wrapper
+        align-items: flex-start
+    
+    &-banner
+        display: block
+        overflow: hidden
+        margin-bottom: 14px
+        img
+            display: block
+            border-radius: 14px
+
+    &-user
+        position: relative
+        padding: 12px 0 12px 60px
+        margin-bottom: 14px
+        &__img
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            object-fit: cover
+            position: absolute
+            top: 0
+            left: 0
+        &__name
+            margin: 0 0 4px
+        &__rate
+            i
+                color: $yelow
+
+    &-navbar
+        width: 100%
+    
+    &-nav
+        display: flex
+        width: 100vw
+        position: relative
+        left: -15px
+        gap: 10px
+        overflow-x: scroll
+        padding: 5px
+        margin-bottom: 14px
+        a
+            white-space: nowrap
+            padding: 10px
+            border-radius: 5px
+            order: 2
+            &.active
+                background-color: #fff
+                font-weight: bold
+                order: 1
+
+            .right
+                display: none
+        
+        [data-noti]::before
+            top: 2%
+            right: 10%
+
+    &-review
+        border-bottom: 1px solid rgba($gray, .5)
+        padding-bottom: 22px
+        margin-bottom: 22px
+        p, span
+            font-size: 12px
+
+        &__date
+            color: $gray
+            margin-bottom: 2px
+
+        &__label
+            font-weight: bold
+            margin: 0 0 4px
+
+        &-header
+            justify-content: flex-start
+            align-items: flex-start
+            position: relative
+            z-index: 1
+            margin-bottom: 14px
+            padding-right: 40px
+
+        &__img
+            width: 64px
+            height: 52px
+            display: inline-block
+            border-radius: 8px
+            margin-right: 14px
+
+        &__menu
+            position: absolute
+            width: 40px
+            text-align: right
+            top: 0
+            right: 0
+            font-size: 20px
+            color: $gray
+
+        &-row
+            span:not(.stars)
+                display: block
+            .stars
+                margin-bottom: 3px
+
+        &-title
+            width: calc( 100% - 78px )
+            font-size: 14px
+
+        &__price
+            margin-top: 3px
+            font-weight: bold
+
+        &__text
+            margin: 0
+
+    @media screen and ( min-width: 1100px )
+        &-banner
+            margin-bottom: 25px
+
+        &-user
+            position: static
+            padding: 0
+            margin-bottom: 25px
+            &__img
+                position: static
+                width: 120px
+                height: 120px
+                border-radius: 50%
+                object-fit: cover
+                display: block
+                margin-bottom: 25px
+            &__name
+                font-size: 16px
+                margin: 0 0 12px
+            &__rate
+                font-size: 16px
+                img
+                    width: 17px
+                    height: 17px
+                    margin: 0 2px 0 0
+                    object-fit: contain
+                    display: inline-block
+                    vertical-align: top
+
+        &-nav
+            display: block
+            width: 100%
+            left: 0
+            overflow: visible
+            border: 1px solid #eee
+            border-radius: 12px
+            padding: 14px 0
+            margin: 0
+            a
+                width: 100%
+                display: block
+                border-radius: 0
+                padding: 10px 31px
+                white-space: normal
+                .right
+                    float: right
+                    display: inline
+                &.active
+                    background-color: #e8ebf1
+
+                &:hover
+                    opacity: 1
+                    background-color: rgba(#e8ebf1, .3)
+
+            [data-noti]::before
+                top: 20%
+
+        &-navbar
+            display: block
+            width: 23%
+
+        &-content
+            width: 75%
+
+        &-review
+            padding-bottom: 32px
+            margin-bottom: 32px
+            p, span
+                font-size: 14px
+
+            &-row
+                .stars
+                    width: unset
+                    margin-right: 10px
+                span:not(.stars)
+                    vertical-align: middle
+                    display: inline-block
+            &__price
+                &::before
+                    content: '*'
+                    display: inline-block
+                    margin: 0 10px

@@ -10,6 +10,7 @@
 html, body
     font-family: 'Geometria', sans-serif
 
+$gray: #a1a1a1
 $black: #07080F
 $yelow: #ffd500
 $blue: #2543a0
@@ -333,6 +334,51 @@ fieldset
             font-weight: bold
             border-color: transparent
 
+.stars
+    display: inline-flex
+    i
+        font-size: 18px
+        vertical-align: middle
+        display: inline-block
+        cursor: pointer
+        color: #eee
+        margin: 0 2px
+        &:nth-child(1)
+            order: 4
+        &:nth-child(2)
+            order: 3
+        &:nth-child(3)
+            order: 2
+        &:nth-child(4)
+            order: 1
+        &:nth-child(5)
+            order: 0
+        &:nth-child(1):hover,
+        &:nth-child(1).active
+            color: $yelow
+            & ~ i
+                color: $yelow
+        &:nth-child(2):hover,
+        &:nth-child(2).active
+            color: $yelow
+            & ~ i
+                color: $yelow
+        &:nth-child(3):hover,
+        &:nth-child(3).active
+            color: $yelow
+            & ~ i
+                color: $yelow
+        &:nth-child(4):hover,
+        &:nth-child(4).active
+            color: $yelow
+            & ~ i
+                color: $yelow
+        &:nth-child(5):hover,
+        &:nth-child(5).active
+            color: $yelow
+            & ~ i
+                color: $yelow
+
 @keyframes opc
     0%
         opacity: 0
@@ -352,6 +398,8 @@ fieldset
 //             filter: grayscale(1) brightness(10)
 
 @media screen and ( min-width: 1100px )
+    $gray: #a7aab0
+
     body
         background-color: var(--white)
         padding-bottom: 0
