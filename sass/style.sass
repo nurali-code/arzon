@@ -109,6 +109,9 @@
         &.red
             background-color: red
 
+        &.green
+            background-color: #25a14b
+
     .btn
         &-save
             width: 28px
@@ -153,6 +156,29 @@
         margin-bottom: 7px
         &::after
             content: ' сом.'
+
+        s
+            color: #afb5bb
+            display: inline-block
+            font-weight: normal
+            transform: scale(.9)
+            vertical-align: middle
+            margin: 0 4px 3px 0
+
+        &_new
+            display: inline-block
+            vertical-align: middle
+            margin: 0 4px 3px 0
+            color: #fff
+            padding: 2px 7px
+            border-radius: 4px
+            background-color: red
+
+        &_tag
+            margin-bottom: 4px
+            &::after
+                content: ''
+                display: none
 
     &__location,
     &__date
@@ -925,6 +951,7 @@
                 max-width: unset
                 width: 32%
                 margin-right: 1.3333333333%
+                margin-bottom: 20px
 
     .banner_row,
     .mob_row
@@ -1364,4 +1391,3 @@
                     display: inline-block
                     padding: 4px 0
                     font-size: 14px
-
