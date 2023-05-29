@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <title>Arzon</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <button class="btn btn-menu" data-modal="menu"><i class="i i-menu"></i></button>
+            <a href="./index.html" class="logo"><img loading="lazy" src="./img/logo.svg" alt="arzon.tj"></a>
+
+            <div class="header-actions">
+                <select class="header-location">
+                    <option>Истаравшан</option>
+                    <option>Душанбе</option>
+                    <option>Бохтар</option>
+                    <option>Вахдат</option>
+                    <option>Ваҳдат</option>
+                    <option>Гиссар</option>
+                    <option>Ҳисор</option>
+                    <option>Истиклол</option>
+                    <option>Исфара</option>
+                    <option>Канибадам</option>
+                    <option>Куляб</option>
+                    <option>Левакант</option>
+                    <option>Левақанд</option>
+                    <option>Нурек</option>
+                    <option>Пенджикент</option>
+                    <option>Рогун</option>
+                    <option>Турсунзаде</option>
+                    <option>Хорог</option>
+                    <option>Худжанд</option>
+                </select>
+                <a href="#" class="btn header__chat" data-noti="12"><i class="i i-chat"></i></a>
+                <a href="./cp-wishlist.html" class="btn header__fav" data-noti="12"><i class="i i-heart-o"></i></a>
+                <button class="btn btn-account" data-modal="reg" data-noti="21"><i class="i i-user"></i></button>
+                <a href="./posting.html" class="btn btn-main"><i class="i i-plus"></i> Разместить объявление</a>
+            </div>
+
+            <div class="header-bottom">
+                <button class="btn btn-catalog" data-modal="catalog">
+                    <i class="i i-menu"></i> Категории
+                    <i class="i i-keyboard_arrow_down"></i>
+                </button>
+                <form>
+                    <input type="search" required placeholder="Что вы ищете?">
+                    <button type="submit" class="btn btn-search">
+                        <i class="i i-search"></i> <span class="pc-block">Найти</span>
+                    </button>
+                </form>
+            </div>
+
+            <div class="header-nav">
+                <select class="header-location">
+                    <option>Истаравшан</option>
+                    <option>Душанбе</option>
+                    <option>Бохтар</option>
+                    <option>Вахдат</option>
+                    <option>Ваҳдат</option>
+                    <option>Гиссар</option>
+                    <option>Ҳисор</option>
+                    <option>Истиклол</option>
+                    <option>Исфара</option>
+                    <option>Канибадам</option>
+                    <option>Куляб</option>
+                    <option>Левакант</option>
+                    <option>Левақанд</option>
+                    <option>Нурек</option>
+                    <option>Пенджикент</option>
+                    <option>Рогун</option>
+                    <option>Турсунзаде</option>
+                    <option>Хорог</option>
+                    <option>Худжанд</option>
+                </select>
+                <a href="./about.html" class="header-nav__link">О сайте</a>
+                <a href="./business.html" class="header-nav__link">Для бизнеса</a>
+                <a href="./help.html" class="header-nav__link">Помощь</a>
+                <a href="./feedback.html" class="header-nav__link">Связаться с нами</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="cp">
+        <div class="container">
+            <h1>Личный кабинет</h1>
+            <div class="wrap cp-wrapper">
+                <div class="cp-navbar">
+                    <div class="cp-user">
+                        <img class="cp-user__img" src="img/holder.png" alt="holder">
+                        <p class="cp-user__name">Нурали Эмомали</p>
+                        <p class="cp-user__rate">
+                            <i class="i i-star"></i>
+                            4.6 (<span>48 отзывов</span>)
+                        </p>
+                    </div>
+                    <nav class="cp-nav">
+                        <a href="./cp-main.html">Мои объявления</a>
+                        <a href="./cp-reviews.html">Мои отзывы</a>
+                        <a href="#">Избранное</a>
+                        <a href="#" data-noti="99">Сообщения</a>
+                        <a href="./cp-notifications.html" class="active">Уведомления</a>
+                        <a href="#">Кошелёк <span class="right">900 сом.</span> </a>
+                        <a href="#">Платные услуги</a>
+                        <a href="#">Для бизнеса</a>
+                        <a href="#">Управление профилем</a>
+                    </nav>
+                </div>
+                <div class="cp-content">
+                    <div class="wrap">
+                        <input type="checkbox" class="cp-message__checkbox">
+                        <div class="toggler">
+                            <button class="toggler__btn active">Мои объявления</button>
+                            <button class="toggler__btn">Архив</button>
+                        </div>
+                        <button class="cp-message__menu"><i class="i i-dots"></i></button>
+                    </div>
+                    <div class="cp-message">
+                        <input type="checkbox" class="cp-message__checkbox">
+                        <img src="img/item.jpg" alt="item" class="cp-message__img">
+                        <div class="title">
+                            <p class="cp-message__date">16 января</p>
+                            <p class="cp-message__user">Продавец</p>
+                            <div class="cp-message-row">
+                                <span class="cp-message__add">Canon EOS 80D body</span>
+                                <span class="cp-message__price">9 000 сом.</span>
+                            </div>
+                            <p class="cp-message__info"></p>
+                            <p class="cp-message__text"></p>
+                        </div>
+                        <button class="cp-message__menu"><i class="i i-dots"></i></button>
+
+                    </div>
+                    <nav class="pagination">
+                        <a href="#" class="pagination__prev"><i class="i i-keyboard_arrow_left"></i></a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#" class="pagination__next"><i class="i i-keyboard_arrow_right"></i></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container wrap">
+            <a class="footer__link" href="./advertising.html">Реклама на сайте</a>
+            <a class="footer__link" href="./balance.html">Как пополнить баланс</a>
+            <a class="footer__link" href="./contacts.html">Контакты</a>
+            <a class="footer__link" href="./paid.html">Платные функции </a>
+            <a class="footer__link" href="./map.html">Карта сайтая</a>
+            <a class="footer__link" href="./help.html">Помощь</a>
+            <p class="footer__text">© 2023 Arzon</p>
+        </div>
+    </footer>
+
+    <div class="modal modal-catalog" id="catalog">
+        <div class="modal-content">
+            <ul class="menu-catalog">
+                <li class="menu-catalog-header">
+                    <button class="menu-catalog__close">Категории</button>
+                </li>
+                <li>
+                    <a href="./realestate.html" class="menu__link">Недвижимость</a>
+                    <button class="menu__next"></button>
+                    <ul class="menu-list">
+                        <li>
+                            <a href="./realestate.html" class="menu__link">Продажа квартир</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="./realestate.html" class="menu__link">1 комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">2 комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">3 комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">4 комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">5 комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">6 комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">7 комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">8 комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">9 комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">10 комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">10+ комнатные</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./realestate.html" class="menu__link">Долгосрочная аренда квартир</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="./realestate.html" class="menu__link">1 комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">2 комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">3 комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">4 комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">5 комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">6 комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">7 комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">8 комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">9 комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">10 комнатные</a></li>
+                                <li><a href="./realestate.html" class="menu__link">10+ комнатные</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./realestate.html" class="menu__link">Посуточная аренда квартир</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="#" class="menu__link">1 комнатные</a></li>
+                                <li><a href="#" class="menu__link">2 комнатные</a></li>
+                                <li><a href="#" class="menu__link">3 комнатные</a></li>
+                                <li><a href="#" class="menu__link">4 комнатные</a></li>
+                                <li><a href="#" class="menu__link">5 комнатные</a></li>
+                                <li><a href="#" class="menu__link">6 комнатные</a></li>
+                                <li><a href="#" class="menu__link">7 комнатные</a></li>
+                                <li><a href="#" class="menu__link">8 комнатные</a></li>
+                                <li><a href="#" class="menu__link">9 комнатные</a></li>
+                                <li><a href="#" class="menu__link">10 комнатные</a></li>
+                                <li><a href="#" class="menu__link">10+ комнатные</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./realestate.html" class="menu__link">Комнаты</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="#" class="menu__link">Продажа комнат</a></li>
+                                <li><a href="#" class="menu__link">Долгосрочная аренда комнат</a></li>
+                                <li><a href="#" class="menu__link">Посуточная аренда комнат</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./realestate.html" class="menu__link">Дома (хавли) и дачи</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="#" class="menu__link">Продажа домов (хавли) и дач</a></li>
+                                <li><a href="#" class="menu__link">Долгосрочная аренда домов (хавли) и дач</a></li>
+                                <li><a href="#" class="menu__link">Посуточная аренда домов (хавли) и дач</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./realestate.html" class="menu__link">Помещения</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="#" class="menu__link">Продажа офисов</a></li>
+                                <li><a href="#" class="menu__link">Аренда офисов</a></li>
+                                <li><a href="#" class="menu__link">Посуточная аренда комнат</a></li>
+                                <li><a href="#" class="menu__link">Аренда складов</a></li>
+                                <li><a href="#" class="menu__link">Торговый центр</a></li>
+                                <li><a href="#" class="menu__link">Другие помещения</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./realestate.html" class="menu__link">Земельные участки</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="#" class="menu__link">Продажа земельных участков с постройкой</a></li>
+                                <li><a href="#" class="menu__link">Аренда земельных участков с постройкой</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./realestate.html" class="menu__link">Гаражи</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="#" class="menu__link">Продажа гаражей</a></li>
+                                <li><a href="#" class="menu__link">Аренда гаражей</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">Вагончики, бытовки, вагон-дома</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./realestate.html" class="menu__link">Транспорт</a>
+                    <button class="menu__next"></button>
+                    <ul class="menu-list">
+                        <li>
+                            <a href="./transport.html" class="menu__link">Легковые авто</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="./realestate.html" class="menu__link">Samsung</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Audi</a></li>
+                                <li><a href="./realestate.html" class="menu__link">BMW</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Chevrolet</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Daewoo</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Ford</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Honda</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Hyundai</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Kia</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Land Rover</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Lexus</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Mercedes-Benz</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Mitsubishi</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Nissan</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Opel</a></li>
+                                <li><a href="./realestate.html" class="menu__link">SsangYong</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Skoda</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Toyota</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Volkswagen</a></li>
+                                <li><a href="./realestate.html" class="menu__link">ВАЗ (Lada)</a></li>
+                                <li><a href="./realestate.html" class="menu__link">ГАЗ</a></li>
+                                <li><a href="./realestate.html" class="menu__link">УАЗ</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Acura</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Alfa Romeo</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Aro</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Asia</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Bentley</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Brilliance</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./transport.html" class="menu__link">Мототехника</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="./realestate.html" class="menu__link">Мотоциклы</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Скутеры и мопеды</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Квадроциклы</a></li>
+                                <li><a href="./realestate.html" class="menu__link">Другой мототранспорт</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./transport.html" class="menu__link">Грузовики и спецтехника</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="#" class="menu__link">Сельхозтехника</a></li>
+                                <li><a href="#" class="menu__link">Строительная техника</a></li>
+                                <li><a href="#" class="menu__link">Грузовики</a></li>
+                                <li><a href="#" class="menu__link">Автобусы и микроавтобусы</a></li>
+                                <li><a href="#" class="menu__link">Прицепы и контейнеры</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./realestate.html" class="menu__link">Работа</a>
+                    <button class="menu__next"></button>
+                    <ul class="menu-list">
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Вакансии</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="./catalog.html" class="menu__link">Административный персонал</a></li>
+                                <li><a href="./catalog.html" class="menu__link">IT, телеком, компьютеры</a></li>
+                                <li><a href="./catalog.html" class="menu__link">HR, кадры</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Банки, страхование, лизинг</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Бухгалтерия, финансы, юристы</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Домашний персонал, обслуживание</a>
+                                </li>
+                                <li><a href="./catalog.html" class="menu__link">Красота, фитнес, спорт</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Маркетинг, реклама, дизайн</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Медицина, фармация</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Начало карьеры, студенты</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Образование, культура, искусство</a>
+                                </li>
+                                <li><a href="./catalog.html" class="menu__link">Охрана, безопасность</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Продажи, розничная торговля</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Производство, ателье</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Рабочий персонал, разнорабочие</a>
+                                </li>
+                                <li><a href="./catalog.html" class="menu__link">Рестораторы, повара, официанты</a>
+                                </li>
+                                <li><a href="./catalog.html" class="menu__link">Руководители</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Другие профессии</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Другие профессии</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Ищу работу (резюме)</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="./catalog.html" class="menu__link">Административный персонал</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Бухгалтерия</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Дизайн</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Закупки</a></li>
+                                <li><a href="./catalog.html" class="menu__link">IT</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Кадры</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Логистика</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Маркетинг</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Медицина</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Недвижимость</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Образование</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Продажи</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Производство</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Рестораны, кафе, гостиницы</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Строительство</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./catalog.html" class="menu__link">Услуги</a>
+                    <button class="menu__next"></button>
+                    <ul class="menu-list">
+                        <li>
+                            <ul class="menu-underlist">
+                                <li><a href="./catalog.html" class="menu__link">Фотография и видеосъемка</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Рекламные услуги</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Курьерские услуги</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Услуги перевода</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Ремонт и строительство</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Красота и здоровье</a></li>
+                                <li><a href="./catalog.html" class="menu__link">IT-услуги</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Образование и тренинги</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Транспортные услуги</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Юридические услуги</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Бухгалтерские услуги</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Уборка и дезинфекция</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Услуги для дома и офиса</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Химчистка и стирка</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./catalog.html" class="menu__link">Телефоны и смартфоны</a>
+                    <button class="menu__next"></button>
+                    <ul class="menu-list">
+                        <li>
+                            <a href="#" class="menu__link">Мобильные телефоны</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="./catalog.html" class="menu__link">Realme</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Xiaomi</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Samsung</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Apple</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Nokia</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Huawei</a></li>
+                                <li><a href="./catalog.html" class="menu__link">OnePlus</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Google Pixel</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Sony</a></li>
+                                <li><a href="./catalog.html" class="menu__link">LG</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Motorola</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Asus</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Lenovo</a></li>
+                                <li><a href="./catalog.html" class="menu__link">HTC</a></li>
+                                <li><a href="./catalog.html" class="menu__link">BlackBerry</a></li>
+                                <li><a href="./catalog.html" class="menu__link">ZTE</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Meizu</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Oppo</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Vivo</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Аксессуары для телефонов</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="./catalog.html" class="menu__link">Внешние аккумуляторы</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Чехлы и защитные пленки</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Наушники и гарнитуры</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Зарядные устройства и кабели</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Держатели и подставки</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Стилусы</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Карты памяти</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Bluetooth-устройства</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Ремешки для часов</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Другие аксессуары</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Ремонт и сервис телефонов</a>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Запчасти и комплектующие для телефонов</a>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Стационарные телефоны</a>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Другая техника связи</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./realestate.html" class="menu__link">Компьютеры и оргтехника</a>
+                    <button class="menu__next"></button>
+                    <ul class="menu-list">
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Ноутбуки</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="./catalog.html" class="menu__link">ASUS</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Acer</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Lenovo</a></li>
+                                <li><a href="./catalog.html" class="menu__link">HP</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Dell</a></li>
+                                <li><a href="./catalog.html" class="menu__link">MSI</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Apple</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Huawei</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Xiaomi</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Samsung</a></li>
+                                <li><a href="./catalog.html" class="menu__link">LG</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Razer</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Alienware</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Microsoft</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Chuwi</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Персональные компьютеры</a>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Игровые приставки</a>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Планшеты и Электронные книги</a>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Программы и игры</a>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Принтеры и сканеры</a>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Мониторы и проекторы</a>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Модемы и сетевое оборудование</a>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Другая техника</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="./catalog.html" class="menu__link">Электроника и быт. техника</a>
+                    <button class="menu__next"></button>
+                    <ul class="menu-list">
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Техника для дома и кухни</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="./catalog.html" class="menu__link">Пылесосы</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Микроволновые печи</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Холодильники</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Плиты</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Духовые шкафы</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Стиральные машины</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Посудомоечные машины</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Электрические чайники</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Мясорубки</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Блендеры</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Соковыжималки</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Кофемашины</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Мультиварки</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Кухонные комбайны</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Хлебопечки</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Фото и видеокамеры</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="./catalog.html" class="menu__link">Цифровые фотоаппараты</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Зеркальные фотоаппараты</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Компактные камеры</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Экшн-камеры</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Видеокамеры</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Студийное оборудование</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Объективы</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Фотоаксессуары</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Оптические приборы</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Универсальные крепления</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">TV, DVD и видео</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="./catalog.html" class="menu__link">Телевизоры</a></li>
+                                <li><a href="./catalog.html" class="menu__link">DVD-плееры</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Проекторы</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Медиаплееры</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Приборы для личного ухода</a>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Аудио и стерео</a>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Кондиционеры и вентиляторы</a>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Медицинская техника и аппараты</a>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Аксессуары и комплектующие для электроники и
+                                бытовой
+                                техники</a>
+                        </li>
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Другая техника</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./catalog.html" class="menu__link">Для дома и дачи</a>
+                    <button class="menu__next"></button>
+                    <ul class="menu-list">
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Мебель</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="./catalog.html" class="menu__link">Мебель для спальни</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Мебель для гостиной</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Мебель для кухни</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Мебель для детской</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Мебель для прихожей</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Офисная мебель</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Мебель из дерева</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Мебель из металла</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">Текстиль и интерьер</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="./catalog.html" class="menu__link">Текстиль (кроме детского)</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Окна и жалюзи</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Ковры и ковровые дорожки</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Постельное белье и комплекты</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Подушки и одеяла</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Сервировка стола и текстиль для
+                                        кухни</a></li>
+                                <li><a href="./catalog.html" class="menu__link">Декоративные подушки и покрывала</a>
+                                </li>
+                                <li><a href="./catalog.html" class="menu__link">Шторы и портьеры</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./catalog.html" class="menu__link">Компьютеры и оргтехника</a>
+                    <button class="menu__next"></button>
+                    <ul class="menu-list">
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Ноутбуки</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="./catalog.html" class="menu__link">ASUS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./catalog.html" class="menu__link">Компьютеры и оргтехника</a>
+                    <button class="menu__next"></button>
+                    <ul class="menu-list">
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Ноутбуки</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="./catalog.html" class="menu__link">ASUS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./catalog.html" class="menu__link">Компьютеры и оргтехника</a>
+                    <button class="menu__next"></button>
+                    <ul class="menu-list">
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Ноутбуки</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="./catalog.html" class="menu__link">ASUS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./catalog.html" class="menu__link">Компьютеры и оргтехника</a>
+                    <button class="menu__next"></button>
+                    <ul class="menu-list">
+                        <li>
+                            <a href="./catalog.html" class="menu__link">Ноутбуки</a>
+                            <button class="menu__next"></button>
+                            <ul class="menu-underlist">
+                                <li><a href="./catalog.html" class="menu__link">ASUS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal modal-catalog" id="menu">
+        <div class="modal-content">
+            <button class="modal-close">✖</button>
+            <nav>
+                <a href="./about.html" class="header-nav__link">О сайте</a>
+                <a href="./business.html" class="header-nav__link">Для бизнеса</a>
+                <a href="./help.html" class="header-nav__link">Помощь</a>
+                <a href="./feedback.html" class="header-nav__link">Связаться с нами</a>
+                <hr>
+                <a href="./advertising.html">Реклама на сайте</a>
+                <a href="./balance.html">Как пополнить баланс</a>
+                <a href="./contacts.html">Контакты</a>
+                <a href="./paid.html">Платные функции </a>
+                <a href="./map.html">Карта сайтая</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="modal modal-form" id="reg">
+        <div class="modal-content">
+            <button class="modal-close">✖</button>
+            <h3 class="modal__heading">Регистрация</h3>
+            <form action="#">
+                <fieldset>
+                    <label>Имя</label>
+                    <input type="text" placeholder="Влад">
+                </fieldset>
+                <fieldset>
+                    <label>Фамилия</label>
+                    <input type="text" placeholder="Владимирович">
+                </fieldset>
+                <fieldset>
+                    <label>Город</label>
+                    <select>
+                        <option>Истаравшан</option>
+                        <option>Душанбе</option>
+                        <option>Бохтар</option>
+                        <option>Вахдат</option>
+                        <option>Ваҳдат</option>
+                        <option>Гиссар</option>
+                        <option>Ҳисор</option>
+                        <option>Истиклол</option>
+                        <option>Исфара</option>
+                        <option>Канибадам</option>
+                        <option>Куляб</option>
+                        <option>Левакант</option>
+                        <option>Левақанд</option>
+                        <option>Нурек</option>
+                        <option>Пенджикент</option>
+                        <option>Рогун</option>
+                        <option>Турсунзаде</option>
+                        <option>Хорог</option>
+                        <option>Худжанд</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <label>E-mail (не обязательно)</label>
+                    <input type="email" placeholder="vlad@mail.ru">
+                </fieldset>
+                <button type="submit" class="btn btn-main">Зарегистрироватся</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal modal-form" id="log">
+        <div class="modal-content">
+            <button class="modal-close">✖</button>
+            <h3 class="modal__heading">Регистрация</h3>
+            <form action="#">
+                <fieldset>
+                    <label>Номер телефона</label>
+                    <input type="tel" value="+992" placeholder="+992">
+                </fieldset>
+                <fieldset>
+                    <label>Код подтверждения</label>
+                    <input type="text" placeholder="Владимирович">
+                </fieldset>
+                <button type="submit" class="btn btn-main">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <a href="./help.html" class="navbar__link active">
+            <span class="navbar-icon"><i class="i i-search"></i></span>
+            <span class="navbar__text">Поиск</span>
+        </a>
+        <a href="./cp-wishlist.html" class="navbar__link">
+            <span class="navbar-icon"><i class="i i-heart-o"></i></span>
+            <span class="navbar__text">Избранное</span>
+        </a>
+        <a href="./posting.html" class="navbar__link">
+            <div class="navbar-icon add"><i class="i i-plus"></i></div>
+            <span class="navbar__text">Объявления</span>
+        </a>
+        <a href="#" class="navbar__link">
+            <span class="navbar-icon"><i class="i i-chat"></i></span>
+            <span class="navbar__text">Сообщения</span>
+        </a>
+        <a href="./cp-main.html" class="navbar__link">
+            <span class="navbar-icon"><i class="i i-user"></i></span>
+            <span class="navbar__text">Профиль</span>
+        </a>
+    </nav>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>

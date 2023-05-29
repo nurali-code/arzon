@@ -164,10 +164,34 @@
         padding: 0
         border: none
 
-    &-select 
+    &-select
         max-width: 300px
         background-color: #eee
         margin-bottom: 14px
+
+    &-message
+        display: flex
+        align-items: center
+        p, span
+            font-size: 12px
+        &__user
+            font-weight: bold
+            margin: 0 0 4px
+        &__price
+            margin-top: 3px
+            font-weight: bold
+        &__img
+            width: 64px
+            height: 52px
+            margin-right: 14px
+            border-radius: 6px
+            object-fit: cover
+
+        &__checkbox
+            display: inline-block
+            width: 16px
+            height: 16px
+            margin-right: 20px
 
     @media screen and ( min-width: 1100px )
         &-banner
@@ -275,5 +299,5 @@
             &__date
                 margin: 0 0 2px
 
-        &-select 
+        &-select
             margin-bottom: 24px
