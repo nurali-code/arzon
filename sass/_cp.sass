@@ -169,21 +169,28 @@
         background-color: #eee
         margin-bottom: 14px
 
+    &-delete
+        font-size: 20px
+        margin-right: 10px
+
     &-message
+        width: 100%
+        padding: 8px 30px 8px 0
+        position: relative
         display: flex
         align-items: center
         p, span
             font-size: 12px
         &__user
             font-weight: bold
-            margin: 0 0 4px
         &__price
-            margin-top: 3px
             font-weight: bold
+        &-row
+            margin-bottom: 4px
         &__img
             width: 64px
             height: 52px
-            margin-right: 14px
+            margin-right: 10px
             border-radius: 6px
             object-fit: cover
 
@@ -191,7 +198,21 @@
             display: inline-block
             width: 16px
             height: 16px
-            margin-right: 20px
+            margin-right: 10px
+
+        &__date
+            opacity: .6
+        &__text
+            opacity: .6
+
+        &__menu
+            font-size: 28px
+            height: 100%
+            opacity: .5
+            position: absolute
+            top: 50%
+            right: 0
+            transform: translateY(-50%) !important
 
     @media screen and ( min-width: 1100px )
         &-banner
@@ -276,7 +297,8 @@
 
             &__price
                 &::before
-                    content: '*'
+                    content: '·'
+                    font-weight: bold
                     display: inline-block
                     margin: 0 10px
 
@@ -301,3 +323,53 @@
 
         &-select
             margin-bottom: 24px
+
+        &-message
+            padding: 14px 0
+            a
+                opacity: 1
+                transform: none
+                &:hover
+                    text-decoration: underline
+            &::before
+                transition: opacity .2s ease
+                content: ''
+                display: block
+                width: calc( 100% + 30px )
+                height: 100%
+                position: absolute
+                top: 0
+                left: -15px
+                z-index: -1
+                border: 1px solid #333
+                border-radius: 16px
+                opacity: 0
+            &:hover
+                &::before
+                    opacity: .3
+
+            &-row
+                margin-bottom: 10px
+            p, span
+                font-size: 14px
+            &__date
+                position: absolute
+                top: 50%
+                right: 50px
+                transform: translateY(-50%)
+
+            &__img
+                margin-right: 14px
+
+            &__price
+                &::before
+                    font-weight: bold
+                    content: '·'
+                    display: inline-block
+                    margin: 0 10px
+
+            &__checkbox
+                margin-right: 20px
+
+        &-delete
+            margin-right: 20px

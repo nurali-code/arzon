@@ -150,6 +150,9 @@ select
     &.stretch
         align-items: stretch
 
+    &-jcs
+        justify-content: start
+
 .headline
     color: var(--blue)
     font-weight: bold
@@ -333,6 +336,14 @@ fieldset
             pointer-events: none
             font-weight: bold
             border-color: transparent
+
+    &-wrap 
+        justify-content: flex-start
+        position: relative
+        margin-bottom: 20px
+        width: 100%
+        .toggler
+            margin-bottom: 0
 
 .stars
     display: inline-flex

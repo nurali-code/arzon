@@ -89,7 +89,7 @@
 
     <main class="cp">
         <div class="container">
-            <h1>Личный кабинет</h1>
+            <h1>Сообщения</h1>
             <div class="wrap cp-wrapper">
                 <div class="cp-navbar">
                     <div class="cp-user">
@@ -104,8 +104,8 @@
                         <a href="./cp-main.html">Мои объявления</a>
                         <a href="./cp-reviews.html">Мои отзывы</a>
                         <a href="#">Избранное</a>
-                        <a href="#" data-noti="99">Сообщения</a>
-                        <a href="./cp-notifications.html" class="active">Уведомления</a>
+                        <a href="#" data-noti="99" class="active">Сообщения</a>
+                        <a href="./cp-notifications.html">Уведомления</a>
                         <a href="#">Кошелёк <span class="right">900 сом.</span> </a>
                         <a href="#">Платные услуги</a>
                         <a href="#">Для бизнеса</a>
@@ -113,39 +113,110 @@
                     </nav>
                 </div>
                 <div class="cp-content">
-                    <div class="wrap">
+                    <div class="wrap toggler-wrap">
                         <input type="checkbox" class="cp-message__checkbox">
                         <div class="toggler">
-                            <button class="toggler__btn active">Мои объявления</button>
-                            <button class="toggler__btn">Архив</button>
+                            <button class="toggler__btn active">Непрочитанные</button>
+                            <button class="toggler__btn">Все</button>
                         </div>
                         <button class="cp-message__menu"><i class="i i-dots"></i></button>
                     </div>
                     <div class="cp-message">
                         <input type="checkbox" class="cp-message__checkbox">
                         <img src="img/item.jpg" alt="item" class="cp-message__img">
-                        <div class="title">
+                        <a href="./cp-messages__inner.html" class="title">
                             <p class="cp-message__date">16 января</p>
                             <p class="cp-message__user">Продавец</p>
                             <div class="cp-message-row">
                                 <span class="cp-message__add">Canon EOS 80D body</span>
                                 <span class="cp-message__price">9 000 сом.</span>
                             </div>
-                            <p class="cp-message__info"></p>
-                            <p class="cp-message__text"></p>
-                        </div>
+                            <p class="cp-message__text">Превью текста сообщения</p>
+                        </a>
                         <button class="cp-message__menu"><i class="i i-dots"></i></button>
-
                     </div>
-                    <nav class="pagination">
-                        <a href="#" class="pagination__prev"><i class="i i-keyboard_arrow_left"></i></a>
-                        <a href="#" class="active">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#" class="pagination__next"><i class="i i-keyboard_arrow_right"></i></a>
-                    </nav>
+                    <div class="cp-message">
+                        <input type="checkbox" class="cp-message__checkbox">
+                        <img src="img/item.jpg" alt="item" class="cp-message__img">
+                        <a href="./cp-messages__inner.html" class="title">
+                            <p class="cp-message__date">16 января</p>
+                            <p class="cp-message__user">Продавец</p>
+                            <div class="cp-message-row">
+                                <span class="cp-message__add">Canon EOS 80D body</span>
+                                <span class="cp-message__price">9 000 сом.</span>
+                            </div>
+                            <p class="cp-message__text">Превью текста сообщения</p>
+                        </a>
+                        <button class="cp-message__menu"><i class="i i-dots"></i></button>
+                    </div>
+                    <div class="cp-message">
+                        <input type="checkbox" class="cp-message__checkbox">
+                        <img src="img/item.jpg" alt="item" class="cp-message__img">
+                        <a href="./cp-messages__inner.html" class="title">
+                            <p class="cp-message__date">16 января</p>
+                            <p class="cp-message__user">Продавец</p>
+                            <div class="cp-message-row">
+                                <span class="cp-message__add">Canon EOS 80D body</span>
+                                <span class="cp-message__price">9 000 сом.</span>
+                            </div>
+                            <p class="cp-message__text">Превью текста сообщения</p>
+                        </a>
+                        <button class="cp-message__menu"><i class="i i-dots"></i></button>
+                    </div>
+                    <div class="cp-message">
+                        <input type="checkbox" class="cp-message__checkbox">
+                        <img src="img/item.jpg" alt="item" class="cp-message__img">
+                        <a href="./cp-messages__inner.html" class="title">
+                            <p class="cp-message__date">16 января</p>
+                            <p class="cp-message__user">Продавец</p>
+                            <div class="cp-message-row">
+                                <span class="cp-message__add">Canon EOS 80D body</span>
+                                <span class="cp-message__price">9 000 сом.</span>
+                            </div>
+                            <p class="cp-message__text">Превью текста сообщения</p>
+                        </a>
+                        <button class="cp-message__menu"><i class="i i-dots"></i></button>
+                    </div>
+                    <div class="cp-message">
+                        <input type="checkbox" class="cp-message__checkbox">
+                        <img src="img/item.jpg" alt="item" class="cp-message__img">
+                        <a href="./cp-messages__inner.html" class="title">
+                            <p class="cp-message__date">16 января</p>
+                            <p class="cp-message__user">Продавец</p>
+                            <div class="cp-message-row">
+                                <span class="cp-message__add">Canon EOS 80D body</span>
+                                <span class="cp-message__price">9 000 сом.</span>
+                            </div>
+                            <p class="cp-message__text">Превью текста сообщения</p>
+                        </a>
+                        <button class="cp-message__menu"><i class="i i-dots"></i></button>
+                    </div>
+                    <div class="cp-message">
+                        <input type="checkbox" class="cp-message__checkbox">
+                        <img src="img/item.jpg" alt="item" class="cp-message__img">
+                        <a href="./cp-messages__inner.html" class="title">
+                            <p class="cp-message__date">16 января</p>
+                            <p class="cp-message__user">Продавец</p>
+                            <div class="cp-message-row">
+                                <span class="cp-message__add">Canon EOS 80D body</span>
+                                <span class="cp-message__price">9 000 сом.</span>
+                            </div>
+                            <p class="cp-message__text">Превью текста сообщения</p>
+                        </a>
+                        <button class="cp-message__menu"><i class="i i-dots"></i></button>
+                    </div>
+                    <div class="wrap wrap-jcs">
+                        <button class="cp-delete"><i class="i i-trash"></i></button>
+                        <nav class="pagination">
+                            <a href="#" class="pagination__prev"><i class="i i-keyboard_arrow_left"></i></a>
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#" class="pagination__next"><i class="i i-keyboard_arrow_right"></i></a>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
