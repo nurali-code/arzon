@@ -173,14 +173,16 @@
         font-size: 20px
         margin-right: 10px
 
-    &-message
-        width: 100%
-        padding: 8px 30px 8px 0
+    &-message,
+    &-message-header
         position: relative
         display: flex
         align-items: center
         p, span
             font-size: 12px
+    &-message
+        width: 100%
+        padding: 8px 30px 8px 0
         &__user
             font-weight: bold
         &__price
@@ -206,13 +208,74 @@
             opacity: .6
 
         &__menu
-            font-size: 28px
+            font-size: 26px
             height: 100%
             opacity: .5
             position: absolute
             top: 50%
             right: 0
             transform: translateY(-50%) !important
+
+        &-header
+            border-bottom: 1px solid #eee
+            padding-bottom: 20px
+        
+        &-dialog
+            padding: 10px 0
+            .date
+                opacity: .6
+                margin: 0
+                font-size: 12px
+
+        &-item
+            display: flex
+            max-width: 90%
+            margin: 12px 0
+            p, span
+                font-size: 14px
+                line-height: 140%
+            img
+                width: 32px
+                height: 32px
+                object-fit: cover
+                margin-right: 15px
+                border-radius: 50%
+
+            .col
+                padding: 22px
+                border-radius: 8px
+
+            .cp-message__menu
+                position: static
+                transform: none !important
+
+            .wrap
+                position: relative
+
+            &.get
+                .col
+                    background-color: #f3f4f7
+            &.send
+                flex-direction: row-reverse
+                margin-left: auto
+                img
+                    margin: 0 0 0 15px
+                .col
+                    background-color: #fff3b5
+
+        &-footer
+            width: 100%
+            .inp-absolute
+                max-width: 100%
+
+        &-photo__add
+            display: inline-block
+            padding: 6px 0
+            color: $blue
+            font-size: 14px
+            i
+                font-size: 20px
+                margin-right: 5px
 
     @media screen and ( min-width: 1100px )
         &-banner
@@ -324,6 +387,10 @@
         &-select
             margin-bottom: 24px
 
+        &-message,
+        &-message-header
+            p, span
+                font-size: 14px
         &-message
             padding: 14px 0
             a
@@ -350,8 +417,7 @@
 
             &-row
                 margin-bottom: 10px
-            p, span
-                font-size: 14px
+
             &__date
                 position: absolute
                 top: 50%
@@ -370,6 +436,19 @@
 
             &__checkbox
                 margin-right: 20px
+
+            &-dialog
+                .date
+                    font-size: 16px
+            &-item
+                max-width: 60%
+                p, span
+                    font-size: 14px
+                .col
+                    border-radius: 16px
+
+            &-photo__add
+                font-size: 16px
 
         &-delete
             margin-right: 20px
