@@ -219,7 +219,7 @@
         &-header
             border-bottom: 1px solid #eee
             padding-bottom: 20px
-        
+
         &-dialog
             padding: 10px 0
             .date
@@ -276,6 +276,35 @@
             i
                 font-size: 20px
                 margin-right: 5px
+
+    &-settings
+        border-bottom: 1px solid #eee
+        padding: 0 0 18px
+        margin-bottom: 18px
+        max-width: 670px
+        &__label
+            color: #001a34
+            font-weight: bold
+            font-size: 16px
+            margin: 0 0 8px
+
+        &__text,
+        &__confirmed
+            font-size: 14px
+
+        &__btn
+            font-size: 13px
+            color: $blue
+            padding: 6px 0
+
+        select
+            display: inline-block
+            min-width: 180px
+            width: unset
+            padding-right: 40px
+
+        &__confirmed
+            color: green
 
     @media screen and ( min-width: 1100px )
         &-banner
@@ -452,3 +481,17 @@
 
         &-delete
             margin-right: 20px
+
+        &-settings
+            &__label
+                font-size: 18px
+                
+            &__text,
+            &__confirmed
+                font-size: 16px
+
+            &__btn
+                font-size: 14px
+
+            &__confirmed
+                float: right
