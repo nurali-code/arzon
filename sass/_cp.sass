@@ -306,6 +306,28 @@
         &__confirmed
             color: green
 
+    &-balance
+        max-width: 670px
+        &-pop
+            padding: 22px 24px
+            background-color: #effff2
+            border-radius: 8px
+            border: 1px solid #c0eec8
+            margin-bottom: 14px
+        &__label
+            font-size: 14px
+            margin-bottom: 8px
+        &__text
+            font-size: 22px
+            font-weight: bold
+        &__input
+            display: block
+            margin: 0 0 14px
+            border: 1px solid rgba(0, 0, 0, .2)
+
+        .btn
+            margin-top: 14px
+
     @media screen and ( min-width: 1100px )
         &-banner
             margin-bottom: 25px
@@ -485,7 +507,7 @@
         &-settings
             &__label
                 font-size: 18px
-                
+
             &__text,
             &__confirmed
                 font-size: 16px
@@ -495,3 +517,11 @@
 
             &__confirmed
                 float: right
+
+        &-balance
+            &-pop
+                border-radius: 16px
+            &__label
+                font-size: 16px
+            &__text
+                font-size: 32px
