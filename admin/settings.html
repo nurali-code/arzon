@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/cp.css">
+
+    <title>Админка</title>
+</head>
+
+<body>
+
+    <header class="header wrap">
+        <a href="#" class="logo"><img src="img/logo.svg" alt="logo"></a>
+        <ul class="navbar">
+            <li class="dropdown">
+                <button class="dropdown-btn">Каталог <span class="badge">+7</span></button>
+                <ul class="dropdown-content">
+                    <li><a href="./ads.html">Объявления</a></li>
+                    <li><a href="./product_haracteristics.html">Характеристики товаров</a></li>
+                    <li><a href="./complaints.html">Жалобы</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <button class="dropdown-btn">Клиенты</button>
+                <ul class="dropdown-content">
+                    <li><a href="./clients.html">Клиенты</a></li>
+                    <li><a href="./payments.html">Платежи</a></li>
+                    <li><a href="./messages.html">Сообщения пользователей</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <button class="dropdown-btn">Справочник</button>
+                <ul class="dropdown-content">
+                    <li><a href="./cities.html">Города</a></li>
+                    <li><a href="./districts.html">Районы</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="./tariff_plans.html" class="dropdown-btn">Тарифные планы</a>
+                <ul class="dropdown-content">
+                    <li><a href="./days.html">Дни</a></li>
+                    <li><a href="./services.html">Услуги</a></li>
+                </ul>
+            </li>
+            <li><a href="./cashback.html">Кэшбэк</a></li>
+            <li><a href="./content.html">Контент</a></li>
+            <li><a href="./administration.html">Администрация</a></li>
+            <li><a href="./settings.html" class="active">Настройки</a></li>
+        </ul>
+        <div class="header-user dropdown">
+            <button class="dropdown-btn"><span class="badge">169</span> Oila superAdmin</button>
+            <div class="dropdown-content">
+                <a href="#">Настройки</a>
+                <a href="#">Профиль</a>
+                <a href="#">Выход</a>
+            </div>
+        </div>
+        <button class="btn btn-menu"><i class="i i-menu"></i></button>
+    </header>
+
+    <main class="admin">
+        <h1>
+            Настройки
+            <a href="#" class="link"><img src="img/xls.png" alt="xls">Экспорт</a>
+        </h1>
+        <input type="text" placeholder="Поиск">
+        <table>
+            <thead>
+                <tr>
+                    <th>Настройка</th>
+                    <th>Редактировать</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">Базовые настройки</a></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                    </td>
+                <tr>
+                <tr>
+                    <td><a href="#">Базовые настройки</a></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                    </td>
+                <tr>
+                    
+            </tbody>
+        </table>
+    </main>
+
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>

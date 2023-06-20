@@ -1,0 +1,307 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    border: none
+    outline: none
+
+    // transition: inherit
+
+html, body
+    font-family: 'Geometria', sans-serif
+
+$gray: #a1a1a1
+$black: #07080F
+$yelow: #ffd500
+$blue: #2543a0
+$blue2: #2D9CDB
+$green: #27AE60
+$purple: #7C4EFF
+$red: #EB5757
+$pink: #F178B6
+
+:root
+    --blue: #2543a0
+    --blue-s: #2D9CDB
+    --yelow: #ffd500
+    --white: #fff
+    --black: #07080F
+    --gray: #a7adb3
+    --green: #27AE60
+    --purple: #7C4EFF
+    --pink: #F178B6
+
+body
+    min-height: 100vh
+    color: var(--black)
+    max-width: 1900px
+    margin: 0 auto
+    padding-bottom: 40px
+    position: relative
+    font-size: 14px
+    background-color: #fff
+    font-family: 'Geometria', sans-serif
+    &.active
+        overflow: hidden
+
+main
+    padding: 0
+
+h1
+    font-size: 32px
+    line-height: 120%
+    margin: 0 0 24px
+    .link
+        display: inline-block
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        float: right
+        img
+            display: inline-block
+            width: 20px
+            margin: 0 5px 0 0
+            vertical-align: middle
+
+.container
+    width: 100%
+    max-width: 1470px
+    margin: 0 auto
+    padding: 0 15px
+    position: relative
+
+img, picture
+    width: 100%
+    max-width: 100%
+    display: block
+
+svg
+    width: 12px
+    height: 12px
+
+a,
+button
+    text-decoration: none
+    color: inherit
+    transition: all ease .3s
+    background-color: transparent
+    &:active
+        transform: scale(.98)
+
+    &:hover
+        opacity: .7
+
+input,
+textarea
+    font-weight: 400
+    font-size: 14px
+    padding: 0 17px
+    height: 42px
+    box-sizing: border-box
+    background-repeat: no-repeat
+    background-position: center right 17px
+    background-size: 18px auto
+    border: 1px solid #828282
+    width: min-content
+    min-width: unset
+    display: inline-block
+    border-radius: 12px
+    max-width: unset
+    padding-right: 50px
+    &::placeholder
+        color: rgba(0, 0, 0, .5)
+
+textarea
+    height: unset
+    padding-top: 10px
+    resize: none
+    width: 100%
+
+select
+    width: 100%
+    font-size: 13px
+    display: block
+    appearance: none
+    background-color: var(--white)
+    border: 1px solid var(--gray)
+    border-radius: 8px
+    padding: 0 12px
+    height: 40px
+    background-image: url('../img/arrow_down.svg')
+    background-repeat: no-repeat
+    background-position: center right 10px
+    background-size: 15px 15px
+    &::placeholder
+        color: var(--gray)
+
+.search-form
+    width: 100%
+    position: relative
+    z-index: 1
+    margin: 0 0 14px
+    input
+        width: 100%
+        border: 1px solid var(--blue)
+        border-radius: 6px
+        box-shadow: 0px 10px 6px 0px rgba(0, 6, 129, 0.06)
+
+    .btn
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 4px
+        z-index: 1
+        color: #fff
+
+.wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    &.scroll
+        padding: 0 0 0 14px
+        flex-wrap: nowrap
+        justify-content: flex-start
+        overflow-x: scroll
+        -ms-overflow-style: none
+        scrollbar-width: none
+        &::-webkit-scrollbar
+            display: none
+
+    &.stretch
+        align-items: stretch
+
+    &-jcs
+        justify-content: start
+
+.headline
+    color: var(--blue)
+    font-weight: bold
+    margin: 0 0 6px
+    font-size: 13px
+    line-height: 110%
+    padding: 0 14px
+    .i
+        font-size: 9px
+
+.banner
+    padding: 6px 0 20px
+
+ol
+    padding: 0 0 0 25px
+    font-weight: 400
+    font-size: 20px
+    line-height: 140%
+
+p
+    line-height: 120%
+
+ul
+    list-style: none
+    li
+        font-weight: 400
+        font-size: 20px
+        line-height: 140%
+        padding-left: 20px
+        margin: 0
+        position: relative
+        &::before
+            content: ''
+            display: inline-block
+            position: absolute
+            top: 9px
+            left: 5px
+            width: 7px
+            height: 7px
+            border-radius: 50%
+            background-color: #fff
+
+hr
+    background-color: rgba(255, 255, 255, .3)
+    height: 1px
+    margin: 20px 0 20px
+
+.seler
+    &__rate
+        padding: 0 2px 0 20px
+        color: #b0b2b9
+        background-image: url('../img/rate.svg')
+        background-repeat: no-repeat
+        background-position: center left
+        background-size: 14px 14px
+        margin-left: 6px
+
+section
+    padding: 0 0 14px
+
+fieldset
+    display: block
+    padding: 0
+    border: none
+    margin: 0 0 16px
+
+.fade
+    opacity: .4
+
+.paginate
+    display: inline-flex
+    vertical-align: middle
+    align-items: center
+    padding: 17px 0
+    &_button
+        vertical-align: middle
+        display: inline-block
+        cursor: pointer
+        padding: 10px 20px
+        font-size: 16px
+        line-height: 19px
+        text-align: center
+        &.previous,
+        &.next
+            width: 30px
+            height: 30px
+            padding: 0
+            display: inline-block
+            vertical-align: middle
+            background-image: url('../img/arrow-right.svg')
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: 60%
+        &.previous
+            background-image: url('../img/arrow__left.svg')
+            background-size: 25%
+
+        &.current
+            font-weight: 600
+            color: #4300D0
+
+    span
+        padding: 10px
+        pointer-events: none
+
+.nowrap
+    white-space: nowrap
+
+.c
+    &-purple 
+        color: $purple
+    &-green 
+        color: $green
+
+@keyframes opc
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+@media screen and ( max-width: 1200px )
+    h1
+        font-size: 28px
+        margin-bottom: 24px
+        .link
+            float: none
+            display: block
+            margin: 0 0 0 auto 
+            text-align: right
+            max-width: 49%
+            padding: 10px 0 

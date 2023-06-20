@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/cp.css">
+
+    <title>Админка</title>
+</head>
+
+<body>
+
+    <header class="header wrap">
+        <a href="#" class="logo"><img src="img/logo.svg" alt="logo"></a>
+        <ul class="navbar">
+            <li class="dropdown">
+                <button class="dropdown-btn">Каталог <span class="badge">+7</span></button>
+                <ul class="dropdown-content">
+                    <li><a href="./ads.html">Объявления</a></li>
+                    <li><a href="./product_haracteristics.html">Характеристики товаров</a></li>
+                    <li><a href="./complaints.html">Жалобы</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <button class="dropdown-btn">Клиенты</button>
+                <ul class="dropdown-content">
+                    <li><a href="./clients.html">Клиенты</a></li>
+                    <li><a href="./payments.html">Платежи</a></li>
+                    <li><a href="./messages.html">Сообщения пользователей</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <button class="dropdown-btn">Справочник</button>
+                <ul class="dropdown-content">
+                    <li><a href="./cities.html">Города</a></li>
+                    <li><a href="./districts.html">Районы</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="./tariff_plans.html" class="dropdown-btn">Тарифные планы</a>
+                <ul class="dropdown-content">
+                    <li><a href="./days.html">Дни</a></li>
+                    <li><a href="./services.html">Услуги</a></li>
+                </ul>
+            </li>
+            <li><a href="./cashback.html">Кэшбэк</a></li>
+            <li><a href="./content.html">Контент</a></li>
+            <li><a href="./administration.html" class="active">Администрация</a></li>
+            <li><a href="./settings.html">Настройки</a></li>
+        </ul>
+        <div class="header-user dropdown">
+            <button class="dropdown-btn"><span class="badge">169</span> Oila superAdmin</button>
+            <div class="dropdown-content">
+                <a href="#">Настройки</a>
+                <a href="#">Профиль</a>
+                <a href="#">Выход</a>
+            </div>
+        </div>
+        <button class="btn btn-menu"><i class="i i-menu"></i></button>
+    </header>
+
+    <main class="admin">
+        <h1>
+            Администраторы 4 <span class="fade">(Не активных 1)</span>
+            <a href="#" class="link"><img src="img/xls.png" alt="xls">Экспорт</a>
+        </h1>
+        <button class="btn btn-green">+ Создать администратора</button>
+        <fieldset class="filter">
+            <input type="text" placeholder="Имя">
+            <input type="email" placeholder="E-mail">
+            <select class="w-30">
+                <option hidden="">Роль</option>
+                <option>Категория</option>
+                <option>Категория</option>
+            </select>
+            <button class="btn btn-purple">Применить</button>
+            <button class="btn btn-denger">Сбросить</button>
+        </fieldset>
+        <table>
+            <thead>
+                <tr>
+                    <th><span class="nowrap">Имя <i class="i i-sorting"></i></span></th>
+                    <th>E-mail</th>
+                    <th>Роль</th>
+                    <th>Создан</th>
+                    <th class="tac">Активность</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Замира</td>
+                    <td>zamira@arzone.tj</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="dropdown-btn">Aдминистратор</button>
+                            <div class="dropdown-content">
+                                Aдминистратор <br>
+                                Модератор <br>
+                                Менеджер по рекламе
+                            </div>
+                        </div>
+                    </td>
+                    <td>19.02.23 23:01:04</td>
+                    <td><span class="stat purple">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Замира</td>
+                    <td>zamira@arzone.tj</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="dropdown-btn">Aдминистратор</button>
+                            <div class="dropdown-content">
+                                Aдминистратор <br>
+                                Модератор <br>
+                                Менеджер по рекламе
+                            </div>
+                        </div>
+                    </td>
+                    <td>19.02.23 23:01:04</td>
+                    <td><span class="stat purple">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Замира</td>
+                    <td>zamira@arzone.tj</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="dropdown-btn">Aдминистратор</button>
+                            <div class="dropdown-content">
+                                Aдминистратор <br>
+                                Модератор <br>
+                                Менеджер по рекламе
+                            </div>
+                        </div>
+                    </td>
+                    <td>19.02.23 23:01:04</td>
+                    <td><span class="stat purple">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Замира</td>
+                    <td>zamira@arzone.tj</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="dropdown-btn">Aдминистратор</button>
+                            <div class="dropdown-content">
+                                Aдминистратор <br>
+                                Модератор <br>
+                                Менеджер по рекламе
+                            </div>
+                        </div>
+                    </td>
+                    <td>19.02.23 23:01:04</td>
+                    <td><span class="stat purple">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Замира</td>
+                    <td>zamira@arzone.tj</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="dropdown-btn">Aдминистратор</button>
+                            <div class="dropdown-content">
+                                Aдминистратор <br>
+                                Модератор <br>
+                                Менеджер по рекламе
+                            </div>
+                        </div>
+                    </td>
+                    <td>19.02.23 23:01:04</td>
+                    <td><span class="stat purple">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Замира</td>
+                    <td>zamira@arzone.tj</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="dropdown-btn">Aдминистратор</button>
+                            <div class="dropdown-content">
+                                Aдминистратор <br>
+                                Модератор <br>
+                                Менеджер по рекламе
+                            </div>
+                        </div>
+                    </td>
+                    <td>19.02.23 23:01:04</td>
+                    <td><span class="stat purple">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+              
+
+            </tbody>
+        </table>
+    </main>
+
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/cp.css">
+
+    <title>Админка</title>
+</head>
+
+<body>
+
+    <header class="header wrap">
+        <a href="#" class="logo"><img src="img/logo.svg" alt="logo"></a>
+        <ul class="navbar">
+            <li class="dropdown">
+                <button class="dropdown-btn">Каталог <span class="badge">+7</span></button>
+                <ul class="dropdown-content">
+                    <li><a href="./ads.html">Объявления</a></li>
+                    <li><a href="./product_haracteristics.html">Характеристики товаров</a></li>
+                    <li><a href="./ad_categories.html">Категории объявлений</a></li>
+                    <li><a href="./complaints.html">Жалобы</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <button class="dropdown-btn">Клиенты</button>
+                <ul class="dropdown-content">
+                    <li><a href="./clients.html">Клиенты</a></li>
+                    <li><a href="./payments.html">Платежи</a></li>
+                    <li><a href="./messages.html">Сообщения пользователей</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <button class="dropdown-btn">Справочник</button>
+                <ul class="dropdown-content">
+                    <li><a href="./cities.html">Города</a></li>
+                    <li><a href="./districts.html">Районы</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="./tariff_plans.html" class="dropdown-btn">Тарифные планы</a>
+                <ul class="dropdown-content">
+                    <li><a href="./days.html">Дни</a></li>
+                    <li><a href="./services.html">Услуги</a></li>
+                </ul>
+            </li>
+            <li><a href="./cashback.html">Кэшбэк</a></li>
+            <li><a href="./content.html" class="active">Контент</a></li>
+            <li><a href="./administration.html">Администрация</a></li>
+            <li><a href="./settings.html">Настройки</a></li>
+        </ul>
+        <div class="header-user dropdown">
+            <button class="dropdown-btn"><span class="badge">169</span> Oila superAdmin</button>
+            <div class="dropdown-content">
+                <a href="#">Настройки</a>
+                <a href="#">Профиль</a>
+                <a href="#">Выход</a>
+            </div>
+        </div>
+        <button class="btn btn-menu"><i class="i i-menu"></i></button>
+    </header>
+
+    <main class="admin">
+        <div class="tab-btns wrap">
+            <button class="tab__btn active" data-tabBtn="1">Страницы</button>
+            <button class="tab__btn" data-tabBtn="2">Топ категории</button>
+            <button class="tab__btn" data-tabBtn="3">Меню в header</button>
+            <button class="tab__btn" data-tabBtn="4">Меню в foother</button>
+        </div>
+
+        <button class="btn btn-green">+ Создать топ-категорию</button>
+
+        <table class="tab-content active" data-tabContent="1">
+            <thead>
+                <tr>
+                    <th><span class="nowrap">Название <i class="i i-sorting"></i></span></th>
+                    <th>Адрес</th>
+                    <th class="tac">Активность</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">Главная</a></td>
+                    <td><a href="#">https://arzon.tj</a></td>
+                    <td><span class="stat green">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">Каталог</a></td>
+                    <td><a href="#">https://arzon.tj/catalog</a></td>
+                    <td><span class="stat purple">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">Главная</a></td>
+                    <td><a href="#">https://arzon.tj</a></td>
+                    <td><span class="stat green">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">Каталог</a></td>
+                    <td><a href="#">https://arzon.tj/catalog</a></td>
+                    <td><span class="stat purple">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="tab-content" data-tabContent="2">
+            <thead>
+                <tr>
+                    <th><span class="nowrap">Название <i class="i i-sorting"></i></span></th>
+                    <th class="tac">Активность</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">Недвижимость в Душанбе</a></td>
+                    <td><span class="stat green">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">Предметы интерьера</a></td>
+                    <td><span class="stat purple">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">Недвижимость в Душанбе</a></td>
+                    <td><span class="stat green">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">Предметы интерьера</a></td>
+                    <td><span class="stat purple">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="tab-content" data-tabContent="3">
+            <thead>
+                <tr>
+                    <th><span class="nowrap">Пункт меню <i class="i i-sorting"></i></span></th>
+                    <th>Адрес</th>
+                    <th class="tac">Активность</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">О сайте</a></td>
+                    <td><a href="#">/category</a></td>
+                    <td><span class="stat green">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">Для бизнеса</a></td>
+                    <td><a href="#">/forbussines</a></td>
+                    <td><span class="stat purple">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="tab-content" data-tabContent="4">
+            <thead>
+                <tr>
+                    <th><span class="nowrap">Пункт меню <i class="i i-sorting"></i></span></th>
+                    <th>Адрес</th>
+                    <th class="tac">Активность</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">О сайте</a></td>
+                    <td><a href="#">/category</a></td>
+                    <td><span class="stat green">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">Для бизнеса</a></td>
+                    <td><a href="#">/forbussines</a></td>
+                    <td><span class="stat purple">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>

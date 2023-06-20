@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/cp.css">
+
+    <title>Админка</title>
+</head>
+
+<body>
+
+    <header class="header wrap">
+        <a href="#" class="logo"><img src="img/logo.svg" alt="logo"></a>
+        <ul class="navbar">
+            <li class="dropdown">
+                <button class="dropdown-btn">Каталог <span class="badge">+7</span></button>
+                <ul class="dropdown-content">
+                    <li><a href="./ads.html">Объявления</a></li>
+                    <li><a href="./product_haracteristics.html">Характеристики товаров</a></li>
+                    <li><a href="./complaints.html">Жалобы</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <button class="dropdown-btn">Клиенты</button>
+                <ul class="dropdown-content">
+                    <li><a href="./clients.html">Клиенты</a></li>
+                    <li><a href="./payments.html">Платежи</a></li>
+                    <li><a href="./messages.html">Сообщения пользователей</a></li>
+                </ul>
+            </li>
+            <li class="dropdown show">
+                <button class="dropdown-btn">Справочник</button>
+                <ul class="dropdown-content">
+                    <li><a href="./cities.html">Города</a></li>
+                    <li><a href="./districts.html" class="active">Районы</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="./tariff_plans.html" class="dropdown-btn">Тарифные планы</a>
+                <ul class="dropdown-content">
+                    <li><a href="./days.html">Дни</a></li>
+                    <li><a href="./services.html">Услуги</a></li>
+                </ul>
+            </li>
+            <li><a href="./cashback.html">Кэшбэк</a></li>
+            <li><a href="./content.html">Контент</a></li>
+            <li><a href="./administration.html">Администрация</a></li>
+            <li><a href="./settings.html">Настройки</a></li>
+        </ul>
+        <div class="header-user dropdown">
+            <button class="dropdown-btn"><span class="badge">169</span> Oila superAdmin</button>
+            <div class="dropdown-content">
+                <a href="#">Настройки</a>
+                <a href="#">Профиль</a>
+                <a href="#">Выход</a>
+            </div>
+        </div>
+        <button class="btn btn-menu"><i class="i i-menu"></i></button>
+    </header>
+
+    <main class="admin">
+        <h1>
+            Районы 482 <span class="fade">(Не активных 3)</span>
+            <a href="#" class="link"><img src="img/xls.png" alt="xls">Экспорт</a>
+        </h1>
+        <button class="btn btn-green">+ Создать район</button>
+        <fieldset class="filter">
+            <input type="text" placeholder="Название">
+            <select class="w-10">
+                <option hidden>Город</option>
+                <option>Город</option>
+                <option>Город</option>
+            </select>
+            <select>
+                <option hidden>Активность</option>
+                <option>Активность</option>
+                <option>Активность</option>
+            </select>
+            <button class="btn btn-purple">Применить</button>
+            <button class="btn btn-denger">Сбросить</button>
+        </fieldset>
+        <table>
+            <thead>
+                <tr>
+                    <th><span class="nowrap">Название <i class="i i-sorting"></i></span></th>
+                    <th>Город</th>
+                    <th class="tac">Активность</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1 мкр</td>
+                    <td>Абдурахмони Джоми</td>
+                    <td><span class="stat green">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1 мкр</td>
+                    <td>Абдурахмони Джоми</td>
+                    <td><span class="stat green">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1 мкр</td>
+                    <td>Абдурахмони Джоми</td>
+                    <td><span class="stat green">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1 мкр</td>
+                    <td>Абдурахмони Джоми</td>
+                    <td><span class="stat green">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1 мкр</td>
+                    <td>Абдурахмони Джоми</td>
+                    <td><span class="stat green">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1 мкр</td>
+                    <td>Абдурахмони Джоми</td>
+                    <td><span class="stat green">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1 мкр</td>
+                    <td>Абдурахмони Джоми</td>
+                    <td><span class="stat green">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1 мкр</td>
+                    <td>Абдурахмони Джоми</td>
+                    <td><span class="stat green">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1 мкр</td>
+                    <td>Абдурахмони Джоми</td>
+                    <td><span class="stat green">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1 мкр</td>
+                    <td>Абдурахмони Джоми</td>
+                    <td><span class="stat green">1</span></td>
+                    <td>
+                        <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
+                        <a href="#" class="admin__btn"><i class="i i-trash"></i></a>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <nav class="paginate">
+            <a href="#" class="paginate_button btn-delete"><i class="i i-trash"></i></a>
+            <a href="#" class="paginate_button previous"></a>
+            <a href="#" class="paginate_button">1</a>
+            <a href="#" class="paginate_button current">2</a>
+            <a href="#" class="paginate_button">3</a>
+            <span class="paginate_button">...</span>
+            <a href="#" class="paginate_button">99</a>
+            <a href="#" class="paginate_button next"></a>
+        </nav>
+    </main>
+
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>

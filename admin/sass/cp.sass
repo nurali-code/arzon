@@ -1,0 +1,295 @@
+@import 'normolize'
+@import 'fonts'
+@import 'elements'
+@import 'btns'
+@import 'header'
+
+.admin
+    width: 100%
+    max-width: calc( 100% - 340px )
+    margin: 0 0 0 auto
+    padding: 0 30px
+    overflow: hidden
+    h1
+        font-weight: normal
+
+    &-wrap
+        justify-content: flex-start
+
+    &-item
+        width: 334px
+        max-width: 90%
+        padding: 30px 30px 25px
+        background-color: rgba($green, .16)
+        border: 2px solid rgba($green, .16)
+        border-radius: 24px
+        margin: 0 22px 33px 0
+        background-image: url('../img/arrow-right.svg')
+        background-repeat: no-repeat
+        background-position: bottom 30px right 25px
+        img
+            width: 32px
+            margin-bottom: 26px
+        &__heading
+            font-weight: 400
+            font-size: 18px
+            line-height: 22px
+            color: #4F4F4F
+            display: block
+
+        &__text
+            font-weight: 800
+            display: block
+            font-size: 32px
+            line-height: 39px
+            color: #4F4F4F
+
+        &:nth-child(2n+2)
+            background-color: rgba($blue2, .16)
+            border: 2px solid rgba($blue2, .16)
+        &:nth-child(3n+3)
+            background-color: rgba( $purple, .16)
+            border: 2px solid rgba( $purple, .16)
+
+    &__btn
+        width: 38px
+        height: 38px
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        vertical-align: middle
+        text-align: center
+        // background-color: blue
+        margin: 0
+        border-radius: 4px
+        i
+            font-size: 22px
+            color: red
+        img
+            width: 24px
+            height: 24px
+            object-fit: contain
+
+        &:hover
+            background-color: rgba($blue, .1)
+
+    &-header
+        display: flex
+        justify-content: space-between
+
+    &-category
+        &-row
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 100%
+
+table
+    width: 100%
+    margin-top: 24px
+    td, th
+        text-align: left
+        padding: 0 6px 10px
+        font-size: 14px
+        line-height: 150%
+        &.tac
+            text-align: center
+
+        &:first-of-type
+            padding-left: 0
+        &:last-of-type
+            padding-right: 0
+            text-align: right
+    td
+        padding: 20px 5px
+        vertical-align: top
+        &:first-of-type
+            padding-left: 0
+        &:last-of-type
+            padding-right: 0
+            text-align: right
+
+    th
+        i
+            cursor: pointer
+            color: #000
+            font-size: 12px
+            display: inline-block
+            padding: 0 7px
+
+    tr
+        border-bottom: 1px solid #eee
+        transition: .3s ease all
+        position: relative
+        z-index: 1
+        &:not(thead tr)
+            &.active
+                background-color: rgba(#F2F2F2, .6)
+            &:hover
+                background-color: rgba($yelow, .05)
+
+    img
+        display: inline-block
+        border-radius: 4px
+        max-width: 40px
+
+    input[type="checkbox"]
+        width: 16px
+        height: 16px
+        border-radius: 4px
+        margin: 0
+
+    a
+        color: #2544A1
+
+    .dropdown
+        &-btn
+            text-align: left
+            padding-right: 20px
+            background-image: url('../img/arrow_down.svg')
+            background-repeat: no-repeat
+            background-position: center right
+            background-size: 15px 15px
+
+.stat
+    width: 16px
+    height: 16px
+    display: block
+    margin: 0 auto
+    border-radius: 50%
+    font-size: 0
+    text-align: center
+    color: transparentize
+    &.green
+        background-color: $green
+    &.purple
+        background-color: $purple
+    &.pink
+        background-color: $pink
+    &.gray
+        background-color: #BDBDBD
+
+.filter
+    background-color: #F7F7F7
+    border-radius: 12px
+    padding: 17px
+    display: block
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    gap: 16px 16px
+    margin: 16px 0 30px
+    input, select
+        width: min-content
+        min-width: unset
+        display: inline-block
+        border-radius: 12px
+        max-width: unset
+        padding-right: 50px
+        &.w
+            &-30
+                min-width: 30%
+            &-40
+                min-width: 40%
+            &-50
+                min-width: 50%
+            &-10
+                width: 10%
+
+    select
+        background-image: url('../img/arrow_down.svg')
+        background-size: 16px auto
+        background-position: right 17px center
+
+.tab
+    &-btns
+        justify-content: flex-start
+
+    &__btn
+        font-weight: 400
+        font-size: 24px
+        line-height: 29px
+        color: $blue
+        padding: 11px 22px
+        border-bottom: 1px solid #E0E0E0
+        margin-bottom: 32px
+        &.active
+            border: 1px solid #E0E0E0
+            border-bottom: none
+    &-content
+        display: none
+        &.active
+            display: table
+
+@media screen and ( max-width: 1450px )
+    .admin
+        max-width: 100%
+
+@media screen and ( max-width: 1200px )
+    .admin
+        padding: 0 15px
+        &-wrap
+            width: 100vw
+            position: relative
+            left: -15px
+            flex-wrap: nowrap
+            padding: 0 0 0 15px
+            margin-bottom: 10px
+            overflow-x: scroll
+        &-item
+            margin: 0 16px 24px 0
+            min-width: 290px
+            width: 290px
+            background-position: bottom 33px right 25px
+            &__text
+                font-size: 26px
+            img
+                margin-bottom: 18px
+
+    .table-container
+        width: 100vw
+        padding: 0 15px
+        position: relative
+        left: -15px
+        overflow-x: scroll
+        -webkit-overflow-scrolling: touch
+
+    .tab
+        &-btns
+            flex-wrap: nowrap
+            overflow-x: scroll
+            margin: 0 0 10px
+            width: 100vw
+            position: relative
+            left: -16px
+            padding: 0 16px 10px
+
+        &__btn
+            min-width: fit-content
+            margin: 0
+            font-size: 16px
+            padding: 8px 12px
+            order: 2
+            &.active
+                order: 1
+                border: 1px solid #E0E0E0
+                border-bottom: none
+        &-content
+
+@media screen and ( max-width: 700px )
+
+    .filter
+        width: 100vw
+        position: relative
+        left: -15px
+        padding: 14px
+        gap: 14px 2%
+        border-radius: 0
+        input, select
+            min-width: 49% !important
+        input
+            width: 49%
+            &.w-30,
+            &.w-40,
+            &.w-50
+                width: 100%

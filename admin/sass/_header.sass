@@ -1,0 +1,124 @@
+.header
+    padding: 30px 30px 20px
+    .logo
+        display: inline-block
+        max-width: 90px
+        margin: 0 auto 0 0
+
+    &-user
+        position: relative
+        padding: 0
+        z-index: 1000
+        .dropdown
+            &-btn
+                font-weight: 400
+                font-size: 14px
+                line-height: 17px
+                color: #2544A1
+
+            &-content
+                position: absolute
+                top: 150%
+                right: -10px
+                min-width: 180px
+                border-radius: 10px
+                padding: 10px 0
+                background-color: #000
+                a
+                    color: #fff
+                    padding: 8px 20px
+                    display: block
+                    text-align: right
+
+    .btn
+        &-menu
+            display: none
+
+    .navbar
+        position: absolute
+        top: 82px
+        left: 30px
+        background-color: #fff
+        border: 2px solid #F2F2F2
+        border-radius: 24px
+        padding: 16px
+        width: 293px
+        li
+            padding: 0
+            &::before
+                display: none
+
+        .dropdown
+            border-radius: 12px
+            &.active, &.show
+                padding: 13px 0 !important
+                background-color: #000
+                a, button
+                    color: #fff
+                .dropdown
+                    &-content
+                        display: block
+
+            &-content
+                padding-left: 16px
+
+        a, button
+            width: 100%
+            text-align: left
+            font-weight: 400
+            border-radius: 12px
+            font-size: 14px
+            line-height: 17px
+            display: block
+            padding: 8px 16px
+            color: $blue
+            &:hover
+                background-color: rgba(#7C4EFF, .1)
+
+            &.active
+                font-weight: bold
+                color: $purple !important
+                background-color: #000
+
+        .badge
+            float: right
+
+    @media screen and ( max-width: 1450px )
+        .navbar
+            left: 0
+            top: 0
+            width: 5px
+            height: 100%
+            padding: 0
+            transition: .2s ease all
+            border: 1px solid rgba(255, 255, 255, 0)
+            position: fixed
+            background-color: transparent
+            z-index: 9999
+            li
+                transition: .2s ease all
+                opacity: 0
+                visibility: hidden
+
+            &.active,
+            &:hover
+                border-color: #F2F2F2
+                padding: 60px 16px 16px
+                background-color: #fff
+                width: 293px
+                li
+                    opacity: 1
+                    visibility: visible
+
+        .btn
+            &-menu
+                margin-left: 15px
+                display: inline-block
+
+    @media screen and ( max-width: 1200px )
+        padding: 20px 15px 15px
+
+.dropdown
+    transition: .3s ease all
+    &-content
+        display: none
