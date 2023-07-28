@@ -3,7 +3,7 @@
     bottom: 0
     left: 0
     width: 100%
-    padding: 0 
+    padding: 0
     z-index: 9999
     display: flex
     justify-content: space-around
@@ -56,24 +56,28 @@
     .i
         font-size: 13px
         color: $blue
-        @media (prefers-color-scheme: dark)
-            color: #c1c9e7
+        // @media (prefers-color-scheme: dark)
+        //     color: #c1c9e7
 
     &__text
         display: block
         font-weight: 400
-        font-size: 12px
+        font-size: 11px
         line-height: 100%
         color: var(--blue)
         opacity: .5
-        @media (prefers-color-scheme: dark)
-            color: #7c88b5
+        // @media (prefers-color-scheme: dark)
+        //     color: #7c88b5
+
+        @media screen and ( min-width: 350px )
+            font-size: 13px
+        @media screen and ( min-width: 400px )
+            font-size: 14px
 
     &__link
-        min-width: 15%
         display: inline-block
         text-align: center
-        padding: 7px 2px 14px
+        padding: 8px 2px 12px
         opacity: 1 !important
         &.active
             .navbar
@@ -91,6 +95,8 @@
                     font-weight: 500
                     @media (prefers-color-scheme: dark)
                         color: #fff
+
+    @media screen and ( min-width: 1100px )
 
     @media screen and ( min-width: 1100px )
         display: none
