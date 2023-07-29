@@ -148,7 +148,7 @@
     &__price
         max-width: calc( 100% - 26px )
         padding: 0 2px 0 10px
-        font-size: 14px
+        font-size: 15px
         line-height: 110%
         margin: 0 0 4px
 
@@ -183,7 +183,7 @@
 
     &__location,
     &__date
-        font-size: 12px
+        font-size: 14px
         line-height: 120%
         margin: 0
         padding: 0 10px 2px
@@ -194,6 +194,7 @@
 
     &-wrapper
         justify-content: space-between
+        align-items: stretch
         .item
             width: 48%
             min-width: unset
@@ -215,22 +216,22 @@
     width: 100%
     max-width: 1440px
     margin: 0 auto
-    padding-top: 13px
-    padding-bottom: 13px
+    padding-top: 6px
+    padding-bottom: 6px
     &__link
         display: none
         color: transparent
         font-size: 0px
         &:nth-last-of-type(2)
             display: inline-block
-            padding: 4px 0 0 12px
+            padding: 8px 10px 8px 16px
             background-repeat: no-repeat
             background-position: left center
             background-image: url('../img/icons/arrow__left.svg')
-            background-size: 6px auto
+            background-size: 7px auto
             &::after
                 content: 'Назад'
-                font-size: 13px
+                font-size: 16px
                 display: inline-block
                 line-height: 130%
                 color: var(--blue)
@@ -239,7 +240,7 @@
             filter: brightness(10)
 
 .card
-    font-size: 13px
+    font-size: 14px
     .path
         order: 2
 
@@ -335,7 +336,7 @@
         margin: 0 0 4px
 
     &__subheading
-        font-size: 14px
+        font-size: 16px
         line-height: 120%
         font-weight: bold
         padding: 10px 0
@@ -365,7 +366,7 @@
 
     &-user
         order: 4
-        font-size: 13px
+        font-size: 14px
         margin: 0 0 15px
         &__name
             font-weight: bold
@@ -378,11 +379,11 @@
             content: ")"
 
     &__status
-        font-size: 13px
+        font-size: 14px
         line-height: 110%
         margin: 10px 0 0
         display: inline-block
-        padding: 2px 9px
+        padding: 2px 9px 3px
         border-radius: 6px
         border: 1px solid #b0b2b9
 
@@ -390,7 +391,7 @@
         order: 6
         padding: 2px 0 2px 18px
         position: relative
-        font-size: 13px
+        font-size: 16px
         margin-bottom: 12px
         .i
             font-size: 12px
@@ -399,14 +400,17 @@
             top: 4px
 
         a
+            display: inline-block
+            vertical-align: middle
             color: #2544a1
+            white-space: nowrap
 
     &__min
         order: 7
         margin-bottom: 20px
 
 .categoris
-    padding-top: 20px
+    padding-top: 15px
     h1
         margin-bottom: 10px
 
@@ -422,7 +426,8 @@
 
     @media screen and ( max-width: 1100px )
         &-item
-            display: inline-block
+            display: inline-flex
+            align-items: center
             width: 48%
             margin: 0 0 14px
             padding: 14px
@@ -431,7 +436,7 @@
             background-color: var(--white)
             border-radius: 6px
             box-shadow: 0px 10px 6px 0px rgba(0, 6, 129, 0.06)
-            font-size: 12px
+            font-size: 14px
             color: var(--blue)
             font-weight: bold
             padding-right: 50px
@@ -483,11 +488,12 @@
                 display: none
 
         a
-            font-size: 12px
+            font-size: 14px
             padding: 2px 0
 
             &:hover
                 text-decoration: underline
+       
         span
             opacity: .5
 
@@ -512,8 +518,8 @@
             align-items: stretch
 
         &__img
-            width: 100px
-            height: 80px
+            width: 120px
+            height: 100px
             border-radius: 8px
             overflow: hidden
             margin-bottom: 11px
@@ -525,13 +531,13 @@
                 background-color: #eee
 
         &__heading
-            font-size: 10px
+            font-size: 14px
             font-weight: 600
             line-height: 130%
             margin-bottom: 1px
 
         &__category
-            font-size: 10px
+            font-size: 12px
             line-height: 130%
             margin-bottom: 8px
             span
@@ -543,10 +549,10 @@
 
         .btn
             &-outline
-                text-align: center
+                text-align: left
                 width: 100%
                 border-radius: 4px
-                font-size: 10px
+                font-size: 12px
                 padding: 8px 6px
                 min-width: unset
 
@@ -597,7 +603,7 @@
         margin-bottom: 10px
 
     &__text
-        font-size: 12px
+        font-size: 16px
         margin-bottom: 14px
 
     section
@@ -627,8 +633,11 @@
             // max-width: 48%
             label
                 margin-bottom: 6px
+                &::before
+                    top: 60%
+                    transform: translateY(-50%)
                 .descr
-                    font-size: 10px
+                    font-size: 14px
 
     iframe
         width: 100%
@@ -676,6 +685,7 @@
         margin-bottom: 40px
         @media screen and ( max-width: 1100px )
             ul
+                padding: 10px 0
                 background-color: #fff
                 border-bottom: none
                 border: 1px solid #eee
@@ -724,7 +734,9 @@
 
             h3
                 min-width: 232px
+                font-size: 20px
                 margin-bottom: 12px
+
             p
                 font-size: 16px
                 color: var(--blue)
@@ -752,7 +764,7 @@
         padding-top: 20px
 
     p
-        font-size: 14px
+        font-size: 16px
         line-height: 140%
         margin-bottom: 14px
 
@@ -763,8 +775,8 @@
         margin-bottom: 24px
 
     h3
-        font-size: 18px
-        margin-bottom: 12px
+        font-size: 20px
+        margin-bottom: 14px
 
     .question
         &-wrap
@@ -784,7 +796,7 @@
                 vertical-align: middle
                 display: inline-block
                 padding: 4px 0
-                font-size: 12px
+                font-size: 16px
                 line-height: 140%
 
 .realstate
