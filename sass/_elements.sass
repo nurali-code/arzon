@@ -29,7 +29,7 @@ main
 h1
     font-size: 24px
     line-height: 120%
-    margin: 0 0 10px
+    margin: 0 0 16px
 
 body
     min-height: 100vh
@@ -97,7 +97,7 @@ textarea
 
 select
     width: 100%
-    font-size: 13px
+    font-size: 14px
     display: block
     appearance: none
     background-color: var(--white)
@@ -119,6 +119,8 @@ select
     margin: 0 0 14px
     input
         width: 100%
+        font-size: 15px
+        height: 48px
         border: 1px solid var(--blue)
         border-radius: 6px
         box-shadow: 0px 10px 6px 0px rgba(0, 6, 129, 0.06)
@@ -127,7 +129,7 @@ select
         position: absolute
         top: 50%
         transform: translateY(-50%)
-        right: 4px
+        right: 8px
         z-index: 1
         color: #fff
 
@@ -173,7 +175,7 @@ ol
 
 p
     font-weight: 400
-    font-size: 10px
+    font-size: 14px
     line-height: 110%
 
 ul
@@ -182,7 +184,7 @@ ul
         font-weight: 400
         font-size: 20px
         line-height: 140%
-        padding-left: 20px
+        padding-left: 26px
         margin: 0
         position: relative
         &::before
@@ -248,22 +250,22 @@ section
 
     &__heading
         font-weight: 700
-        font-size: 13px
+        font-size: 16px
         padding: 10px 0
         color: var(--blue)
         &::before
-            font-size: 11px
+            font-size: 14px
             color: var(--blue)
             content: "\e91b"
             font-family: "arzon_fonts" !important
-            margin-right: 4px
+            margin-right: 8px
 
     @media screen and ( max-width: 1100px )
         &__btn
             display: block
             width: 100%
             text-align: left
-            font-size: 13px
+            font-size: 15px
             line-height: auto
             padding: 4px 16px
             &.active
@@ -287,7 +289,7 @@ fieldset
     border: none
     margin: 0 0 16px
     label
-        font-size: 13px
+        font-size: 16px
         display: block
         margin-bottom: 4px
 
@@ -307,7 +309,7 @@ fieldset
         border: 1px solid var(--gray)
         border-radius: 8px
         padding: 0 12px
-        height: 40px
+        height: 48px
 
     textarea
         height: unset
@@ -325,8 +327,9 @@ fieldset
     &__btn
         display: inline-block
         vertical-align: middle
-        margin-right: 20px
-        font-size: 16px
+        margin-right: 16px
+        font-size: 18px
+        padding: 2px
         line-height: 120%
         border-bottom: 1px dashed rgba(0,0,0, .3)
         opacity: .5
