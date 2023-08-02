@@ -4,13 +4,17 @@ $(document).ready(function () {
         event.stopPropagation();
         $('.navbar, .btn-menu, body').toggleClass('active');
     });
+    $('[data-category-btn]').on('click', function (event) {
+        $(this).toggleClass('active');
+        var categoryBtn = $(this).attr('data-category-btn');
+        $('[data-category-content="' + categoryBtn + '"]').slideToggle();
+    });
 
     $(document).on('click', function (event) {
         if (!$(event.target).closest('.navbar').length && !$(event.target).hasClass('btn-menu')) {
             $('.navbar, .btn-menu, body').removeClass('active');
         }
     });
-
 
     if ($(window).width() < 768) {
         $('table').each(function () {

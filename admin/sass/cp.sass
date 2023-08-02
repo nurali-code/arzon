@@ -4,6 +4,24 @@
 @import 'btns'
 @import 'header'
 
+[data-category-content]
+    display: none
+[data-category-btn]
+    position: relative
+    z-index: 1
+    padding-left: 20px
+    &::before
+        content: '+'
+        display: inline-block
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+        font-size: 20px
+
+    &.active::before
+        content: '-'
+
 .admin
     width: 100%
     max-width: calc( 100% - 340px )
@@ -76,13 +94,39 @@
     &-header
         display: flex
         justify-content: space-between
+        padding-right: 120px
+        .col
+            font-size: 14px
+            color: #4F4F4F
+            font-weight: 700
 
     &-category
-        &-row
+        &__heading
+            color: #2544A1
+            font-size: 14px
+            line-height: 130%
+            font-weight: 400
+            text-align: left
+
+        ul
+            padding-left: 64px
+
+        li
+            border-bottom: 1px solid #F2F2F2
+            padding: 8px 0
+            &:last-of-type
+                border-bottom: none
+
+        &-item
             display: flex
             align-items: center
             justify-content: center
             width: 100%
+            .col 
+                text-align: right
+
+        .stat
+            margin: 0 70px 0 auto
 
 table
     width: 100%
@@ -153,13 +197,14 @@ table
 
 .stat
     width: 16px
+    min-width: 16px
     height: 16px
     display: block
     margin: 0 auto
     border-radius: 50%
     font-size: 0
     text-align: center
-    color: transparentize
+    color: rgba(0, 0, 0, 0)
     &.green
         background-color: $green
     &.purple
@@ -293,3 +338,13 @@ table
             &.w-40,
             &.w-50
                 width: 100%
+
+    .admin
+        &-header 
+            padding-right: 80px
+            
+        &-category
+            .stat
+                margin-right: 30px
+            ul
+                padding-left: 20px
