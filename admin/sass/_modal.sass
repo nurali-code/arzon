@@ -71,18 +71,6 @@
     &.is-open
         display: block
 
-    &-catalog
-        .modal
-            &-content
-                border-radius: 0
-                left: 0
-                top: 0
-                transform: none
-                padding: 0
-                height: 100%
-                max-width: 500px
-                max-height: 100%
-
     &__heading
         font-size: 36px
         left: 120%
@@ -91,10 +79,29 @@
     &-form
         form 
             .wrap 
-                margin-top: 40px
-                max-width: 400px
-                button
-                    margin: 0 0 10px
+                justify-content: flex-start
+                gap: 20px
+        
+        fieldset
+            display: flex
+            justify-content: space-between
+            align-items: center
+            
+            label
+                font-size: 16px
+                display: block
+                margin-bottom: 4px
+
+            input,
+            select,
+            textarea,
+            .col
+                width: 100%
+                border-radius: 8px
+                max-width: 366px
+                &.wide
+                    max-width: 486px
+
         .modal-content
             padding: 70px 80px
             max-width: 860px
@@ -111,16 +118,22 @@
                 width: 100%
 
         &__heading
-            font-size: 28px
+            font-size: 24px
+            max-width: 90%
             margin-bottom: 25px
 
         &-form
             fieldset
+                display: block
                 input, select
                     max-width: 100%
             .modal-content
                 padding: 30px 20px
                 max-width: 460px
+
+            form 
+                .wrap 
+                    display: block
 
     @media screen and ( max-width: 700px )
         &-content
@@ -137,88 +150,4 @@
             right: 16px
             font-size: 20px
 
-        &#catalog
-            .modal
-                &-content
-                    padding: 0
-
-.menu
-    &-catalog
-        position: relative
-        height: 450px
-        &-header
-            background-color: #eee
-            border-bottom: none !important
-
-        &__close
-            padding: 15px
-            font-size: 20px
-            width: 100%
-            text-align: left
-            &::after
-                float: right
-                font-size: 14px
-                text-align: center
-                opacity: .6
-                width: 30px
-                height: 30px
-                line-height: 30px
-                border-radius: 50%
-                border: 1px solid #000
-                content: '✖'
-                display: inline-block
-                vertical-align: middle
-                margin: 0 10px 2px 0
-
-        ul
-            width: 100%
-            display: none
-            padding-left: 15px
-            background-color: rgba(0,0,0,.05)
-
-        li
-            display: flex
-            flex-wrap: wrap
-            padding: 0
-            z-index: 1
-            transition: all ease .3s
-            border-bottom: 1px solid rgba($blue, .2)
-            &:last-of-type
-                border-bottom: none
-            &::before
-                display: none
-
-    &-list
-        width: 100%
-
-    &__link
-        max-width: 70%
-        padding: 12px 20px
-        font-size: 14px
-        line-height: 140%
-        display: inline-block
-        vertical-align: middle
-        &:hover
-            text-decoration: underline
-
-    &__next
-        width: 30%
-        margin: 0 0 0 auto
-        opacity: .4
-        display: inline-block
-        vertical-align: middle
-        background-image: url('../img/icons/arrow_down.svg')
-        background-repeat: no-repeat
-        background-position: right 30px center
-        background-size: auto 20px
-        transform-origin: 50% 50%
-        transition: none
-        &:hover
-            opacity: 1
-        &.active
-            background-position: left 30px center
-            transform: rotate(180deg)
-
-    @media screen and ( max-width: 700px )
-        &__link
-            font-size: 12px
+    

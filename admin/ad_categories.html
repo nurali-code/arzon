@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/cp.css?ver=123456">
+    <link rel="stylesheet" href="./css/cp.css?ver=234567">
     <title>Админка</title>
 </head>
 
@@ -65,7 +65,7 @@
             Характеристики товаров 123<span class="fade">(Не активных 7)</span>
             <a href="#" class="link"><img src="img/xls.png" alt="xls">Экспорт</a>
         </h1>
-        <a href="#" class="btn btn-green">+ Создать характеристику</a>
+        <a href="#" class="btn btn-green" data-modal="reg">+ Создать характеристику</a>
         <fieldset class="filter">
             <input class="w-50" type="text" placeholder="Название">
             <select>
@@ -157,7 +157,8 @@
                     </li>
                     <li>
                         <span class="admin-category-item">
-                            <button class="admin-category__heading" data-category-btn="03">Долгосрочная аренда квартир</button>
+                            <button class="admin-category__heading" data-category-btn="03">Долгосрочная аренда
+                                квартир</button>
                             <span class="stat green">0</span>
                             <span class="col">
                                 <a href="#" class="admin__btn"><img src="./img/edit.svg" alt="edit"></a>
@@ -289,8 +290,38 @@
         </nav>
     </main>
 
+    <div class="modal modal-form" id="reg">
+        <div class="modal-content">
+            <button class="modal-cancel modal-close">✖</button>
+            <h3 class="modal__heading">Создать категорию</h3>
+            <form action="#">
+                <fieldset>
+                    <label>Название категории</label>
+                    <input type="text" placeholder="Введите название">
+                </fieldset>
+                <fieldset>
+                    <label>Рассположение</label>
+                    <select>
+                        <option>Выберите рассположение</option>
+                        <option>Работа</option>
+                        <option>Транспорт</option>
+                        <option>Недвижимость</option>
+                        <option>Услуги</option>
+                        <option>Работа</option>
+                        <option>Транспорт</option>
+                        <option>Недвижимость</option>
+                        <option>Услуги</option>
+                    </select>
+                </fieldset>
+                <div class="wrap">
+                    <button type="submit" class="btn btn-main">Добавить</button>
+                    <button type="reset" class="btn btn-outline modal-cancel">Отменить</button>
+            </form>
+        </div>
+    </div>
+
     <script src="./js/jquery-3.6.1.min.js"></script>
-    <script src="./js/scripts.js?ver=123456"></script>
+    <script src="./js/scripts.js?ver=234567"></script>
 </body>
 
 </html>
