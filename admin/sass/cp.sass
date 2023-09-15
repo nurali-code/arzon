@@ -123,11 +123,22 @@
             align-items: center
             justify-content: center
             width: 100%
-            .col 
+            .col
                 text-align: right
 
         .stat
             margin: 0 70px 0 auto
+
+    &-form
+        fieldset
+            // background-color: red
+            display: block
+            input, select
+                width: 100%
+                display: block
+
+        &-row
+            width: 32%
 
 table
     width: 100%
@@ -294,6 +305,12 @@ table
             img
                 margin-bottom: 18px
 
+        &-form
+            fieldset
+
+            &-row
+                width: 48%
+
     .table-container
         width: 100vw
         padding: 0 15px
@@ -343,11 +360,17 @@ table
                 width: 100%
 
     .admin
-        &-header 
+        &-header
             padding-right: 80px
-            
+
         &-category
             .stat
                 margin-right: 30px
             ul
                 padding-left: 20px
+
+        &-form
+            fieldset
+
+            &-row
+                width: 100%

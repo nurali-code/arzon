@@ -68,7 +68,7 @@
             Характеристики товаров 123<span class="fade">(Не активных 7)</span>
             <a href="#" class="link"><img src="img/xls.png" alt="xls">Экспорт</a>
         </h1>
-        <a href="#" class="btn btn-green" data-modal="haracteristics">+ Создать характеристику</a>
+        <a href="./add_haracteristics.html" class="btn btn-green" >+ Создать характеристику</a>
         <fieldset class="filter">
             <input class="w-50" type="text" placeholder="Название">
             <select>
@@ -170,79 +170,6 @@
             <a href="#" class="paginate_button next"></a>
         </nav>
     </main>
-
-    <div class="modal modal-form" id="haracteristics">
-        <div class="modal-content">
-            <button class="modal-cancel modal-close">✖</button>
-            <h3 class="modal__heading">Добавление новой характеристики</h3>
-            <form action="#">
-                <fieldset>
-                    <label>Показывать в фильтре <i>*</i></label>
-                    <div class="col inp-check">
-                        <input type="checkbox" id="checkbox1">
-                        <label for="checkbox1"></label>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <label>Показывать в карточке <br> товара в списке <i>*</i></label>
-                    <div class="col inp-check">
-                        <input type="checkbox" id="checkbox2">
-                        <label for="checkbox2"></label>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <label>Обязательная к заполнению <i>*</i></label>
-                    <div class="col inp-check">
-                        <input type="checkbox" id="checkbox3">
-                        <label for="checkbox3"></label>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <label>Тип</label>
-                    <select>
-                        <option>Вариационная характеристика</option>
-                        <option>Множественный выбор</option>
-                        <option>Обычная характеристика</option>
-                        <option>Поле для ввода любого текста</option>
-                    </select>
-                </fieldset>
-                <fieldset>
-                    <label>Родительская характеристика  </label>
-                    <select>
-                        <option>Вариационная характеристика</option>
-                        <option>Множественный выбор</option>
-                        <option>Обычная характеристика</option>
-                        <option>Поле для ввода любого текста</option>
-                    </select>
-                </fieldset>
-                <fieldset>
-                    <label>Тип категории <br> (отображение хот линков) </label>
-                    <select>
-                        <option>Вариационная характеристика</option>
-                        <option>Множественный выбор</option>
-                        <option>Обычная характеристика</option>
-                        <option>Поле для ввода любого текста</option>
-                    </select>
-                </fieldset>
-                <fieldset>
-                    <label>Название <i>*</i></label>
-                    <input type="text" placeholder="Введите название">
-                </fieldset>
-                <fieldset>
-                    <label>Алиас <i>*</i> </label>
-                    <input type="text" placeholder="Введите название">
-                </fieldset>
-                <fieldset>
-                    <label>Категории <i>*</i> </label>
-                    <input type="text" placeholder="Введите название">
-                </fieldset>
-                <div class="wrap">
-                    <button type="submit" class="btn btn-main">Сохранить</button>
-                    <button type="reset" class="btn btn-outline modal-cancel">Отменить</button>
-                </div>
-            </form>
-        </div>
-    </div>
 
 
     <script src="./js/jquery-3.6.1.min.js"></script>

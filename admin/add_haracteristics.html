@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="./css/cp.css?ver=34567">
+
+    <title>Админка</title>
+</head>
+
+<body>
+
+    <header class="header wrap">
+        <a href="#" class="logo"><img src="img/logo.svg" alt="logo"></a>
+        <ul class="navbar">
+            <li class="dropdown show">
+                <button class="dropdown-btn">Каталог <span class="badge">+7</span></button>
+                <ul class="dropdown-content">
+                    <li><a href="./ads.html">Объявления</a></li>
+                    <li><a href="./product_haracteristics.html" class="active">Характеристики товаров</a></li>
+                    <li><a href="./ad_categories.html">Категории объявлений</a></li>
+                    <li><a href="./complaints.html">Жалобы</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <button class="dropdown-btn">Клиенты</button>
+                <ul class="dropdown-content">
+                    <li><a href="./clients.html" class="active">Клиенты</a></li>
+                    <li><a href="./payments.html">Платежи</a></li>
+                    <li><a href="./messages.html">Сообщения пользователей</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <button class="dropdown-btn">Справочник</button>
+                <ul class="dropdown-content">
+                    <li><a href="./cities.html" class="active">Города</a></li>
+                    <li><a href="./districts.html">Районы</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="./tariff_plans.html" class="dropdown-btn">Тарифные планы</a>
+                <ul class="dropdown-content">
+                    <li><a href="./days.html" class="active">Дни</a></li>
+                    <li><a href="./services.html">Услуги</a></li>
+                </ul>
+            </li>
+            <li><a href="./cashback.html">Кэшбэк</a></li>
+            <li><a href="./content.html">Контент</a></li>
+            <li><a href="./administration.html">Администрация</a></li>
+            <li><a href="./settings.html">Настройки</a></li>
+        </ul>
+        <div class="header-user dropdown">
+            <button class="dropdown-btn"><span class="badge">169</span> Oila superAdmin</button>
+            <div class="dropdown-content">
+                <a href="#">Настройки</a>
+                <a href="#">Профиль</a>
+                <a href="#">Выход</a>
+            </div>
+        </div>
+        <button class="btn btn-menu"><i class="i i-menu"></i></button>
+    </header>
+
+    <main class="admin">
+        <h1>
+            Добавление новой характеристики
+            <a href="#" class="link"><img src="img/xls.png" alt="xls">Экспорт</a>
+        </h1>
+        <div class="admin-form wrap">
+            <div class="admin-form-row">
+                <fieldset>
+                    <label>Показывать в фильтре <i>*</i></label>
+                    <div class="col inp-check">
+                        <input type="checkbox" id="checkbox1">
+                        <label for="checkbox1"></label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label>Показывать в карточке товара в списке <i>*</i></label>
+                    <div class="col inp-check">
+                        <input type="checkbox" id="checkbox2">
+                        <label for="checkbox2"></label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label>Обязательная к заполнению <i>*</i></label>
+                    <div class="col inp-check">
+                        <input type="checkbox" id="checkbox3">
+                        <label for="checkbox3"></label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="admin-form-row">
+                <fieldset>
+                    <label>Тип</label>
+                    <select>
+                        <option>Вариационная характеристика</option>
+                        <option>Множественный выбор</option>
+                        <option>Обычная характеристика</option>
+                        <option>Поле для ввода любого текста</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <label>Родительская характеристика </label>
+                    <select>
+                        <option>Вариационная характеристика</option>
+                        <option>Множественный выбор</option>
+                        <option>Обычная характеристика</option>
+                        <option>Поле для ввода любого текста</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <label>Тип категории (отображение хот линков) </label>
+                    <select>
+                        <option>Вариационная характеристика</option>
+                        <option>Множественный выбор</option>
+                        <option>Обычная характеристика</option>
+                        <option>Поле для ввода любого текста</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div class="admin-form-row">
+                <fieldset>
+                    <label>Название <i>*</i></label>
+                    <input type="text" placeholder="Введите название">
+                </fieldset>
+                <fieldset>
+                    <label>Алиас <i>*</i> </label>
+                    <input type="text" placeholder="Введите название">
+                </fieldset>
+                <fieldset>
+                    <label>Категории <i>*</i> </label>
+                    <input type="text" placeholder="Введите название">
+                </fieldset>
+            </div>
+            
+        </div>
+        <div>
+            <button type="submit" class="btn btn-main">Сохранить</button>
+            <button type="reset" class="btn btn-outline modal-cancel">Отменить</button>
+        </div>
+    </main>
+
+
+
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/scripts.js?ver=345678"></script>
+</body>
+
+</html>
