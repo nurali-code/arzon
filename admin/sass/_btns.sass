@@ -151,21 +151,26 @@
     &-check
         display: inline-block
         vertical-align: middle
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
         label
             display: block
             vertical-align: middle
-            width: 60px
-            height: 30px
+            width: 50px
+            height: 25px
             border-radius: 30px
             background-color: rgba(0, 0, 0, .2)
             // border: 1px solid #000
             position: relative
             z-index: 1
+            cursor: pointer
             &::before
                 content: ''
                 display: block
-                width: 20px
-                height: 20px
+                width: 19px
+                height: 18px
                 background-color: #fff
                 border-radius: 50%
                 position: absolute
@@ -173,6 +178,7 @@
                 left: 5px
                 transform: translateY(-50%)
                 transition: all .3s ease
+
         input
             display: none !important
             &:checked ~ label
@@ -222,6 +228,11 @@
             background-image: none
             &:first-child
                 border-right: 1px solid #eee !important
+
+.fieldset
+    &-check
+        padding: 8px 0 7px 60px 
+        margin: 0
 
 @media screen and ( min-width: 1100px )
     .btn

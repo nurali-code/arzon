@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+    <link rel="stylesheet" href="./css/treeselectjs.css">
     <link rel="stylesheet" href="./css/cp.css?ver=34567">
 
     <title>Админка</title>
@@ -68,78 +69,113 @@
             Добавление новой характеристики
             <a href="#" class="link"><img src="img/xls.png" alt="xls">Экспорт</a>
         </h1>
-        <div class="admin-form wrap">
-            <div class="admin-form-row">
-                <fieldset>
+        <div class="main-container">
+            <h2>Характеристика</h2>
+            <fieldset class="fieldset-check">
+                <label>Активность <i>*</i></label>
+                <div class="col inp-check">
+                    <input type="checkbox" name="IsActive" id="IsActive" onchange="checkboxTrueFalse(this);"
+                        value="false">
+                    <label for="IsActive"></label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label>Название <i>*</i></label>
+                <input placeholder="Введите название" type="text" id="Name" name="Name" value="">
+            </fieldset>
+            <fieldset>
+                <label>Категории <i>*</i> </label>
+                <div id="categories-autocomplete" style="width: 100%;" class="treeselect">
+                    <div class="treeselect-input treeselect-input--value-not-selected" tabindex="-1">
+                        <div class="treeselect-input__tags"><input class="treeselect-input__edit"
+                                placeholder="Ввидите категорие"></div>
+                        <div class="treeselect-input__operators"><span class="treeselect-input__clear"
+                                tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                    viewBox="0 0 25 25" fill="none" stroke="#000000" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                                </svg></span><span class="treeselect-input__arrow"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 25"
+                                    fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M6 9l6 6 6-6"></path>
+                                </svg></span></div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+        </div>
+        <div id="fields-container">
+            <h1>Полей</h1>
+            <div id="fields-row" class="fields-row">
+                <div class="admin-form-row">
+                    <fieldset>
+                        <label>Название <i>*</i></label>
+                        <input type="text" placeholder="Введите название" id="field-input-Name-0">
+                    </fieldset>
+                    <fieldset>
+                        <label>Алиас <i>*</i> </label>
+                        <input type="text" placeholder="Введите алиас" id="field-input-JsonField-0">
+                    </fieldset>
+                    <fieldset>
+                        <label>Источник <i>*</i> </label>
+                        <input type="text" placeholder="Введите источник" id="field-input-Source-0">
+                    </fieldset>
+                </div>
+                <div class="admin-form-row">
+                    <fieldset class="fieldset-check">
+                        <label>Показывать в фильтре <i>*</i></label>
+                        <div class="col inp-check">
+                            <input type="checkbox" id="checkbox1">
+                            <label for="checkbox1"></label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset-check">
+                        <label>Показывать в карточке товара в списке <i>*</i></label>
+                        <div class="col inp-check">
+                            <input required="" type="checkbox" id="checkbox2">
+                            <label for="checkbox2"></label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset-check">
+                        <label>Обязательная к заполнению <i>*</i></label>
+                        <div class="col inp-check">
+                            <input type="checkbox" id="checkbox3">
+                            <label for="checkbox3"></label>
+                        </div>
+                    </fieldset>
+                </div>
+                <!-- <fieldset>
                     <label>Показывать в фильтре <i>*</i></label>
                     <div class="col inp-check">
-                        <input type="checkbox" id="checkbox1">
-                        <label for="checkbox1"></label>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <label>Показывать в карточке товара в списке <i>*</i></label>
-                    <div class="col inp-check">
-                        <input type="checkbox" id="checkbox2">
-                        <label for="checkbox2"></label>
+                        <input type="checkbox" id="field-input-ShowInFilter-0" onchange="checkboxTrueFalse(this);"
+                            value="false">
+                        <label for="field-input-ShowInFilter-0"></label>
                     </div>
                 </fieldset>
                 <fieldset>
                     <label>Обязательная к заполнению <i>*</i></label>
                     <div class="col inp-check">
-                        <input type="checkbox" id="checkbox3">
-                        <label for="checkbox3"></label>
+                        <input type="checkbox" id="field-input-MakeRequired-0" onchange="checkboxTrueFalse(this);"
+                            value="false">
+                        <label for="field-input-MakeRequired-0"></label>
                     </div>
                 </fieldset>
-            </div>
-            <div class="admin-form-row">
                 <fieldset>
-                    <label>Тип</label>
-                    <select>
-                        <option>Вариационная характеристика</option>
-                        <option>Множественный выбор</option>
-                        <option>Обычная характеристика</option>
-                        <option>Поле для ввода любого текста</option>
+                    <label>Тип данных <i>*</i></label>
+                    <select id="field-input-TypeId-0" title="Тип данных">
+                        <option hidden="">Выберите тип данных</option>
+                        <option value="1">string</option>
+                        <option value="2">number</option>
+                        <option value="3">boolean</option>
+                        <option value="4">date</option>
                     </select>
-                </fieldset>
-                <fieldset>
-                    <label>Родительская характеристика </label>
-                    <select>
-                        <option>Вариационная характеристика</option>
-                        <option>Множественный выбор</option>
-                        <option>Обычная характеристика</option>
-                        <option>Поле для ввода любого текста</option>
-                    </select>
-                </fieldset>
-                <fieldset>
-                    <label>Тип категории (отображение хот линков) </label>
-                    <select>
-                        <option>Вариационная характеристика</option>
-                        <option>Множественный выбор</option>
-                        <option>Обычная характеристика</option>
-                        <option>Поле для ввода любого текста</option>
-                    </select>
-                </fieldset>
+                </fieldset> -->
             </div>
-            <div class="admin-form-row">
-                <fieldset>
-                    <label>Название <i>*</i></label>
-                    <input type="text" placeholder="Введите название">
-                </fieldset>
-                <fieldset>
-                    <label>Алиас <i>*</i> </label>
-                    <input type="text" placeholder="Введите название">
-                </fieldset>
-                <fieldset>
-                    <label>Категории <i>*</i> </label>
-                    <input type="text" placeholder="Введите название">
-                </fieldset>
-            </div>
-            
-        </div>
-        <div>
-            <button type="submit" class="btn btn-main">Сохранить</button>
-            <button type="reset" class="btn btn-outline modal-cancel">Отменить</button>
+            <button type="button" onclick="addNewFieldsRow(this)">+</button>
         </div>
     </main>
 
